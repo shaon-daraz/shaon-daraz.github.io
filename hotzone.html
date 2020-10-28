@@ -125,8 +125,8 @@
         /*border: 1px solid white;*/
     }
     .pull-left{
-        margin-left: 5px;
-        color: white!important; 
+        margin-left: 15px;
+        color: white; 
         font-size: 10px!important;
         cursor: pointer!important;
         font-weight:600 !important;
@@ -135,7 +135,7 @@
         margin-right: 20px;
         font-size: 10px!important;
         cursor: pointer!important;
-        color: #3ec251 !important;
+        color: #3ec251;
         font-weight:600!important;
     }
     .hr-margin-align{
@@ -234,7 +234,7 @@
     }
     #draggable { 
         cursor:move;
-        height: calc(100vh - 50px);
+        height: calc(100vh - 2px);
         width: 300px;
         text-align:center;
     }
@@ -248,9 +248,52 @@
     }
 </style>
 <div id="category1" style="position: fixed !important; z-index: 999 !important; background-image: linear-gradient(#ae009a, #270178); top:0; left:0;height: 100% !important; width: 100% !important;font-family: 'Montserrat', sans-serif !important;">
+    <div class="col-xs-12 zero-pad">
+        <img src="https://img.alicdn.com/tfs/TB1gnHOqaNj0u4jSZFyXXXgMVXa-750-200.jpg" style="width: 100%;">
+    </div>
+    <div class="col-xs-12 zero-pad" style="background-color: white; padding: 12px;">
+            <div id="firstcat">
+                <span class="pull-left" style="color: black;">Payment Discount</span>
+                <a href="#">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+
+            </div>
+            <div id="secondcat" style="display: none;">
+                <span class="pull-left" style="color: black;">Event Partners</span>
+                <a href="#">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+            <div id="thirdcat" style="display: none;">
+                <span class="pull-left" style="color: black;">11.11 Lineup</span>
+                <a href="#">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+            <div id="fourthcat" style="display: none;">
+                <span class="pull-left" style="color: black;">Ludo Tournament</span>
+                <a href="#">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+            <div id="fifthcat" style="display: none;">
+                <span class="pull-left" style="color: black;">Double Taka</span>
+                <a href="#">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+            <div id="sixthcat" style="display: none;">
+                <span class="pull-left" style="color: black;">1 Taka Game</span>
+                <a href="#">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+    </div>
+
     <div class="col-xs-5 list-group" style="height: 100%;">
         <ul class="div-list-main" style="padding-left: 27px!important;">
-            <li class="main-listing list-group-item list-group-item-action" style="border: none; background-image: linear-gradient(to right, #270178, #ac009a);"><span></span></li>
+            
             <li class="main-listing list-group-item list-group-item-action" style="background-color: #6700b6" id="firstlist" onclick="firstCatOpen()">
                 <img class="main-listing-img" src="https://img.alicdn.com/tfs/TB1aiRi0uL2gK0jSZPhXXahvXXa-300-300.jpg" style="width: 24px;margin-top: -8%;">
                 <span class="cat-span">Payment Discount</span>
@@ -281,19 +324,9 @@
 
 
     <!--first Category -->
-    <div class="col-xs-7 zero-pad" id="firstcat" style="display: show;" id="drag">
+    <div class="col-xs-7 zero-pad" id="firstcat1" style="display: show;" id="drag">
 
-        <div class="">
-            <br>
-            <span class="pull-left">Payment Discount </span>
-            <a href="#">
-                <span class="pull-right">&gt;&gt; See More</span>
-            </a>
-        </div>
-
-        <div class="col-xs-12 hr-margin-align">
-            <hr class="hr-margin">
-        </div>
+        
 
 
         <div class="col-xs-12 sub-cat-padding" id="draggable">
@@ -338,19 +371,9 @@
 
 
     <!--Second Category -->
-    <div class="col-xs-7 fixed zero-pad" id="secondcat" style="display: none;" id="drag">
+    <div class="col-xs-7 fixed zero-pad" id="secondcat1" style="display: none;" id="drag">
 
-        <div class="">
-            <br>
-            <span class="pull-left">Event Partners</span>
-            <a href="#">
-                <span class="pull-right">&gt;&gt; See More</span>
-            </a>
-        </div>
-
-        <div class="col-xs-12 hr-margin-align">
-            <hr class="hr-margin">
-        </div>
+       
 
         <div class="col-xs-12 sub-cat-padding" id="draggable">
             <ul class="div-list-main">
@@ -381,19 +404,9 @@
 
 
     <!--third Category -->
-    <div class="col-xs-7 fixed zero-pad" id="thirdcat" style="display: none;" id="drag">
+    <div class="col-xs-7 fixed zero-pad" id="thirdcat1" style="display: none;" id="drag">
 
-        <div class="">
-            <br>
-            <span class="pull-left">11.11 Lineup</span>
-            <a href="#">
-                <span class="pull-right">&gt;&gt; See More</span>
-            </a>
-        </div>
-
-        <div class="col-xs-12 hr-margin-align">
-            <hr class="hr-margin">
-        </div>
+        
 
         <div class="col-xs-12 sub-cat-padding" id="draggable">
             <ul class="div-list-main">
@@ -464,19 +477,9 @@
 
 
     <!--fourth Category -->
-    <div class="col-xs-7 fixed zero-pad" id="fourthcat" style="display: none;" id="drag">
+    <div class="col-xs-7 fixed zero-pad" id="fourthcat1" style="display: none;" id="drag">
 
-        <div class="">
-            <br>
-            <span class="pull-left">Ludo Tournament</span>
-            <a href="#">
-                <span class="pull-right">&gt;&gt; See More</span>
-            </a>
-        </div>
-
-        <div class="col-xs-12 hr-margin-align">
-            <hr class="hr-margin">
-        </div>
+        
 
         <div class="col-xs-12 sub-cat-padding" id="draggable">
             <ul class="div-list-main">
@@ -492,18 +495,8 @@
 
 
     <!--fifth Category -->
-    <div class="col-xs-7 fixed zero-pad" id="fifthcat" style="display: none;" id="drag">
-        <div class="">
-            <br>
-            <span class="pull-left">Double Taka </span>
-            <a href="#">
-                <span class="pull-right">&gt;&gt; See More</span>
-            </a>
-        </div>
-
-        <div class="col-xs-12 hr-margin-align">
-            <hr class="hr-margin">
-        </div>
+    <div class="col-xs-7 fixed zero-pad" id="fifthcat1" style="display: none;" id="drag">
+        
 
         <div class="col-xs-12 sub-cat-padding" id="draggable">
             <ul class="div-list-main">
@@ -519,19 +512,9 @@
 
 
     <!--Sixth Category -->
-    <div class="col-xs-7 fixed zero-pad" id="sixthcat" style="display: none;" id="drag">
+    <div class="col-xs-7 fixed zero-pad" id="sixthcat1" style="display: none;" id="drag">
 
-        <div class="">
-            <br>
-            <span class="pull-left">1 Taka Game</span>
-            <a href="#">
-                <span class="pull-right">&gt;&gt; See More</span>
-            </a>
-        </div>
-
-        <div class="col-xs-12 hr-margin-align">
-            <hr class="hr-margin">
-        </div>
+        
 
         <div class="col-xs-12 sub-cat-padding" id="draggable">
             <ul class="div-list-main">
@@ -617,8 +600,14 @@ function dragElement(elmnt) {
         document.getElementById('fourthcat').style.display = "none";
         document.getElementById('fifthcat').style.display = "none";
         document.getElementById('sixthcat').style.display = "none";
-        document.getElementById('seventhcat').style.display = "none";
-        document.getElementById('eightcat').style.display = "none";
+        
+        document.getElementById('firstcat1').style.display = "block";
+        document.getElementById('secondcat1').style.display = "none";
+        document.getElementById('thirdcat1').style.display = "none";
+        document.getElementById('fourthcat1').style.display = "none";
+        document.getElementById('fifthcat1').style.display = "none";
+        document.getElementById('sixthcat1').style.display = "none";
+        
     }
 
         function secondCatOpen() {
@@ -628,8 +617,13 @@ function dragElement(elmnt) {
         document.getElementById('fourthcat').style.display = "none";
         document.getElementById('fifthcat').style.display = "none";
         document.getElementById('sixthcat').style.display = "none";
-        document.getElementById('seventhcat').style.display = "none";
-        document.getElementById('eightcat').style.display = "none";
+        
+        document.getElementById('firstcat1').style.display = "none";
+        document.getElementById('secondcat1').style.display = "block";
+        document.getElementById('thirdcat1').style.display = "none";
+        document.getElementById('fourthcat1').style.display = "none";
+        document.getElementById('fifthcat1').style.display = "none";
+        document.getElementById('sixthcat1').style.display = "none";
     }
 
         function thirdCatOpen() {
@@ -639,8 +633,14 @@ function dragElement(elmnt) {
         document.getElementById('fourthcat').style.display = "none";
         document.getElementById('fifthcat').style.display = "none";
         document.getElementById('sixthcat').style.display = "none";
-        document.getElementById('seventhcat').style.display = "none";
-        document.getElementById('eightcat').style.display = "none";
+
+        document.getElementById('firstcat1').style.display = "none";
+        document.getElementById('secondcat1').style.display = "none";
+        document.getElementById('thirdcat1').style.display = "block";
+        document.getElementById('fourthcat1').style.display = "none";
+        document.getElementById('fifthcat1').style.display = "none";
+        document.getElementById('sixthcat1').style.display = "none";
+        
     }
         function fourthCatOpen() {
         document.getElementById('firstcat').style.display = "none";
@@ -649,8 +649,14 @@ function dragElement(elmnt) {
         document.getElementById('fourthcat').style.display = "block";
         document.getElementById('fifthcat').style.display = "none";
         document.getElementById('sixthcat').style.display = "none";
-        document.getElementById('seventhcat').style.display = "none";
-        document.getElementById('eightcat').style.display = "none";
+
+        document.getElementById('firstcat1').style.display = "none";
+        document.getElementById('secondcat1').style.display = "none";
+        document.getElementById('thirdcat1').style.display = "none";
+        document.getElementById('fourthcat1').style.display = "block";
+        document.getElementById('fifthcat1').style.display = "none";
+        document.getElementById('sixthcat1').style.display = "none";
+        
     }
         function fifthCatOpen() {
         document.getElementById('firstcat').style.display = "none";
@@ -659,8 +665,14 @@ function dragElement(elmnt) {
         document.getElementById('fourthcat').style.display = "none";
         document.getElementById('fifthcat').style.display = "block";
         document.getElementById('sixthcat').style.display = "none";
-        document.getElementById('seventhcat').style.display = "none";
-        document.getElementById('eightcat').style.display = "none";
+
+        document.getElementById('firstcat1').style.display = "none";
+        document.getElementById('secondcat1').style.display = "none";
+        document.getElementById('thirdcat1').style.display = "none";
+        document.getElementById('fourthcat1').style.display = "none";
+        document.getElementById('fifthcat1').style.display = "block";
+        document.getElementById('sixthcat1').style.display = "none";
+        
     }
         function sixthCatOpen() {
         document.getElementById('firstcat').style.display = "none";
@@ -669,8 +681,14 @@ function dragElement(elmnt) {
         document.getElementById('fourthcat').style.display = "none";
         document.getElementById('fifthcat').style.display = "none";
         document.getElementById('sixthcat').style.display = "block";
-        document.getElementById('seventhcat').style.display = "none";
-        document.getElementById('eightcat').style.display = "none";
+
+        document.getElementById('firstcat1').style.display = "none";
+        document.getElementById('secondcat1').style.display = "none";
+        document.getElementById('thirdcat1').style.display = "none";
+        document.getElementById('fourthcat1').style.display = "none";
+        document.getElementById('fifthcat1').style.display = "none";
+        document.getElementById('sixthcat1').style.display = "block";
+        
     }
         
 
