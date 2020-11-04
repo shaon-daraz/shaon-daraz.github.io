@@ -146,6 +146,11 @@
         margin-left: -10px;
     }
 
+    .bg{
+        background-image: linear-gradient(#ae009a, #270178);
+    }
+
+
     .hr-margin-align{
         margin-bottom: -32px; 
         padding-bottom: 15px;
@@ -261,12 +266,12 @@
         }
     }
 </style>
-<div id="category1" style="position: fixed !important; z-index: 999 !important; background-image: linear-gradient(#ae009a, #270178); top:0; left:0; height: 100% !important; width: 100% !important;font-family: 'Montserrat', sans-serif !important; overflow: auto;">
+<div id="category1" class="bg " style="position: fixed !important; z-index: 999 !important; top:0; left:0; height: 100% !important; width: 100% !important;font-family: 'Montserrat', sans-serif !important; overflow: auto;">
     <div class="col-xs-12 zero-pad">
         <img src="https://img.alicdn.com/tfs/TB1ZkEHnMgP7K4jSZFqXXamhVXa-760-210.jpg" style="width: 100%;">
     </div>
     <div class="col-xs-12 zero-pad" style="background-color: white; padding: 12px;">
-            <div id="firstcat">
+            <div id="firstcat" style="display: none;">
                 <span class="pull-left" style="color: black;">Payment Partners</span>
                 <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/payment-partners">
                     <span class="pull-right">&gt;&gt; See More</span>
@@ -287,19 +292,25 @@
             </div>
             <div id="fourthcat" style="display: none;">
                 <span class="pull-left" style="color: black;">Ludo Tournament</span>
-                <a href="https://tinyurl.com/y57vm4q9">
+                <a href="https://www.daraz.com.bd/wow/camp/daraz/megascenario/bd/dfg/register-ludo-tournament">
                     <span class="pull-right">&gt;&gt; See More</span>
                 </a>
             </div>
             <div id="fifthcat" style="display: none;">
                 <span class="pull-left" style="color: black;">Double Taka</span>
-                <a href="https://tinyurl.com/y62jvdgh">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/double-taka-voucher">
                     <span class="pull-right">&gt;&gt; See More</span>
                 </a>
             </div>
             <div id="sixthcat" style="display: none;">
                 <span class="pull-left" style="color: black;">1 Taka Game</span>
-                <a href="https://tinyurl.com/y6drw9tk">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/one-taka-game">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+            <div id="seventhcat">
+                <span class="pull-left" style="color: black;">Pre Sale</span>
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/pre-sale">
                     <span class="pull-right">&gt;&gt; See More</span>
                 </a>
             </div>
@@ -307,27 +318,32 @@
 
     <div class="col-xs-5 list-group" style="height: 100%;">
         <ul class="div-list-main" style="padding-left: 30px!important;">
-            
-            <li class="main-listing list-group-item list-group-item-action zoom" style="padding: 0!important; background-color: transparent!important;" id="firstlist" onclick="firstCatOpen()">
+
+            <li class="main-listing list-group-item list-group-item-action zoom c7" style="padding: 0!important; background-color: transparent!important;" id="sixthlist" onclick="seventhCatOpen()">
+                <img src="https://img.alicdn.com/tfs/TB1qW1D1hD1gK0jSZFsXXbldVXa-200-100.png" style="width: 100%;">
+                
+            </li> 
+
+            <li class="main-listing list-group-item list-group-item-action zoom c1" style="padding: 0!important; background-color: transparent!important;" id="firstlist" onclick="firstCatOpen()">
                 <img src="https://img.alicdn.com/tfs/TB1.kjz0VP7gK0jSZFjXXc5aXXa-200-100.png" style="width: 100%;">
                 
             </li>
-            <li class="main-listing list-group-item list-group-item-action zoom" style="padding: 0!important; background-color: transparent!important;" id="secondlist" onclick="secondCatOpen()">
+            <li class="main-listing list-group-item list-group-item-action zoom c2" style="padding: 0!important; background-color: transparent!important;" id="secondlist" onclick="secondCatOpen()">
                 <img src="https://img.alicdn.com/tfs/TB1qQkbm5pE_u4jSZKbXXbCUVXa-200-100.png" style="width: 100%;">
             </li>
-            <li class="main-listing list-group-item list-group-item-action zoom" style="padding: 0!important; background-color: transparent!important;" id="thirdlist" onclick="thirdCatOpen()">
+            <li class="main-listing list-group-item list-group-item-action zoom c3" style="padding: 0!important; background-color: transparent!important;" id="thirdlist" onclick="thirdCatOpen()">
                 <img src="https://img.alicdn.com/tfs/TB1etj4lsieb18jSZFvXXaI3FXa-200-100.png" style="width: 100%;">
                 
             </li>
-            <li class="main-listing list-group-item list-group-item-action zoom" style="padding: 0!important; background-color: transparent!important;" id="fourthlist" onclick="fourthCatOpen()">
+            <li class="main-listing list-group-item list-group-item-action zoom c4" style="padding: 0!important; background-color: transparent!important;" id="fourthlist" onclick="fourthCatOpen()">
                 <img src="https://img.alicdn.com/tfs/TB1ftj4lsieb18jSZFvXXaI3FXa-200-100.png" style="width: 100%;">
                 
             </li>
-            <li class="main-listing list-group-item list-group-item-action zoom" style="padding: 0!important; background-color: transparent!important;" id="fifthlist" onclick="fifthCatOpen()">
+            <li class="main-listing list-group-item list-group-item-action zoom c5" style="padding: 0!important; background-color: transparent!important;" id="fifthlist" onclick="fifthCatOpen()">
                 <img src="https://img.alicdn.com/tfs/TB1vGmCoCR26e4jSZFEXXbwuXXa-200-100.png" style="width: 100%;">
                 
             </li>
-            <li class="main-listing list-group-item list-group-item-action zoom" style="padding: 0!important; background-color: transparent!important;" id="sixthlist" onclick="sixthCatOpen()">
+            <li class="main-listing list-group-item list-group-item-action zoom c6" style="padding: 0!important; background-color: transparent!important;" id="sixthlist" onclick="sixthCatOpen()">
                 <img src="https://img.alicdn.com/tfs/TB1b0j4lsieb18jSZFvXXaI3FXa-200-100.png" style="width: 100%;">
                 
             </li>           
@@ -337,7 +353,7 @@
 
 
     <!--first Category -->
-    <div class="col-xs-7 zero-pad" id="firstcat1" style="display: show;" id="drag">
+    <div class="col-xs-7 zero-pad" id="firstcat1" style="display: none;" id="drag">
 
         
 
@@ -541,6 +557,24 @@
             </ul>
         </div>
     </div> 
+
+
+    <!--Seventh Category -->
+    <div class="col-xs-7 fixed zero-pad" id="seventhcat1" style="display: show;" id="drag">
+
+        
+
+        <div class="col-xs-12 sub-cat-padding" id="draggable">
+            <ul class="div-list-main">
+            <li class="sub-listing-img list-group-item-action cat-seven">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/pre-sale" name="one_taka">
+                <img src="https://img.alicdn.com/tfs/TB1_Y4tp2zO3e4jSZFxXXaP_FXa-500-1000.gif" style="width: 100%;">
+                </a>
+            </li>            
+            
+            </ul>
+        </div>
+    </div> 
         
 
 </div>
@@ -559,6 +593,8 @@
     $('.selected').removeClass('selected');
     $(this).addClass('selected');
     });
+
+
 
     // Make the DIV element draggable:
 dragElement(document.getElementById("drag"));
@@ -619,6 +655,7 @@ function dragElement(elmnt) {
         document.getElementById('fourthcat').style.display = "none";
         document.getElementById('fifthcat').style.display = "none";
         document.getElementById('sixthcat').style.display = "none";
+        document.getElementById('seventhcat').style.display = "none";
         
         document.getElementById('firstcat1').style.display = "block";
         document.getElementById('secondcat1').style.display = "none";
@@ -626,6 +663,7 @@ function dragElement(elmnt) {
         document.getElementById('fourthcat1').style.display = "none";
         document.getElementById('fifthcat1').style.display = "none";
         document.getElementById('sixthcat1').style.display = "none";
+        document.getElementById('seventhcat1').style.display = "none";
         
     }
 
@@ -636,6 +674,7 @@ function dragElement(elmnt) {
         document.getElementById('fourthcat').style.display = "none";
         document.getElementById('fifthcat').style.display = "none";
         document.getElementById('sixthcat').style.display = "none";
+        document.getElementById('seventhcat').style.display = "none";
         
         document.getElementById('firstcat1').style.display = "none";
         document.getElementById('secondcat1').style.display = "block";
@@ -643,6 +682,7 @@ function dragElement(elmnt) {
         document.getElementById('fourthcat1').style.display = "none";
         document.getElementById('fifthcat1').style.display = "none";
         document.getElementById('sixthcat1').style.display = "none";
+        document.getElementById('seventhcat1').style.display = "none";
     }
 
         function thirdCatOpen() {
@@ -652,6 +692,7 @@ function dragElement(elmnt) {
         document.getElementById('fourthcat').style.display = "none";
         document.getElementById('fifthcat').style.display = "none";
         document.getElementById('sixthcat').style.display = "none";
+        document.getElementById('seventhcat').style.display = "none";
 
         document.getElementById('firstcat1').style.display = "none";
         document.getElementById('secondcat1').style.display = "none";
@@ -659,6 +700,7 @@ function dragElement(elmnt) {
         document.getElementById('fourthcat1').style.display = "none";
         document.getElementById('fifthcat1').style.display = "none";
         document.getElementById('sixthcat1').style.display = "none";
+        document.getElementById('seventhcat1').style.display = "none";
         
     }
         function fourthCatOpen() {
@@ -668,6 +710,7 @@ function dragElement(elmnt) {
         document.getElementById('fourthcat').style.display = "block";
         document.getElementById('fifthcat').style.display = "none";
         document.getElementById('sixthcat').style.display = "none";
+        document.getElementById('seventhcat').style.display = "none";
 
         document.getElementById('firstcat1').style.display = "none";
         document.getElementById('secondcat1').style.display = "none";
@@ -675,6 +718,7 @@ function dragElement(elmnt) {
         document.getElementById('fourthcat1').style.display = "block";
         document.getElementById('fifthcat1').style.display = "none";
         document.getElementById('sixthcat1').style.display = "none";
+        document.getElementById('seventhcat1').style.display = "none";
         
     }
         function fifthCatOpen() {
@@ -684,6 +728,7 @@ function dragElement(elmnt) {
         document.getElementById('fourthcat').style.display = "none";
         document.getElementById('fifthcat').style.display = "block";
         document.getElementById('sixthcat').style.display = "none";
+        document.getElementById('seventhcat').style.display = "none";
 
         document.getElementById('firstcat1').style.display = "none";
         document.getElementById('secondcat1').style.display = "none";
@@ -691,6 +736,7 @@ function dragElement(elmnt) {
         document.getElementById('fourthcat1').style.display = "none";
         document.getElementById('fifthcat1').style.display = "block";
         document.getElementById('sixthcat1').style.display = "none";
+        document.getElementById('seventhcat1').style.display = "none";
         
     }
         function sixthCatOpen() {
@@ -700,6 +746,7 @@ function dragElement(elmnt) {
         document.getElementById('fourthcat').style.display = "none";
         document.getElementById('fifthcat').style.display = "none";
         document.getElementById('sixthcat').style.display = "block";
+        document.getElementById('seventhcat').style.display = "none";
 
         document.getElementById('firstcat1').style.display = "none";
         document.getElementById('secondcat1').style.display = "none";
@@ -707,8 +754,29 @@ function dragElement(elmnt) {
         document.getElementById('fourthcat1').style.display = "none";
         document.getElementById('fifthcat1').style.display = "none";
         document.getElementById('sixthcat1').style.display = "block";
+        document.getElementById('seventhcat1').style.display = "none";
         
     }
+
+    function seventhCatOpen() {
+        document.getElementById('firstcat').style.display = "none";
+        document.getElementById('secondcat').style.display = "none";
+        document.getElementById('thirdcat').style.display = "none";
+        document.getElementById('fourthcat').style.display = "none";
+        document.getElementById('fifthcat').style.display = "none";
+        document.getElementById('sixthcat').style.display = "none";
+        document.getElementById('seventhcat').style.display = "block";
+
+        document.getElementById('firstcat1').style.display = "none";
+        document.getElementById('secondcat1').style.display = "none";
+        document.getElementById('thirdcat1').style.display = "none";
+        document.getElementById('fourthcat1').style.display = "none";
+        document.getElementById('fifthcat1').style.display = "none";
+        document.getElementById('sixthcat1').style.display = "none";
+        document.getElementById('seventhcat1').style.display = "block";
+        
+    }
+
 
     
 
