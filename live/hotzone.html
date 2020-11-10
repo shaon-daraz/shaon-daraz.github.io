@@ -1,0 +1,793 @@
+<!-- stylesheets -->
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="https://kit.fontawesome.com/0ff19582bb.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover user-scalable=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style type="text/css">
+  @media(max-width: 767px) {
+    .mui-zebra-page {
+      background-size: contain !important;
+    }
+  }     
+    .div-img {
+        width: 50% !important;
+    }
+
+    .div-contents {
+        margin-right: auto !important;
+        margin-left: auto !important;
+        margin-top: -7% !important;
+    }
+
+    .lzd-act-richtext a {
+        color: #000 !important;
+        text-decoration: none !important;
+        font-weight: 600 !important;
+    }
+
+    .div-wrap {
+        display: none !important;
+    }
+
+    .lzd-act-richtext img {
+        position: relative !important;
+        top: 0% !important;
+    }
+
+    .div-list-main {
+        padding-left: 17px !important;
+        padding-right: 0 !important;
+        list-style: none !important;
+        margin-left: -15% !important;
+        line-height: 2.5 !important;
+        cursor: pointer !important;
+        font-size: 9.5px !important;
+        font-family: 'Montserrat', sans-serif !important;
+    }
+
+    .main-listing-img {
+        border-radius: 50px !important;
+        margin-right: 5.5px !important;
+        box-shadow: rgba(0, 0, 0, 0.11) 0px 0.96px 4.8px 0px !important;
+        float: left !important;
+        width: 25% !important;
+    }
+
+    .main-listing-img-right {
+        border-radius: 50px !important;
+        margin-right: 7.5px !important;
+        box-shadow: rgba(0, 0, 0, 0.11) 0px 0.96px 4.8px 0px !important;
+        float: right!important;
+        width: 50px !important;
+    }
+
+    .sub-listing-img{
+        padding-left: 21px!important;
+        padding-right: 3px!important;
+        box-shadow: rgba(0, 0, 0, 0.11) 0px 0.96px 4.8px 0px !important;
+        float: left !important;
+        width: 100% !important;
+    }
+    .list-group-item-action:active {
+        background: #f9f9f9;
+    }
+
+    .list-group-item-action {
+        font-weight: 500;
+    }
+
+    .list-group-item {
+        padding: 2.75rem 0.1rem 2.75rem .5rem !important;
+        border-bottom: none!important;
+        border-left: none!important;
+        border-right: none!important;
+        border-top: none!important;
+        background-color: none!important;
+    }
+
+    .sub-cat-padding{
+        overflow-y: scroll !important; 
+        width: 100% !important; 
+        padding-left: 2px!important; 
+        padding-right: 0px!important
+    }
+
+    .zero-pad{
+        padding-left: 0px!important; 
+        padding-right: 0px!important;
+    }
+
+    /*.cat-one{
+        background-color: #5d0196;
+        
+    }
+    .cat-two{
+        background-color: #8800f2;
+        
+    }
+    .cat-three{
+        background-color: #91049d;
+        
+    }
+    .cat-four{
+        background-color: #ac00b7;
+        
+    }
+    .cat-five{
+        background-color: #c100b9;
+        
+    }
+    .cat-six{
+        background-color: #b202b5;
+        
+    }*/
+    .pull-left{
+        margin-left: 15px;
+        color: white; 
+        font-size: 10px!important;
+        cursor: pointer!important;
+        font-weight:600 !important;
+    }
+    .pull-right{
+        margin-right: 20px;
+        font-size: 10px!important;
+        cursor: pointer!important;
+        color: #3ec251;
+        font-weight:600!important;
+    }
+
+    .selected{
+        box-shadow:0px 12px 22px 1px #333;
+        width: 109%!important;
+        margin-left: -10px;
+    }
+
+    .bg{
+        background-image: linear-gradient(#ae009a, #270178);
+    }
+
+
+    .hr-margin-align{
+        margin-bottom: -32px; 
+        padding-bottom: 15px;
+    }
+
+    .list-group{
+        padding: 0px!important;
+    }
+    #category1 {
+        transition-duration: 2s;
+        transition-delay: 2s;
+        transition-timing-function: linear;
+        -webkit-transition-duration: 2s;
+        -webkit-transition-delay: 2s;
+        -webkit-transition-timing-function:
+    }
+
+    .full-width {
+        width: 100% !important;
+    }
+
+    .cat-hr {
+        border: 0.5px solid #d8d8d8;
+        margin-top: -1rem !important;
+        margin-bottom: 0rem !important;
+    }
+
+    .cat-span{
+        color: white;
+        font-weight: 600;
+        box-sizing: content-box;
+        white-space: nowrap;
+        display: inline-block;
+        text-overflow: ellipsis;
+        display: inline-block;
+        width: 70%;
+    }
+
+    .df-main-div {
+        position: absolute !important;
+    }
+
+    .lzd-act-richtext ol,
+    .lzd-act-richtext ul {
+        padding-left: 18px !important;
+        padding-right: 0 !important;
+    }
+
+    .hr-margin {
+        margin-bottom: 2rem;
+    }
+
+    .lzd-act-richtext h6 {
+        margin: 0 !important;
+        font-weight: 500 !important;
+    }
+
+    @media (min-width: 375px) and (max-width: 1200px) {
+        .div-df {
+            position: fixed !important;
+            left: 0;
+            bottom: -7% !important;
+            width: 100%;
+            background-color: #e1e1e1 !important;
+            color: #000;
+            text-align: center;
+            padding: 2% 0 !important;
+            z-index: 999 !important;
+            margin: -4% 0 !important;
+            height: 135px !important;
+        }
+    }
+
+    .div-df {
+        position: fixed !important;
+        left: 0;
+        bottom: -10.5%;
+        width: 100%;
+        background-color: #e1e1e1;
+        color: #000 !important;
+        text-align: center;
+        padding: 2% 0 !important;
+        z-index: 999 !important;
+        margin: -4% 0 !important;
+        height: 135px !important;
+    }
+    .mxt-60{
+        margin-top: 100px;
+    }
+    h5 {
+        font-weight: 600;
+     }
+    .main-cat-img{
+        width: 25%;
+    }
+    #drag{
+        right: 0;
+        top: 8%;
+        
+    }
+    #draggable { 
+        cursor:move;
+        height: calc(100vh - 170px);
+        width: 300px;
+        text-align:center;
+    }
+    @media(min-width: 768px) {
+        .desk-no {
+            display: none !important;
+        }
+        #category1 {
+            display: none !important;
+        }
+    }
+</style>
+<div id="category1" class="bg " style="position: fixed !important; z-index: 999 !important; top:0; left:0; height: 100% !important; width: 100% !important;font-family: 'Montserrat', sans-serif !important; overflow: auto;">
+    <div class="col-xs-12 zero-pad">
+        <img src="https://img.alicdn.com/tfs/TB1ZkEHnMgP7K4jSZFqXXamhVXa-760-210.jpg" style="width: 100%;" name="top_banner">
+    </div>
+    <div class="col-xs-12 zero-pad" style="background-color: white; padding: 12px;">
+            <div id="firstcat" style="display: none;">
+                <span class="pull-left" style="color: black;">Payment Partners</span>
+                <a href="https://click.daraz.com.bd/e/_eD6xc">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+
+            </div>
+            <div id="secondcat" style="display: none;">
+                <span class="pull-left" style="color: black;">Event Partners</span>
+                <a href="https://click.daraz.com.bd/e/_eBZGW">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+            <div id="thirdcat" style="display: none;">
+                <span class="pull-left" style="color: black;">11.11 Lineup</span>
+                <a href="https://click.daraz.com.bd/e/_eBZGW">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+            <div id="fourthcat" style="display: none;">
+                <span class="pull-left" style="color: black;">Ludo Tournament</span>
+                <a href="https://click.daraz.com.bd/e/_eBZvM">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+            <div id="fifthcat" style="display: none;">
+                <span class="pull-left" style="color: black;">Double Taka</span>
+                <a href="https://click.daraz.com.bd/e/_edzzu">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+            <div id="sixthcat" style="display: none;">
+                <span class="pull-left" style="color: black;">1 Taka Game</span>
+                <a href="https://click.daraz.com.bd/e/_eCG80">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+            <div id="seventhcat">
+                <span class="pull-left" style="color: black;">Pre Sale</span>
+                <a href="https://click.daraz.com.bd/e/_eBnuS">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+    </div>
+
+    <div class="col-xs-5 list-group" style="height: 100%;">
+        <ul class="div-list-main" style="padding-left: 30px!important;">
+
+            <li class="main-listing list-group-item list-group-item-action zoom c7" style="padding: 0!important; background-color: transparent!important;" id="sixthlist" onclick="seventhCatOpen()">
+                <img src="https://img.alicdn.com/tfs/TB1qW1D1hD1gK0jSZFsXXbldVXa-200-100.png" style="width: 100%;">
+                
+            </li> 
+
+            <li class="main-listing list-group-item list-group-item-action zoom c1" style="padding: 0!important; background-color: transparent!important;" id="firstlist" onclick="firstCatOpen()">
+                <img src="https://img.alicdn.com/tfs/TB1.kjz0VP7gK0jSZFjXXc5aXXa-200-100.png" style="width: 100%;">
+                
+            </li>
+            <li class="main-listing list-group-item list-group-item-action zoom c2" style="padding: 0!important; background-color: transparent!important;" id="secondlist" onclick="secondCatOpen()">
+                <img src="https://img.alicdn.com/tfs/TB1qQkbm5pE_u4jSZKbXXbCUVXa-200-100.png" style="width: 100%;">
+            </li>
+            <li class="main-listing list-group-item list-group-item-action zoom c3" style="padding: 0!important; background-color: transparent!important;" id="thirdlist" onclick="thirdCatOpen()">
+                <img src="https://img.alicdn.com/tfs/TB1etj4lsieb18jSZFvXXaI3FXa-200-100.png" style="width: 100%;">
+                
+            </li>
+            <!--<li class="main-listing list-group-item list-group-item-action zoom c4" style="padding: 0!important; background-color: transparent!important;" id="fourthlist" onclick="fourthCatOpen()">
+                <img src="https://img.alicdn.com/tfs/TB1ftj4lsieb18jSZFvXXaI3FXa-200-100.png" style="width: 100%;">
+                
+            </li>-->
+            <li class="main-listing list-group-item list-group-item-action zoom c5" style="padding: 0!important; background-color: transparent!important;" id="fifthlist" onclick="fifthCatOpen()">
+                <img src="https://img.alicdn.com/tfs/TB1vGmCoCR26e4jSZFEXXbwuXXa-200-100.png" style="width: 100%;">
+                
+            </li>
+            <!--<li class="main-listing list-group-item list-group-item-action zoom c6" style="padding: 0!important; background-color: transparent!important;" id="sixthlist" onclick="sixthCatOpen()">
+                <img src="https://img.alicdn.com/tfs/TB1b0j4lsieb18jSZFvXXaI3FXa-200-100.png" style="width: 100%;">
+                
+            </li>-->           
+        </ul>
+    </div>
+
+
+
+    <!--first Category -->
+    <div class="col-xs-7 zero-pad" id="firstcat1" style="display: none;" id="drag">
+
+        
+
+
+        <div class="col-xs-12 sub-cat-padding" id="draggable">
+            <ul class="div-list-main">
+            <li class="sub-listing-img list-group-item-action cat-one">
+                <a href="https://click.daraz.com.bd/e/_eCK7M" name="bkash">
+                <img src="https://img.alicdn.com/tfs/TB1aChq0pT7gK0jSZFpXXaTkpXa-500-250.png" style="width: 100%;">
+            </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action cat-one">
+                <a href="https://click.daraz.com.bd/e/_eCGfA" name="brac_bank">
+                <img src="https://img.alicdn.com/tfs/TB1U8pJp8Bh1e4jSZFhXXcC9VXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action cat-one">
+                <a href="https://click.daraz.com.bd/e/_edzgQ" name="city_bank">
+                <img src="https://img.alicdn.com/tfs/TB1jI9qpTM11u4jSZPxXXahcXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action cat-one">
+                <a href="https://click.daraz.com.bd/e/_edzHG" name="EBL">
+                <img src="https://img.alicdn.com/tfs/TB1dFNi0rY1gK0jSZTEXXXDQVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action cat-one">
+                <a href="https://click.daraz.com.bd/e/_eDowE" name="SCB">
+                <img src="https://img.alicdn.com/tfs/TB1mMxr0EY1gK0jSZFMXXaWcVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action cat-one">
+                <a href="https://click.daraz.com.bd/e/_eethu" name="marcentile_bank">
+                <img src="https://img.alicdn.com/tfs/TB1sLNi0pY7gK0jSZKzXXaikpXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            
+            </ul>
+        </div>
+        
+
+    </div>
+
+
+
+    <!--Second Category -->
+    <div class="col-xs-7 fixed zero-pad" id="secondcat1" style="display: none;" id="drag">
+
+       
+
+        <div class="col-xs-12 sub-cat-padding" id="draggable">
+            <ul class="div-list-main">
+            <li class="sub-listing-img list-group-item-action cat-two">
+                <a href="https://click.daraz.com.bd/e/_eetIA" name="link3">
+                <img src="https://img.alicdn.com/tfs/TB1b8tgnzMZ7e4jSZFOXXX7epXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action cat-two">
+                <a href="https://click.daraz.com.bd/e/_edxKm" name="Dhaka_Regency">
+                <img src="https://img.alicdn.com/tfs/TB1wN4k0Ez1gK0jSZLeXXb9kVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action cat-two">
+                <a href="https://click.daraz.com.bd/e/_eDo9o" name="Burger_king">
+                <img src="https://img.alicdn.com/tfs/TB11aXs0AL0gK0jSZFAXXcA9pXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action cat-two">
+                <a href="https://click.daraz.com.bd/e/_eCG8q" name="share_trip">
+                <img src="https://img.alicdn.com/tfs/TB1hFzl02b2gK0jSZK9XXaEgFXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action cat-two">
+                <a href="https://click.daraz.com.bd/e/_eBnj8" name="bongo">
+                <img src="https://img.alicdn.com/tfs/TB1lFDv0WL7gK0jSZFBXXXZZpXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action cat-two">
+                <a href="https://click.daraz.com.bd/e/_eDogY" name="kotha">
+                <img src="https://img.alicdn.com/tfs/TB1YSe4rP39YK4jSZPcXXXrUFXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action cat-two">
+                <a href="https://click.daraz.com.bd/e/_eejii" name="robi">
+                <img src="https://img.alicdn.com/tfs/TB1YsRtmcieb18jSZFvXXaI3FXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!--third Category -->
+    <div class="col-xs-7 fixed zero-pad" id="thirdcat1" style="display: none;" id="drag">
+
+        
+
+        <div class="col-xs-12 sub-cat-padding" id="draggable">
+            <ul class="div-list-main">
+            
+            <li class="sub-listing-img list-group-item-action cat-three">
+                <a href="https://click.daraz.com.bd/e/_edzzu" name="double_taka">
+                <img src="https://img.alicdn.com/tfs/TB1yGLb0pP7gK0jSZFjXXc5aXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action cat-three">
+                <a href="https://click.daraz.com.bd/e/_eCbL0" name="mission_11_11">
+                <img src="https://img.alicdn.com/tfs/TB1GROZ0EH1gK0jSZSyXXXtlpXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action cat-three">
+                <a href="#" name="11_taka_mystyry">
+                <img src="https://img.alicdn.com/tfs/TB1VGG20rr1gK0jSZFDXXb9yVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action cat-three">
+                <a href="https://click.daraz.com.bd/e/_eCdH0" name="app_visit">
+                <img src="https://img.alicdn.com/tfs/TB1xSeY0uH2gK0jSZJnXXaT1FXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action cat-three">
+                <a href="https://click.daraz.com.bd/e/_eCPIK" name="price_slash">
+                <img src="https://img.alicdn.com/tfs/TB1gO2u0VT7gK0jSZFpXXaTkpXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action cat-three">
+                <a href="#" name="seller_double_taka">
+                <img src="https://img.alicdn.com/tfs/TB1vv6rqaNj0u4jSZFyXXXgMVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action cat-three">
+                <a href="#" name="shake_shake">
+                <img src="https://img.alicdn.com/tfs/TB1Gp6PmypE_u4jSZKbXXbCUVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action cat-three">
+                <a href="#" name="spin_the_wheel">
+                <img src="https://img.alicdn.com/tfs/TB1I8i00pT7gK0jSZFpXXaTkpXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action cat-three">
+                <a href="#" name="happy_hour">
+                <img src="https://img.alicdn.com/tfs/TB12.WQ0rY1gK0jSZTEXXXDQVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action cat-three">
+                <a href="#" name="guess_get">
+                <img src="https://img.alicdn.com/tfs/TB18DbgltTfau8jSZFwXXX1mVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <!--fourth Category -->
+    <div class="col-xs-7 fixed zero-pad" id="fourthcat1" style="display: none;" id="drag">
+
+        
+
+        <div class="col-xs-12 sub-cat-padding" id="draggable">
+            <ul class="div-list-main">
+            <li class="sub-listing-img list-group-item-action cat-four">
+                <a href="https://click.daraz.com.bd/e/_eBZvM" name="ludo">
+                <img src="https://img.alicdn.com/tfs/TB1CSsz0.T1gK0jSZFrXXcNCXXa-500-1000.png" style="width: 100%;">
+                </a>
+            </li>        
+            </ul>
+        </div>
+
+    </div>
+
+
+    <!--fifth Category -->
+    <div class="col-xs-7 fixed zero-pad" id="fifthcat1" style="display: none;" id="drag">
+        
+
+        <div class="col-xs-12 sub-cat-padding" id="draggable">
+            <ul class="div-list-main">
+            <li class="sub-listing-img list-group-item-action cat-five">
+                <a href="https://click.daraz.com.bd/e/_edzzu" name="double_taka">
+                <img src="https://img.alicdn.com/tfs/TB1ZPkp0VT7gK0jSZFpXXaTkpXa-500-1000.png" style="width: 100%;">
+                </a>
+            </li>            
+            
+            </ul>
+        </div>
+    </div>
+
+
+    <!--Sixth Category -->
+    <div class="col-xs-7 fixed zero-pad" id="sixthcat1" style="display: none;" id="drag">
+
+        
+
+        <div class="col-xs-12 sub-cat-padding" id="draggable">
+            <ul class="div-list-main">
+            <li class="sub-listing-img list-group-item-action cat-six">
+                <a href="https://click.daraz.com.bd/e/_eCG80" name="one_taka">
+                <img src="https://img.alicdn.com/tfs/TB1ZCAcplFR4u4jSZFPXXanzFXa-500-1000.png" style="width: 100%;">
+                </a>
+            </li>            
+            
+            </ul>
+        </div>
+    </div> 
+
+
+    <!--Seventh Category -->
+    <div class="col-xs-7 fixed zero-pad" id="seventhcat1" style="display: show;" id="drag">
+
+        
+
+        <div class="col-xs-12 sub-cat-padding" id="draggable">
+            <ul class="div-list-main">
+            <li class="sub-listing-img list-group-item-action cat-seven">
+                <a href="https://click.daraz.com.bd/e/_eBnuS" name="pre_sale">
+                <img src="https://img.alicdn.com/tfs/TB1_Y4tp2zO3e4jSZFxXXaP_FXa-500-1000.gif" style="width: 100%;">
+                </a>
+            </li>            
+            
+            </ul>
+        </div>
+    </div> 
+        
+
+</div>
+
+
+</div>
+
+
+
+<!-- scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+    $('.zoom').click(function(){
+    $('.selected').removeClass('selected');
+    $(this).addClass('selected');
+    });
+
+
+
+    // Make the DIV element draggable:
+dragElement(document.getElementById("drag"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "dragImg")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "dragImg").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+    /*function category1() {
+        var x = document.getElementById("category1");
+        if (x.style.display === "none") {
+            x.style.display = "block";   
+        } else {
+            x.style.display = "none";
+        }
+    }*/
+
+    function firstCatOpen() {
+        document.getElementById('firstcat').style.display = "block";
+        document.getElementById('secondcat').style.display = "none";
+        document.getElementById('thirdcat').style.display = "none";
+        document.getElementById('fourthcat').style.display = "none";
+        document.getElementById('fifthcat').style.display = "none";
+        document.getElementById('sixthcat').style.display = "none";
+        document.getElementById('seventhcat').style.display = "none";
+        
+        document.getElementById('firstcat1').style.display = "block";
+        document.getElementById('secondcat1').style.display = "none";
+        document.getElementById('thirdcat1').style.display = "none";
+        document.getElementById('fourthcat1').style.display = "none";
+        document.getElementById('fifthcat1').style.display = "none";
+        document.getElementById('sixthcat1').style.display = "none";
+        document.getElementById('seventhcat1').style.display = "none";
+        
+    }
+
+        function secondCatOpen() {
+        document.getElementById('firstcat').style.display = "none";
+        document.getElementById('secondcat').style.display = "block";
+        document.getElementById('thirdcat').style.display = "none";
+        document.getElementById('fourthcat').style.display = "none";
+        document.getElementById('fifthcat').style.display = "none";
+        document.getElementById('sixthcat').style.display = "none";
+        document.getElementById('seventhcat').style.display = "none";
+        
+        document.getElementById('firstcat1').style.display = "none";
+        document.getElementById('secondcat1').style.display = "block";
+        document.getElementById('thirdcat1').style.display = "none";
+        document.getElementById('fourthcat1').style.display = "none";
+        document.getElementById('fifthcat1').style.display = "none";
+        document.getElementById('sixthcat1').style.display = "none";
+        document.getElementById('seventhcat1').style.display = "none";
+    }
+
+        function thirdCatOpen() {
+        document.getElementById('firstcat').style.display = "none";
+        document.getElementById('secondcat').style.display = "none";
+        document.getElementById('thirdcat').style.display = "block";
+        document.getElementById('fourthcat').style.display = "none";
+        document.getElementById('fifthcat').style.display = "none";
+        document.getElementById('sixthcat').style.display = "none";
+        document.getElementById('seventhcat').style.display = "none";
+
+        document.getElementById('firstcat1').style.display = "none";
+        document.getElementById('secondcat1').style.display = "none";
+        document.getElementById('thirdcat1').style.display = "block";
+        document.getElementById('fourthcat1').style.display = "none";
+        document.getElementById('fifthcat1').style.display = "none";
+        document.getElementById('sixthcat1').style.display = "none";
+        document.getElementById('seventhcat1').style.display = "none";
+        
+    }
+        function fourthCatOpen() {
+        document.getElementById('firstcat').style.display = "none";
+        document.getElementById('secondcat').style.display = "none";
+        document.getElementById('thirdcat').style.display = "none";
+        document.getElementById('fourthcat').style.display = "block";
+        document.getElementById('fifthcat').style.display = "none";
+        document.getElementById('sixthcat').style.display = "none";
+        document.getElementById('seventhcat').style.display = "none";
+
+        document.getElementById('firstcat1').style.display = "none";
+        document.getElementById('secondcat1').style.display = "none";
+        document.getElementById('thirdcat1').style.display = "none";
+        document.getElementById('fourthcat1').style.display = "block";
+        document.getElementById('fifthcat1').style.display = "none";
+        document.getElementById('sixthcat1').style.display = "none";
+        document.getElementById('seventhcat1').style.display = "none";
+        
+    }
+        function fifthCatOpen() {
+        document.getElementById('firstcat').style.display = "none";
+        document.getElementById('secondcat').style.display = "none";
+        document.getElementById('thirdcat').style.display = "none";
+        document.getElementById('fourthcat').style.display = "none";
+        document.getElementById('fifthcat').style.display = "block";
+        document.getElementById('sixthcat').style.display = "none";
+        document.getElementById('seventhcat').style.display = "none";
+
+        document.getElementById('firstcat1').style.display = "none";
+        document.getElementById('secondcat1').style.display = "none";
+        document.getElementById('thirdcat1').style.display = "none";
+        document.getElementById('fourthcat1').style.display = "none";
+        document.getElementById('fifthcat1').style.display = "block";
+        document.getElementById('sixthcat1').style.display = "none";
+        document.getElementById('seventhcat1').style.display = "none";
+        
+    }
+        function sixthCatOpen() {
+        document.getElementById('firstcat').style.display = "none";
+        document.getElementById('secondcat').style.display = "none";
+        document.getElementById('thirdcat').style.display = "none";
+        document.getElementById('fourthcat').style.display = "none";
+        document.getElementById('fifthcat').style.display = "none";
+        document.getElementById('sixthcat').style.display = "block";
+        document.getElementById('seventhcat').style.display = "none";
+
+        document.getElementById('firstcat1').style.display = "none";
+        document.getElementById('secondcat1').style.display = "none";
+        document.getElementById('thirdcat1').style.display = "none";
+        document.getElementById('fourthcat1').style.display = "none";
+        document.getElementById('fifthcat1').style.display = "none";
+        document.getElementById('sixthcat1').style.display = "block";
+        document.getElementById('seventhcat1').style.display = "none";
+        
+    }
+
+    function seventhCatOpen() {
+        document.getElementById('firstcat').style.display = "none";
+        document.getElementById('secondcat').style.display = "none";
+        document.getElementById('thirdcat').style.display = "none";
+        document.getElementById('fourthcat').style.display = "none";
+        document.getElementById('fifthcat').style.display = "none";
+        document.getElementById('sixthcat').style.display = "none";
+        document.getElementById('seventhcat').style.display = "block";
+
+        document.getElementById('firstcat1').style.display = "none";
+        document.getElementById('secondcat1').style.display = "none";
+        document.getElementById('thirdcat1').style.display = "none";
+        document.getElementById('fourthcat1').style.display = "none";
+        document.getElementById('fifthcat1').style.display = "none";
+        document.getElementById('sixthcat1').style.display = "none";
+        document.getElementById('seventhcat1').style.display = "block";
+        
+    }
+
+
+    
+
+
+        
+
+</script>
+
+
