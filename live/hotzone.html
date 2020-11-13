@@ -97,7 +97,7 @@
         padding-right: 0px!important
     }
 
-    .zero-pad{
+    .zero-pad {
         padding-left: 0px!important; 
         padding-right: 0px!important;
     }
@@ -278,108 +278,338 @@
         }
     }
 </style>
+<script type="text/javascript">
+    function catOpen(catName) {
+        var colright = document.getElementsByClassName('rightdiv');
+        for(i = 0; i < colright.length; i++) {
+            colright[i].style.display = 'none';
+        }
+        var colleft = document.getElementsByClassName('leftdiv');
+        for(i = 0; i < colleft.length; i++) {
+            colleft[i].style.display = 'none';
+        }
+        if(catName=="firstcat")
+        {
+            document.getElementById('firstcat').style.display = "block";
+            document.getElementById('firstcat1').style.display = "block";
+
+        }
+        else if(catName=="secondcat")
+        {
+            document.getElementById('secondcat').style.display = "block";
+            document.getElementById('secondcat1').style.display = "block";
+        }
+        else if(catName=="thirdcat")
+        {
+            document.getElementById('thirdcat').style.display = "block";
+            document.getElementById('thirdcat1').style.display = "block";
+        }
+        else if(catName=="fourthcat")
+        {
+            document.getElementById('fourthcat').style.display = "block";
+            document.getElementById('fourthcat1').style.display = "block";
+        }
+        else if(catName=="fifthcat")
+        {
+            document.getElementById('fifthcat').style.display = "block";
+            document.getElementById('fifthcat1').style.display = "block";
+        }
+        else if(catName=="sixthcat")
+        {
+            document.getElementById('sixthcat').style.display = "block";
+            document.getElementById('sixthcat1').style.display = "block";
+        }
+        else if(catName=="seventhcat")
+        {
+            document.getElementById('seventhcat').style.display = "block";
+            document.getElementById('seventhcat1').style.display = "block";
+        }
+        else if(catName=="eighthcat")
+        {
+            document.getElementById('eighthcat').style.display = "block";
+            document.getElementById('eighthcat1').style.display = "block";
+        }
+        else if(catName=="ninethcat")
+        {
+            document.getElementById('ninethcat').style.display = "block";
+            document.getElementById('ninethcat1').style.display = "block";
+        }
+        else if(catName=="tenthcat")
+        {
+            document.getElementById('tenthcat').style.display = "block";
+            document.getElementById('tenthcat1').style.display = "block";
+        }
+        else if(catName=="elevencat")
+        {
+            document.getElementById('elevencat').style.display = "block";
+            document.getElementById('elevencat1').style.display = "block";
+        }
+        else if(catName=="twelvecat")
+        {
+            document.getElementById('twelvecat').style.display = "block";
+            document.getElementById('twelvecat1').style.display = "block";
+        }
+        else if(catName=="thirteencat")
+        {
+            document.getElementById('thirteencat').style.display = "block";
+            document.getElementById('thirteencat1').style.display = "block";
+        }
+        else if(catName=="fourteencat")
+        {
+            document.getElementById('fourteencat').style.display = "block";
+            document.getElementById('fourteencat1').style.display = "block";
+        }
+        else if(catName=="fifteencat")
+        {
+            document.getElementById('fifteencat').style.display = "block";
+            document.getElementById('fifteencat1').style.display = "block";
+        }
+        else if(catName=="sixteencat")
+        {
+            document.getElementById('sixteencat').style.display = "block";
+            document.getElementById('sixteencat1').style.display = "block";
+        }
+        else if(catName=="seventeencat")
+        {
+            document.getElementById('seventeencat').style.display = "block";
+            document.getElementById('seventeencat1').style.display = "block";
+        }
+        else if(catName=="eighteencat")
+        {
+            document.getElementById('eighteencat').style.display = "block";
+            document.getElementById('eighteencat1').style.display = "block";
+        }
+
+    }       
+</script>
 <div id="category1" class="bg " style="position: fixed !important; z-index: 999 !important; top:0; left:0; height: 100% !important; width: 100% !important;font-family: 'Montserrat', sans-serif !important; overflow: auto;">
-    <div class="col-xs-12 zero-pad">
+    <div class="col-xs-12 zero-pad ">
         <img src="https://img.alicdn.com/tfs/TB17Yys18r0gK0jSZFnXXbRRXXa-760-210.png" style="width: 100%;" name="top_banner">
     </div>
-    <div class="col-xs-12 zero-pad" style="background-color: white; padding: 12px;">
-            <div id="firstcat" style="display: none;">
-                <span class="pull-left" style="color: black;">Exclusive Launches</span>
-                <a href="https://click.daraz.com.bd/e/_eetzk">
+    <div class="col-xs-12 zero-pad " style="background-color: white; padding: 12px;">
+            <div id="firstcat" class="leftdiv" style="display: none;">
+                <span class="pull-left" style="color: black;">Mobiles & Tablets</span>
+                <a href="https://click.daraz.com.bd/e/_eBXpe">
                     <span class="pull-right">&gt;&gt; See More</span>
                 </a>
-
             </div>
-            <div id="secondcat">
+            <div id="secondcat" class="leftdiv" style="display: show;">
                 <span class="pull-left" style="color: black;">11.11 Lineup</span>
                 <a href="https://click.daraz.com.bd/e/_eetzk">
                     <span class="pull-right">&gt;&gt; See More</span>
                 </a>
             </div>
-            <div id="thirdcat" style="display: none;">
+            <div id="thirdcat" class="leftdiv" style="display: none;">
                 <span class="pull-left" style="color: black;">Mega Deals</span>
                 <a href="https://click.daraz.com.bd/e/_eC0d4">
                     <span class="pull-right">&gt;&gt; See More</span>
                 </a>
             </div>
-            <div id="fourthcat" style="display: none;">
+            <div id="fourthcat" class="leftdiv" style="display: none;">
                 <span class="pull-left" style="color: black;">Payment Partners</span>
                 <a href="https://click.daraz.com.bd/e/_eD6xc">
                     <span class="pull-right">&gt;&gt; See More</span>
                 </a>
             </div>
-            <div id="fifthcat" style="display: none;">
-                <span class="pull-left" style="color: black;">Category Exclusives</span>
-                <a href="https://click.daraz.com.bd/e/_eetzk">
+            <div id="fifthcat" class="leftdiv" style="display: none;">
+                <span class="pull-left" style="color: black;">Men's Fashion</span>
+                <a href="https://click.daraz.com.bd/e/_eBloa">
                     <span class="pull-right">&gt;&gt; See More</span>
                 </a>
             </div>
-            <div id="sixthcat" style="display: none;">
+            <div id="sixthcat" class="leftdiv" style="display: none;">
                 <span class="pull-left" style="color: black;">Event Partners</span>
                 <a href="https://click.daraz.com.bd/e/_eetzk">
                     <span class="pull-right">&gt;&gt; See More</span>
                 </a>
             </div>
-            <div id="seventhcat" style="display: none;">
+            <div id="seventhcat" class="leftdiv" style="display: none;">
                 <span class="pull-left" style="color: black;">Hot Deals</span>
                 <a href="https://click.daraz.com.bd/e/_eetzk">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+            <div id="eighthcat" class="leftdiv" style="display: none;">
+                <span class="pull-left" style="color: black;">Women's Fashion</span>
+                <a href="https://click.daraz.com.bd/e/_eB2PG">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+            <div id="ninethcat" class="leftdiv" style="display: none;">
+                <span class="pull-left" style="color: black;">Health & Beauty</span>
+                <a href="https://click.daraz.com.bd/e/_eCC1Y">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+            <div id="tenthcat" class="leftdiv" style="display: none;">
+                <span class="pull-left" style="color: black;">Home Appliances</span>
+                <a href="https://click.daraz.com.bd/e/_eeIOw">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+            <div id="elevencat" class="leftdiv" style="display: none;">
+                <span class="pull-left" style="color: black;">Computers & Laptops</span>
+                <a href="https://click.daraz.com.bd/e/_eBZRu">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+            <div id="twelvecat" class="leftdiv" style="display: none;">
+                <span class="pull-left" style="color: black;">Home & Lifestyle</span>
+                <a href="https://click.daraz.com.bd/e/_eCeai">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+            <div id="thirteencat" class="leftdiv" style="display: none;">
+                <span class="pull-left" style="color: black;">Bags & Travel</span>
+                <a href="https://click.daraz.com.bd/e/_eB80A">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+            <div id="fourteencat" class="leftdiv" style="display: none;">
+                <span class="pull-left" style="color: black;">Digital Goods</span>
+                <a href="https://click.daraz.com.bd/e/_eB8Lu">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+            <div id="fifteencat" class="leftdiv" style="display: none;">
+                <span class="pull-left" style="color: black;">TV,Audio,Gaming & Wearable</span>
+                <a href="https://click.daraz.com.bd/e/_eBnQQ">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+            <div id="sixteencat" class="leftdiv" style="display: none;">
+                <span class="pull-left" style="color: black;">Sports & Outdoor</span>
+                <a href="https://click.daraz.com.bd/e/_eCNPY">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+            <div id="seventeencat" class="leftdiv" style="display: none;">
+                <span class="pull-left" style="color: black;">Music & Arts</span>
+                <a href="https://click.daraz.com.bd/e/_eD9Sq">
+                    <span class="pull-right">&gt;&gt; See More</span>
+                </a>
+            </div>
+            <div id="eighteencat" class="leftdiv" style="display: none;">
+                <span class="pull-left" style="color: black;">Baby, Kids & Toys</span>
+                <a href="https://click.daraz.com.bd/e/_eBXow">
                     <span class="pull-right">&gt;&gt; See More</span>
                 </a>
             </div>
     </div>
 
     <div class="col-xs-5 list-group" style="height: 100%;">
-        <ul class="div-list-main" style="padding-left: 30px!important;">
-            <li class="main-listing list-group-item list-group-item-action zoom c2" style="padding: 0!important; background-color: transparent!important;" id="secondlist" onclick="secondCatOpen()">                
+        <ul class="div-list-main" style="padding-left: 30px!important; overflow-y: scroll; height: 100%;">
+
+            <li class="main-listing list-group-item list-group-item-action zoom c2 selected" style="padding: 0!important; background-color: transparent!important;" onclick="catOpen('secondcat')">                
                 <img src="https://img.alicdn.com/tfs/TB1etj4lsieb18jSZFvXXaI3FXa-200-100.png" style="width: 100%;" name="11.11-lineup">
             </li>
-            <li class="main-listing list-group-item list-group-item-action zoom c3" style="padding: 0!important; background-color: transparent!important;" id="thirdlist" onclick="thirdCatOpen()">                
+            <li class="main-listing list-group-item list-group-item-action zoom c3" style="padding: 0!important; background-color: transparent!important;" onclick="catOpen('thirdcat')">                
                 <img src="https://img.alicdn.com/tfs/TB1w2M5q_M11u4jSZPxXXahcXXa-200-100.png" style="width: 100%;" name="mega-deals">               
             </li>
-            <!--<li class="main-listing list-group-item list-group-item-action zoom c1" style="padding: 0!important; background-color: transparent!important;" id="firstlist" onclick="firstCatOpen()">                
-                <img src="https://img.alicdn.com/tfs/TB1R8YY1KL2gK0jSZPhXXahvXXa-200-100.png" style="width: 100%;" name="Exclusive-launches">  
-            </li>-->
-            <li class="main-listing list-group-item list-group-item-action zoom c4" style="padding: 0!important; background-color: transparent!important;" id="fourthlist" onclick="fourthCatOpen()">                
+            
+            <li class="main-listing list-group-item list-group-item-action zoom c4" style="padding: 0!important; background-color: transparent!important;" onclick="catOpen('fourthcat')">                
                 <img src="https://img.alicdn.com/tfs/TB1.kjz0VP7gK0jSZFjXXc5aXXa-200-100.png" style="width: 100%;" name="payment-partners">                
             </li>
-            <li class="main-listing list-group-item list-group-item-action zoom c5" style="padding: 0!important; background-color: transparent!important;" id="fifthlist" onclick="fifthCatOpen()">                
-                <img src="https://img.alicdn.com/tfs/TB1FjDUoPMZ7e4jSZFOXXX7epXa-200-100.png" style="width: 100%;" name="Category-exclusive">                
-            </li>
-            <li class="main-listing list-group-item list-group-item-action zoom c6" style="padding: 0!important; background-color: transparent!important;" id="sixthlist" onclick="sixthCatOpen()">
+            
+            <li class="main-listing list-group-item list-group-item-action zoom c6" style="padding: 0!important; background-color: transparent!important;" onclick="catOpen('sixthcat')">
                 <img src="https://img.alicdn.com/tfs/TB1qQkbm5pE_u4jSZKbXXbCUVXa-200-100.png" style="width: 100%;" name="event-partners">                
             </li>
-            <li class="main-listing list-group-item list-group-item-action zoom c7" style="padding: 0!important; background-color: transparent!important;" id="seventhlist" onclick="seventhCatOpen()">
+            <li class="main-listing list-group-item list-group-item-action zoom c7" style="padding: 0!important; background-color: transparent!important;" onclick="catOpen('seventhcat')">
                 <img src="https://img.alicdn.com/tfs/TB138smsj39YK4jSZPcXXXrUFXa-200-100.png" style="width: 100%;" name="hot-deals">                
-            </li> 
+            </li>
 
+            <li class="main-listing list-group-item list-group-item-action zoom c1" style="padding: 0!important; background-color: transparent!important;" onclick="catOpen('firstcat')">                
+                <img src="https://img.alicdn.com/tfs/TB135BT2eL2gK0jSZFmXXc7iXXa-200-100.png" style="width: 100%;" name="Mobiles_tablets">  
+            </li>
+            <li class="main-listing list-group-item list-group-item-action zoom c5" style="padding: 0!important; background-color: transparent!important;" onclick="catOpen('fifthcat')">                
+                <img src="https://img.alicdn.com/tfs/TB1IFK7nCslXu8jSZFuXXXg7FXa-200-100.png" style="width: 100%;" name="Men_fashion">                
+            </li>
+
+            <li class="main-listing list-group-item list-group-item-action zoom c8" style="padding: 0!important; background-color: transparent!important;" onclick="catOpen('eighthcat')">                
+                <img src="https://img.alicdn.com/tfs/TB10rtH2XT7gK0jSZFpXXaTkpXa-200-100.png" style="width: 100%;" name="Women_fashion">                
+            </li>
+            <li class="main-listing list-group-item list-group-item-action zoom c9" style="padding: 0!important; background-color: transparent!important;" onclick="catOpen('ninethcat')">                
+                <img src="https://img.alicdn.com/tfs/TB1GuFI2br1gK0jSZFDXXb9yVXa-200-100.png" style="width: 100%;" name="Health_beauty">                
+            </li>
+            <li class="main-listing list-group-item list-group-item-action zoom c10" style="padding: 0!important; background-color: transparent!important;" onclick="catOpen('tenthcat')">                
+                <img src="https://img.alicdn.com/tfs/TB1LM8H2aL7gK0jSZFBXXXZZpXa-200-100.png" style="width: 100%;" name="Appliances">                
+            </li>
+            <li class="main-listing list-group-item list-group-item-action zoom c11" style="padding: 0!important; background-color: transparent!important;" onclick="catOpen('elevencat')">                
+                <img src="https://img.alicdn.com/tfs/TB1D58B2fb2gK0jSZK9XXaEgFXa-200-100.png" style="width: 100%;" name="Computers_laptops">                
+            </li>
+            <li class="main-listing list-group-item list-group-item-action zoom c12" style="padding: 0!important; background-color: transparent!important;" onclick="catOpen('twelvecat')">                
+                <img src="https://img.alicdn.com/tfs/TB1sl4L2kT2gK0jSZFkXXcIQFXa-200-100.png" style="width: 100%;" name="Home_lifestyle">                
+            </li>
+            <li class="main-listing list-group-item list-group-item-action zoom c13" style="padding: 0!important; background-color: transparent!important;" onclick="catOpen('thirteencat')">                
+                <img src="https://img.alicdn.com/tfs/TB1GAktpcVl614jSZKPXXaGjpXa-200-100.png" style="width: 100%;" name="Bags_travel">                
+            </li>
+            <li class="main-listing list-group-item list-group-item-action zoom c14" style="padding: 0!important; background-color: transparent!important;" onclick="catOpen('fourteencat')">                
+                <img src="https://img.alicdn.com/tfs/TB1tGlI2kL0gK0jSZFAXXcA9pXa-200-100.png" style="width: 100%;" name="Digital_goods">                
+            </li>
+            <li class="main-listing list-group-item list-group-item-action zoom c15" style="padding: 0!important; background-color: transparent!important;" onclick="catOpen('fifteencat')">                
+                <img src="https://img.alicdn.com/tfs/TB1TfFH2oY1gK0jSZFCXXcwqXXa-200-100.png" style="width: 100%;" name="Tv_audio_camera">                
+            </li>
+            <li class="main-listing list-group-item list-group-item-action zoom c16" style="padding: 0!important; background-color: transparent!important;" onclick="catOpen('sixteencat')">                
+                <img src="https://img.alicdn.com/tfs/TB1u93qqLzO3e4jSZFxXXaP_FXa-200-100.png" style="width: 100%;" name="Sports_outdoor">                
+            </li>
+            <li class="main-listing list-group-item list-group-item-action zoom c17" style="padding: 0!important; background-color: transparent!important;" onclick="catOpen('seventeencat')">                
+                <img src="https://img.alicdn.com/tfs/TB1AqhG2oH1gK0jSZSyXXXtlpXa-200-100.png" style="width: 100%;" name="Music_books">                
+            </li>
+            <li class="main-listing list-group-item list-group-item-action zoom c18" style="padding: 0!important; background-color: transparent!important;" onclick="catOpen('eighteencat')">                
+                <img src="https://img.alicdn.com/tfs/TB1Ikhy2XY7gK0jSZKzXXaikpXa-200-100.png" style="width: 100%;" name="Baby_kids">                
+            </li>
         </ul>
     </div>
 
 
 
     <!--first Category -->
-    <div class="col-xs-7 zero-pad" id="firstcat1" style="display: none;" id="drag">
+    <div class="col-xs-7 zero-pad rightdiv" id="firstcat1" style="display: none;">
+
+
 
         
 
 
         <div class="col-xs-12 sub-cat-padding" id="draggable">
             <ul class="div-list-main">
-            <li class="sub-listing-img list-group-item-action cat-one">
-                <a href="https://www.daraz.com.bd/shop/smartphonesxiaomi/" name="Poco-x3">
-                <img src="https://img.alicdn.com/tfs/TB1On.i1QL0gK0jSZFAXXcA9pXa-500-500.png" style="width: 100%;">
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/realme-c15-6000-mah-battery-18w-quick-charge-ultra-wide-quad-camera-i154354145-s1083430642.html" name="realmec15">
+                <img src="https://img.alicdn.com/tfs/TB1UsAZpCR26e4jSZFEXXbwuXXa-500-250.png" style="width: 100%;">
                 </a>
             </li>
-            <li class="sub-listing-img list-group-item-action cat-one">
-                <a href="https://www.daraz.com.bd/shop/aiim-global-ltd" name="oppo">
-                <img src="https://img.alicdn.com/tfs/TB1GPJ1msieb18jSZFvXXaI3FXa-500-500.png" style="width: 100%;">
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/realme-7i-8gb-ram-128-rom-64-mp-quad-camera-i150668447-s1077470627.html" name="realme7i">
+                <img src="https://img.alicdn.com/tfs/TB1ZVNV2eL2gK0jSZFmXXc7iXXa-500-250.png" style="width: 100%;">
                 </a>
             </li>
-            <li class="sub-listing-img list-group-item-action cat-one">
-                <a href="https://www.daraz.com.bd/shop/motorola-bd" name="moto-g8">
-                <img src="https://img.alicdn.com/tfs/TB1uHwzrqNj0u4jSZFyXXXgMVXa-500-500.png" style="width: 100%;">
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/motorola-g8-power-lite-i154350524-s1083432791.html" name="motog8">
+                <img src="https://img.alicdn.com/tfs/TB1EZpypjMZ7e4jSZFOXXX7epXa-500-250.png" style="width: 100%;">
                 </a>
-            </li>           
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/poco-x3-nfc-smartphone-6gb-ram128gb-rom-i156936477-s1086996784.html" name="pocox3">
+                <img src="https://img.alicdn.com/tfs/TB1uuJJ2oY1gK0jSZFMXXaWcVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/smartphones" name="smartphone">
+                <img src="https://img.alicdn.com/tfs/TB19Jm9o3gP7K4jSZFqXXamhVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/feature-phones" name="feature_phone">
+                <img src="https://img.alicdn.com/tfs/TB18NdY2oT1gK0jSZFrXXcNCXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/powerbanks" name="powerbanks">
+                <img src="https://img.alicdn.com/tfs/TB18DA3pCR26e4jSZFEXXbwuXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+                       
             </ul>
         </div>
         
@@ -389,7 +619,7 @@
 
 
     <!--Second Category -->
-    <div class="col-xs-7 fixed zero-pad" id="secondcat1" style="display: show;" id="drag">
+    <div class="col-xs-7 fixed zero-pad rightdiv" id="secondcat1" style="display: show;" >
 
        
 
@@ -435,7 +665,7 @@
 
 
     <!--third Category -->
-    <div class="col-xs-7 fixed zero-pad" id="thirdcat1" style="display: none;" id="drag">
+    <div class="col-xs-7 fixed zero-pad rightdiv" id="thirdcat1" style="display: none;">
 
         
 
@@ -560,7 +790,7 @@
 
 
     <!--fourth Category -->
-    <div class="col-xs-7 fixed zero-pad" id="fourthcat1" style="display: none;" id="drag">
+    <div class="col-xs-7 fixed zero-pad rightdiv" id="fourthcat1" style="display: none;" >
 
         
 
@@ -603,94 +833,55 @@
 
 
     <!--fifth Category -->
-    <div class="col-xs-7 fixed zero-pad" id="fifthcat1" style="display: none;" id="drag">
+    <div class="col-xs-7 fixed zero-pad rightdiv" id="fifthcat1" style="display: none;" >
         
 
         <div class="col-xs-12 sub-cat-padding" id="draggable">
             <ul class="div-list-main">
                 
-                <li class="sub-listing-img list-group-item-action cat-five">
-                    <a href="https://click.daraz.com.bd/e/_eBXpe" name="Mobiles-Accessories_cl">
-                    <img src="https://img.alicdn.com/tfs/TB1OHwm1FP7gK0jSZFjXXc5aXXa-500-250.png" style="width: 100%;">
-                    </a>
-                </li>
-                <li class="sub-listing-img list-group-item-action cat-five">
-                    <a href="https://click.daraz.com.bd/e/_eBnQQ" name="tv-audio_cl">
-                    <img src="https://img.alicdn.com/tfs/TB1r9T91KH2gK0jSZJnXXaT1FXa-500-250.png" style="width: 100%;">
-                    </a>
-                </li>
-                <li class="sub-listing-img list-group-item-action cat-five">
-                    <a href="https://click.daraz.com.bd/e/_eeIOw" name="appliance_cl">
-                    <img src="https://img.alicdn.com/tfs/TB1NqsX1UY1gK0jSZFCXXcwqXXa-500-250.png" style="width: 100%;">
-                    </a>
-                </li>
-                <li class="sub-listing-img list-group-item-action cat-five">
-                    <a href="https://click.daraz.com.bd/e/_eBZRu" name="computer_cl">
-                    <img src="https://img.alicdn.com/tfs/TB1YnMrrlBh1e4jSZFhXXcC9VXa-500-250.png" style="width: 100%;">
-                    </a>
-                </li>
-                <li class="sub-listing-img list-group-item-action cat-five">
-                    <a href="https://click.daraz.com.bd/e/_eCeai" name="lifestyle_cl">
-                    <img src="https://img.alicdn.com/tfs/TB1Yr71nOpE_u4jSZKbXXbCUVXa-500-250.png" style="width: 100%;">
-                    </a>
-                </li>
-                <li class="sub-listing-img list-group-item-action cat-five">
-                    <a href="https://click.daraz.com.bd/e/_eehnC" name="global_cl">
-                    <img src="https://img.alicdn.com/tfs/TB1hzf41KL2gK0jSZPhXXahvXXa-500-250.png" style="width: 100%;">
-                    </a>
-                </li>
-                <li class="sub-listing-img list-group-item-action cat-five">
-                    <a href="https://click.daraz.com.bd/e/_eBloa" name="men_cl">
-                    <img src="https://img.alicdn.com/tfs/TB1Drz31HY1gK0jSZTEXXXDQVXa-500-250.png" style="width: 100%;">
-                    </a>
-                </li>
-                <li class="sub-listing-img list-group-item-action cat-five">
-                    <a href="https://click.daraz.com.bd/e/_eB2PG" name="women_cl">
-                    <img src="https://img.alicdn.com/tfs/TB13Q3CrqNj0u4jSZFyXXXgMVXa-500-250.png" style="width: 100%;">
-                    </a>
-                </li>
-                <li class="sub-listing-img list-group-item-action cat-five">
-                    <a href="https://click.daraz.com.bd/e/_eB80A" name="bags_cl">
-                    <img src="https://img.alicdn.com/tfs/TB1nU.ymJTfau8jSZFwXXX1mVXa-500-250.png" style="width: 100%;">
-                    </a>
-                </li>
-                <li class="sub-listing-img list-group-item-action cat-five">
-                    <a href="https://click.daraz.com.bd/e/_eCC1Y" name="health_cl">
-                    <img src="https://img.alicdn.com/tfs/TB1LhSUqvzO3e4jSZFxXXaP_FXa-500-250.png" style="width: 100%;">
-                    </a>
-                </li>
-                <li class="sub-listing-img list-group-item-action cat-five">
-                    <a href="https://click.daraz.com.bd/e/_eCNPY" name="sports_cl">
-                    <img src="https://img.alicdn.com/tfs/TB1_oe1niDsXe8jSZR0XXXK6FXa-500-250.png" style="width: 100%;">
-                    </a>
-                </li>
-                <li class="sub-listing-img list-group-item-action cat-five">
-                    <a href="https://click.daraz.com.bd/e/_eB8Lu" name="digital_cl">
-                    <img src="https://img.alicdn.com/tfs/TB1f1cl1KL2gK0jSZFmXXc7iXXa-500-250.png" style="width: 100%;">
-                    </a>
-                </li>
-                <li class="sub-listing-img list-group-item-action cat-five">
-                    <a href="https://click.daraz.com.bd/e/_eBXow" name="baby_cl">
-                    <img src="https://img.alicdn.com/tfs/TB1xCxtoMgP7K4jSZFqXXamhVXa-500-250.png" style="width: 100%;">
-                    </a>
-                </li>
-                <li class="sub-listing-img list-group-item-action cat-five">
-                    <a href="https://click.daraz.com.bd/e/_eD9Sq" name="music_cl">
-                    <img src="https://img.alicdn.com/tfs/TB1grwm1FP7gK0jSZFjXXc5aXXa-500-250.png" style="width: 100%;">
-                    </a>
-                </li>
-                <li class="sub-listing-img list-group-item-action cat-five">
-                    <a href="https://click.daraz.com.bd/e/_eDqBC" name="motors_cl">
-                    <img src="https://img.alicdn.com/tfs/TB1uW_Zp8FR4u4jSZFPXXanzFXa-500-250.png" style="width: 100%;">
-                    </a>
-                </li>                   
+                <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/blue-color-premium-jeans-pant-for-men-i153592413-s1082204507.html" name="pant">
+                <img src="https://img.alicdn.com/tfs/TB1gDRJ2kL0gK0jSZFAXXcA9pXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/ssb-ralphy-premium-leather-laptop-sleeve-s-lc700-i156750749-s1086512408.html" name="laptop_bag">
+                <img src="https://img.alicdn.com/tfs/TB1GV03rRBh1e4jSZFhXXcC9VXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/stylish-premium-winter-jacket-for-men-white-and-navy-i124771616-s1044996084.html" name="jacket">
+                <img src="https://img.alicdn.com/tfs/TB1OyQZpCR26e4jSZFEXXbwuXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/army-green-cotton-long-sleeve-casual-shirt-for-men-i127136317-s1047161555.html" name="shirt">
+                <img src="https://img.alicdn.com/tfs/TB1H9WnmIieb18jSZFvXXaI3FXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/mens-fashion-t-shirts" name="t_shirt_men">
+                <img src="https://img.alicdn.com/tfs/TB1zl8N2oY1gK0jSZFCXXcwqXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/mens-fashion-watches" name="watches_men">
+                <img src="https://img.alicdn.com/tfs/TB19DpN2aL7gK0jSZFBXXXZZpXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/mens-fashion-shoes" name="shoes_men">
+                <img src="https://img.alicdn.com/tfs/TB1JO8wokcx_u4jSZFlXXXnUFXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>                   
             </ul>
         </div>
     </div>
 
 
     <!--Sixth Category -->
-    <div class="col-xs-7 fixed zero-pad" id="sixthcat1" style="display: none;" id="drag">
+    <div class="col-xs-7 fixed zero-pad rightdiv" id="sixthcat1" style="display: none;" >
 
         
 
@@ -737,7 +928,7 @@
 
 
     <!--Seventh Category -->
-    <div class="col-xs-7 fixed zero-pad" id="seventhcat1" style="display: none;" id="drag">
+    <div class="col-xs-7 fixed zero-pad rightdiv" id="seventhcat1" style="display: none;" >
 
         
 
@@ -785,7 +976,530 @@
                 </li>            
             </ul>
         </div>
-    </div> 
+    </div>
+
+    <!--eighth Category -->
+    <div class="col-xs-7 zero-pad rightdiv" id="eighthcat1" style="display: none;" >
+
+        
+        <div class="col-xs-12 sub-cat-padding" id="draggable">
+            <ul class="div-list-main">
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/eye-catching-design-with-sparking-collection-rich-fabric-ripe-plum-purple-colour-heavy-weaved-work-traditional-unstitched-weightless-jamdani-sharee-for-women-i132120297-s1052844604.html" name="sharee">
+                <img src="https://img.alicdn.com/tfs/TB1QOdJ2oY1gK0jSZFCXXcwqXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/unstitched-multicolor-georgette-kurti-for-women-3piece-i127934168-s1047866081.html" name="kurti">
+                <img src="https://img.alicdn.com/tfs/TB1IiNwqBFR4u4jSZFPXXanzFXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/ladies-leather-purses-handbags-women-shopping-tote-hand-bag-i142324171-s1066232324.html" name="purse">
+                <img src="https://img.alicdn.com/tfs/TB1NpstqLzO3e4jSZFxXXaP_FXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            
+
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/western-clothing" name="western_clothing">
+                <img src="https://img.alicdn.com/tfs/TB1idNU2hv1gK0jSZFFXXb0sXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/winter-arrivals-womens-fashion" name="winter_arrival">
+                <img src="https://img.alicdn.com/tfs/TB178lN2XT7gK0jSZFpXXaTkpXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/salwar-kameez" name="salwar_kameez">
+                <img src="https://img.alicdn.com/tfs/TB1NC7DnyDsXe8jSZR0XXXK6FXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+                       
+            </ul>
+        </div>
+    </div>
+
+    <!--nineth Category -->
+    <div class="col-xs-7 zero-pad rightdiv" id="ninethcat1" style="display: none;" >
+
+        
+        <div class="col-xs-12 sub-cat-padding" id="draggable">
+            <ul class="div-list-main">
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/xiaomi-enchen-electric-hair-clippers-adult-razors-professional-trimmers-corner-razor-for-man-black-i131692853-s1052132882.html" name="trimmer">
+                <img src="https://img.alicdn.com/tfs/TB1_8Jy2kL0gK0jSZFtXXXQCXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/saffron-goats-milk-soap-120-gm-i1219647-s20536393.html" name="soap">
+                <img src="https://img.alicdn.com/tfs/TB1HMlC2eL2gK0jSZPhXXahvXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/philips-hp810803-drycare-hair-dryer-for-women-i114728296-s1032482666.html" name="hairdry">
+                <img src="https://img.alicdn.com/tfs/TB16TRW2XP7gK0jSZFjXXc5aXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/vitamin-c-glow-boosting-moisturiser-50ml-i141994906-s1065774736.html" name="moisturizers">
+                <img src="https://img.alicdn.com/tfs/TB17EXJ2oY1gK0jSZFCXXcwqXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/skin-body-hair-care" name="skin_body">
+                <img src="https://img.alicdn.com/tfs/TB1rIVBqBFR4u4jSZFPXXanzFXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/fragrances" name="fragrance">
+                <img src="https://img.alicdn.com/tfs/TB1.1uNrDM11u4jSZPxXXahcXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/beauty-styling-tools" name="styling_tools">
+                <img src="https://img.alicdn.com/tfs/TB1I3hH2oz1gK0jSZLeXXb9kVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+                       
+            </ul>
+        </div>
+    </div>
+
+
+    <!--tenth Category -->
+    <div class="col-xs-7 zero-pad rightdiv" id="tenthcat1" style="display: none;" >
+
+        
+        <div class="col-xs-12 sub-cat-padding" id="draggable">
+            <ul class="div-list-main">
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/midea-15-ton-split-type-ac-non-inverter-6-years-compressor-guaranty-low-energy-i110128306-s1026924327.html" name="refrigerator">
+                <img src="https://img.alicdn.com/tfs/TB1FJB4ndTfau8jSZFwXXX1mVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/sharp-full-auto-washing-machine-es-x858-80-kg-i133614137-s1055346281.html" name="washing_machine">
+                <img src="https://img.alicdn.com/tfs/TB1RJJB2bY1gK0jSZTEXXXDQVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/midea-15-ton-split-type-ac-non-inverter-6-years-compressor-guaranty-low-energy-i110128306-s1026924327.html" name="air_conditioner">
+                <img src="https://img.alicdn.com/tfs/TB1MtRP2kY2gK0jSZFgXXc5OFXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/sharp-ah-xp13shve-inverter-ac-10-ton-white-i854689-s3530021.html" name="AC_inverter">
+                <img src="https://img.alicdn.com/tfs/TB1Vahtokcx_u4jSZFlXXXnUFXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/air-conditioner" name="air_conditioner_cat">
+                <img src="https://img.alicdn.com/tfs/TB1EBI4pCR26e4jSZFEXXbwuXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/refregerator-freezer" name="refrigerator_cat">
+                <img src="https://img.alicdn.com/tfs/TB18WxN2oH1gK0jSZSyXXXtlpXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/washing-machines-irons" name="washing_machine_cat">
+                <img src="https://img.alicdn.com/tfs/TB1mCdC2hz1gK0jSZSgXXavwpXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+                       
+            </ul>
+        </div>
+    </div>
+
+
+    <!--eleven Category -->
+    <div class="col-xs-7 zero-pad rightdiv" id="elevencat1" style="display: none;" >
+
+        
+        <div class="col-xs-12 sub-cat-padding" id="draggable">
+            <ul class="div-list-main">
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/chuwi-herobook-pro-intel-celeron-8gb-ram-256gb-ssd-14-inch-laptop-grey-i129890799-s1049690195.html" name="laptop">
+                <img src="https://img.alicdn.com/tfs/TB1S54E2hD1gK0jSZFsXXbldVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/walton-laptop-tamarind-metal-body-ex510g-10th-gen-intel-core-i5-10210u-160ghz-up-to-42ghz-512gb-sataiii-m2-2280-ssd-8gb-ddr4-2666mhz-ram-14-inch-ips-matte-lcd-i128818607-s1048642352.html" name="laptop_walton">
+                <img src="https://img.alicdn.com/tfs/TB1H.hO2kT2gK0jSZFkXXcIQFXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/mi-wifi-router-4c-global-version-300mbps-4-antennas-smart-app-control-white-i121268740-s1040930105.html" name="router_MI">
+                <img src="https://img.alicdn.com/tfs/TB1_ZFL2kL0gK0jSZFAXXcA9pXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/tp-link-tl-wr940n-450mbps-wireless-n-router-i113902190-s1031272219.html" name="router_tplink">
+                <img src="https://img.alicdn.com/tfs/TB14zlK2aL7gK0jSZFBXXXZZpXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/networking" name="networking">
+                <img src="https://img.alicdn.com/tfs/TB1A_AApcVl614jSZKPXXaGjpXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/keyboards-mice" name="keyboard">
+                <img src="https://img.alicdn.com/tfs/TB1_XXT2kT2gK0jSZFkXXcIQFXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/storages" name="storage">
+                <img src="https://img.alicdn.com/tfs/TB1iOF22XP7gK0jSZFjXXc5aXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+                       
+            </ul>
+        </div>
+    </div>
+
+
+    <!--twelve Category -->
+    <div class="col-xs-7 zero-pad rightdiv" id="twelvecat1" style="display: none;" >
+
+        
+        <div class="col-xs-12 sub-cat-padding" id="draggable">
+            <ul class="div-list-main">
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/sddam-sofa-s-1045-malaysiyan-process-wood-sofa-321-6-pcs-furniture-hutbazaar-ltd-i131144442-s1051206942.html" name="sofa">
+                <img src="https://img.alicdn.com/tfs/TB16pBF2hD1gK0jSZFsXXbldVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/noah-non-stick-full-set-olive-i117878542-s1037210840.html" name="pot_pans">
+                <img src="https://img.alicdn.com/tfs/TB1q_4U2oT1gK0jSZFrXXcNCXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/folding-iron-table-1442-inches-multi-colorm-i127688642-s1047644642.html" name="iron_table">
+                <img src="https://img.alicdn.com/tfs/TB1CzXJ2oH1gK0jSZSyXXXtlpXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/high-pressure-washer-znc-s3-1800w-120bar-1750psi-220-car-washer-machine-i131938984-s1052576587.html" name="hand_tool">
+                <img src="https://img.alicdn.com/tfs/TB1lyC_nCslXu8jSZFuXXXg7FXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/home-furniture" name="home_furniture">
+                <img src="https://img.alicdn.com/tfs/TB1ax1tmIieb18jSZFvXXaI3FXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/cookware-dining" name="cookware">
+                <img src="https://img.alicdn.com/tfs/TB1ZRJ12lr0gK0jSZFnXXbRRXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/office-furniture" name="offie_furniture">
+                <img src="https://img.alicdn.com/tfs/TB18yJN2oH1gK0jSZSyXXXtlpXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+                       
+            </ul>
+        </div>
+    </div>
+
+
+    <!--thirteen Category -->
+    <div class="col-xs-7 zero-pad rightdiv" id="thirteencat1" style="display: none;" >
+
+        
+        <div class="col-xs-12 sub-cat-padding" id="draggable">
+            <ul class="div-list-main">
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/ssb-sb-w19-100_genuine-short-leather-wallet-agun-i124301265-s1044578266.html" name="wallet">
+                <img src="https://img.alicdn.com/tfs/TB1R1brlNvbeK8jSZPfXXariXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/unique-pu-leather-handbag-for-women-maroon-i100123263-s1014001263.html" name="backpack">
+                <img src="https://img.alicdn.com/tfs/TB1XjxE2oz1gK0jSZLeXXb9kVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/cat-backpack-for-men-i132580258-s1053680703.html" name="crossbody_bag">
+                <img src="https://img.alicdn.com/tfs/TB1H9l5sP39YK4jSZPcXXXrUFXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/louiswill-women-travel-bags-waterproof-weekender-bags-oxford-cloth-luggages-handbags-shoulder-bags-traveling-bags-shoes-separation-sport-bags-fitness-bags-gym-totes-for-men-women-i136576875-s1058744157.html" name="travel_bag">
+                <img src="https://img.alicdn.com/tfs/TB1UkgxpcVl614jSZKPXXaGjpXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/womens-bags" name="women_bag">
+                <img src="https://img.alicdn.com/tfs/TB14DZEnyDsXe8jSZR0XXXK6FXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/belts" name="belt">
+                <img src="https://img.alicdn.com/tfs/TB1UGJ9ndTfau8jSZFwXXX1mVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/travel-bags" name="travel_bag">
+                <img src="https://img.alicdn.com/tfs/TB1wn412lr0gK0jSZFnXXbRRXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+                       
+            </ul>
+        </div>
+    </div>
+
+
+    <!--fourteen Category -->
+    <div class="col-xs-7 zero-pad rightdiv" id="fourteencat1" style="display: none;" >
+
+        
+        <div class="col-xs-12 sub-cat-padding" id="draggable">
+            <ul class="div-list-main">
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/amazoncom-egift-cards-500-usd-i127274614-s1047280099.html" name="amazon_gift_card">
+                <img src="https://img.alicdn.com/tfs/TB1oTFY2lr0gK0jSZFnXXbRRXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/google-play-gift-card-10-usd-us-region-i100965092-s1014947917.html" name="googleplay_10usd">
+                <img src="https://img.alicdn.com/tfs/TB1Is4Z2eL2gK0jSZFmXXc7iXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/google-play-100-loaded-gmail-us-region-i131814618-s1052344977.html" name="googleplay_100usd">
+                <img src="https://img.alicdn.com/tfs/TB1HU4M2br1gK0jSZFDXXb9yVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/1000-rupee-google-play-gift-card-indian-region-gift-code-i123212436-s1043305695.html" name="googleplay_1000rs">
+                <img src="https://img.alicdn.com/tfs/TB11FtW2oT1gK0jSZFrXXcNCXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/games" name="games">
+                <img src="https://img.alicdn.com/tfs/TB1oWtE2kL0gK0jSZFtXXXQCXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/e-learning" name="e_learning">
+                <img src="https://img.alicdn.com/tfs/TB1.4pG2XY7gK0jSZKzXXaikpXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/travel" name="travel_cat">
+                <img src="https://img.alicdn.com/tfs/TB17SGtmIieb18jSZFvXXaI3FXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+                       
+            </ul>
+        </div>
+    </div>
+
+
+    <!--fifteen Category -->
+    <div class="col-xs-7 zero-pad rightdiv" id="fifteencat1" style="display: none;" >
+
+        
+        <div class="col-xs-12 sub-cat-padding" id="draggable">
+            <ul class="div-list-main">
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/vikan-android-smart-hd-led-tv-32-ram-1-gb-rom-8-gb-black-4k-supported-i888111-s3666215.html" name="smart_tv">
+                <img src="https://img.alicdn.com/tfs/TB1HudW2oT1gK0jSZFrXXcNCXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/mi-4a-32-hd-smart-android-tv-4a-european-i128380517-s1048268729.html" name="led_tv">
+                <img src="https://img.alicdn.com/tfs/TB1H5dG2fb2gK0jSZK9XXaEgFXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/mi-xiaomi-434k-hdr-android-led-tv-4s-43n-global-european-i143822657-s1068294823.html" name="android_tv">
+                <img src="https://img.alicdn.com/tfs/TB1Qut02XP7gK0jSZFjXXc5aXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/mi-band-5-amoled-screen-smart-fitness-tracker-chinese-version-black-i132788073-s1053970688.html" name="mi_band">
+                <img src="https://img.alicdn.com/tfs/TB1tqFM2XT7gK0jSZFpXXaTkpXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/televisions" name="television_cat">
+                <img src="https://img.alicdn.com/tfs/TB1OW8P2XT7gK0jSZFpXXaTkpXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/cameras" name="camera_cat">
+                <img src="https://img.alicdn.com/tfs/TB1O9syqLzO3e4jSZFxXXaP_FXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/headphones-and-earbuds" name="earbud">
+                <img src="https://img.alicdn.com/tfs/TB1TLB9ndTfau8jSZFwXXX1mVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+                       
+            </ul>
+        </div>
+    </div>
+
+    <!--sixteen Category -->
+    <div class="col-xs-7 zero-pad rightdiv" id="sixteencat1" style="display: none;" >
+
+        
+        <div class="col-xs-12 sub-cat-padding" id="draggable">
+            <ul class="div-list-main">
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/foldable-motorized-treadmill-kl-901s-i144058338-s1068566642.html" name="treadmill">
+                <img src="https://img.alicdn.com/tfs/TB1el9LrDM11u4jSZPxXXahcXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/treadmill-dk-12ab-250-hp-motor-with-massager-i144442939-s1069130824.html" name="treadmill2">
+                <img src="https://img.alicdn.com/tfs/TB1txACnyDsXe8jSZR0XXXK6FXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/motorized-treadmill-25-hp-black-i132398245-s1053394051.html" name="treadmill3">
+                <img src="https://img.alicdn.com/tfs/TB15z0M2oY1gK0jSZFCXXcwqXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/motorized-treadmill-2hp-multifunction-user-maximum-120kg-i129854870-s1049654048.html" name="treadmill4">
+                <img src="https://img.alicdn.com/tfs/TB1L15erWNj0u4jSZFyXXXgMVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/fitness-accessories" name="fitness_accessories">
+                <img src="https://img.alicdn.com/tfs/TB11yXG2bY1gK0jSZTEXXXDQVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/dumbbells-weights" name="dumbell">
+                <img src="https://img.alicdn.com/tfs/TB1P_hEpjMZ7e4jSZFOXXX7epXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/cardio-training-equipments" name="cardio">
+                <img src="https://img.alicdn.com/tfs/TB1e58P2aL7gK0jSZFBXXXZZpXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+                       
+            </ul>
+        </div>
+    </div>
+
+
+    <!--seventeen Category -->
+    <div class="col-xs-7 zero-pad rightdiv" id="seventeencat1" style="display: none;" >
+
+        
+        <div class="col-xs-12 sub-cat-padding" id="draggable">
+            <ul class="div-list-main">
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/matte-black-premium-acoustic-guitar-black-2020-edition-i132522988-s1053592349.html" name="guitar">
+                <img src="https://img.alicdn.com/tfs/TB12CVZ2lr0gK0jSZFnXXbRRXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/deviser-l-720a-acoustic-guitar-36-sandy-brown-i1015061-s9857225.html" name="accoustic_guitar">
+                <img src="https://img.alicdn.com/tfs/TB1rJhG2oz1gK0jSZLeXXb9kVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/casio-fx-991ex-solar-and-battery-powered-scientific-calculator-black-i131656795-s1052060885.html" name="calculator">
+                <img src="https://img.alicdn.com/tfs/TB1S4tF2eL2gK0jSZPhXXahvXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/superpoint-df-pen-10-pcs-i156122939-s1085628401.html" name="pen">
+                <img src="https://img.alicdn.com/tfs/TB19txT2hv1gK0jSZFFXXb0sXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/books-collection" name="book_collection">
+                <img src="https://img.alicdn.com/tfs/TB1_SBP2aL7gK0jSZFBXXXZZpXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/guitar-accessories" name="guitar_cat">
+                <img src="https://img.alicdn.com/tfs/TB1O7432XP7gK0jSZFjXXc5aXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/piano-keyboards" name="piano_cat">
+                <img src="https://img.alicdn.com/tfs/TB1mkN02oT1gK0jSZFrXXcNCXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+                       
+            </ul>
+        </div>
+    </div>
+
+
+    <!--eighteen Category -->
+    <div class="col-xs-7 zero-pad rightdiv" id="eighteencat1" style="display: none;" >
+
+        
+        <div class="col-xs-12 sub-cat-padding" id="draggable">
+            <ul class="div-list-main">
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/licensed-mclaren-p4-12v-battery-powered-ride-on-kids-car-double-motor-remote-control-rc-with-auto-dancing-mood-i100831183-s1014812770.html" name="ride_on">
+                <img src="https://img.alicdn.com/tfs/TB1akIwqLzO3e4jSZFxXXaP_FXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/-i108030264-s1023506790.html" name="diaper">
+                <img src="https://img.alicdn.com/tfs/TB1yvCMrDM11u4jSZPxXXahcXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/neocare-belt-system-baby-diaper-l-7-18-kg-50pcs-i13888-s117527.html" name="diaper2">
+                <img src="https://img.alicdn.com/tfs/TB1Wa3DnyDsXe8jSZR0XXXK6FXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sku">
+                <a href="https://www.daraz.com.bd/products/huggies-dry-belt-diaper-nb-new-born-64-pcs-0-5-kg-i156744856-s1086508959.html" name="diaper3">
+                <img src="https://img.alicdn.com/tfs/TB11_zXnCslXu8jSZFuXXXg7FXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/baby-gears-accessories" name="baby_gear_cat">
+                <img src="https://img.alicdn.com/tfs/TB126rcnCslXu8jSZFuXXXg7FXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/baby-grooming-kits" name="baby_grooming_kit">
+                <img src="https://img.alicdn.com/tfs/TB1Ve76pCR26e4jSZFEXXbwuXXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+            <li class="sub-listing-img list-group-item-action sub-cat">
+                <a href="https://www.daraz.com.bd/wow/gcp/daraz/megascenario/bd/11_11_2020/toys" name="toys">
+                <img src="https://img.alicdn.com/tfs/TB1YAS.o3gP7K4jSZFqXXamhVXa-500-250.png" style="width: 100%;">
+                </a>
+            </li>
+                       
+            </ul>
+        </div>
+    </div>
+
+
         
 
 </div>
@@ -804,195 +1518,6 @@
     $('.selected').removeClass('selected');
     $(this).addClass('selected');
     });
-
-
-
-    // Make the DIV element draggable:
-dragElement(document.getElementById("drag"));
-
-function dragElement(elmnt) {
-  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "dragImg")) {
-    // if present, the header is where you move the DIV from:
-    document.getElementById(elmnt.id + "dragImg").onmousedown = dragMouseDown;
-  } else {
-    // otherwise, move the DIV from anywhere inside the DIV:
-    elmnt.onmousedown = dragMouseDown;
-  }
-
-  function dragMouseDown(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // get the mouse cursor position at startup:
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    document.onmouseup = closeDragElement;
-    // call a function whenever the cursor moves:
-    document.onmousemove = elementDrag;
-  }
-
-  function elementDrag(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // calculate the new cursor position:
-    pos1 = pos3 - e.clientX;
-    pos2 = pos4 - e.clientY;
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    // set the element's new position:
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-  }
-
-  function closeDragElement() {
-    // stop moving when mouse button is released:
-    document.onmouseup = null;
-    document.onmousemove = null;
-  }
-}
-    /*function category1() {
-        var x = document.getElementById("category1");
-        if (x.style.display === "none") {
-            x.style.display = "block";   
-        } else {
-            x.style.display = "none";
-        }
-    }*/
-
-    function firstCatOpen() {
-        document.getElementById('firstcat').style.display = "block";
-        document.getElementById('secondcat').style.display = "none";
-        document.getElementById('thirdcat').style.display = "none";
-        document.getElementById('fourthcat').style.display = "none";
-        document.getElementById('fifthcat').style.display = "none";
-        document.getElementById('sixthcat').style.display = "none";
-        document.getElementById('seventhcat').style.display = "none";
-        
-        document.getElementById('firstcat1').style.display = "block";
-        document.getElementById('secondcat1').style.display = "none";
-        document.getElementById('thirdcat1').style.display = "none";
-        document.getElementById('fourthcat1').style.display = "none";
-        document.getElementById('fifthcat1').style.display = "none";
-        document.getElementById('sixthcat1').style.display = "none";
-        document.getElementById('seventhcat1').style.display = "none";
-        
-    }
-
-        function secondCatOpen() {
-        document.getElementById('firstcat').style.display = "none";
-        document.getElementById('secondcat').style.display = "block";
-        document.getElementById('thirdcat').style.display = "none";
-        document.getElementById('fourthcat').style.display = "none";
-        document.getElementById('fifthcat').style.display = "none";
-        document.getElementById('sixthcat').style.display = "none";
-        document.getElementById('seventhcat').style.display = "none";
-        
-        document.getElementById('firstcat1').style.display = "none";
-        document.getElementById('secondcat1').style.display = "block";
-        document.getElementById('thirdcat1').style.display = "none";
-        document.getElementById('fourthcat1').style.display = "none";
-        document.getElementById('fifthcat1').style.display = "none";
-        document.getElementById('sixthcat1').style.display = "none";
-        document.getElementById('seventhcat1').style.display = "none";
-    }
-
-        function thirdCatOpen() {
-        document.getElementById('firstcat').style.display = "none";
-        document.getElementById('secondcat').style.display = "none";
-        document.getElementById('thirdcat').style.display = "block";
-        document.getElementById('fourthcat').style.display = "none";
-        document.getElementById('fifthcat').style.display = "none";
-        document.getElementById('sixthcat').style.display = "none";
-        document.getElementById('seventhcat').style.display = "none";
-
-        document.getElementById('firstcat1').style.display = "none";
-        document.getElementById('secondcat1').style.display = "none";
-        document.getElementById('thirdcat1').style.display = "block";
-        document.getElementById('fourthcat1').style.display = "none";
-        document.getElementById('fifthcat1').style.display = "none";
-        document.getElementById('sixthcat1').style.display = "none";
-        document.getElementById('seventhcat1').style.display = "none";
-        
-    }
-        function fourthCatOpen() {
-        document.getElementById('firstcat').style.display = "none";
-        document.getElementById('secondcat').style.display = "none";
-        document.getElementById('thirdcat').style.display = "none";
-        document.getElementById('fourthcat').style.display = "block";
-        document.getElementById('fifthcat').style.display = "none";
-        document.getElementById('sixthcat').style.display = "none";
-        document.getElementById('seventhcat').style.display = "none";
-
-        document.getElementById('firstcat1').style.display = "none";
-        document.getElementById('secondcat1').style.display = "none";
-        document.getElementById('thirdcat1').style.display = "none";
-        document.getElementById('fourthcat1').style.display = "block";
-        document.getElementById('fifthcat1').style.display = "none";
-        document.getElementById('sixthcat1').style.display = "none";
-        document.getElementById('seventhcat1').style.display = "none";
-        
-    }
-        function fifthCatOpen() {
-        document.getElementById('firstcat').style.display = "none";
-        document.getElementById('secondcat').style.display = "none";
-        document.getElementById('thirdcat').style.display = "none";
-        document.getElementById('fourthcat').style.display = "none";
-        document.getElementById('fifthcat').style.display = "block";
-        document.getElementById('sixthcat').style.display = "none";
-        document.getElementById('seventhcat').style.display = "none";
-
-        document.getElementById('firstcat1').style.display = "none";
-        document.getElementById('secondcat1').style.display = "none";
-        document.getElementById('thirdcat1').style.display = "none";
-        document.getElementById('fourthcat1').style.display = "none";
-        document.getElementById('fifthcat1').style.display = "block";
-        document.getElementById('sixthcat1').style.display = "none";
-        document.getElementById('seventhcat1').style.display = "none";
-        
-    }
-        function sixthCatOpen() {
-        document.getElementById('firstcat').style.display = "none";
-        document.getElementById('secondcat').style.display = "none";
-        document.getElementById('thirdcat').style.display = "none";
-        document.getElementById('fourthcat').style.display = "none";
-        document.getElementById('fifthcat').style.display = "none";
-        document.getElementById('sixthcat').style.display = "block";
-        document.getElementById('seventhcat').style.display = "none";
-
-        document.getElementById('firstcat1').style.display = "none";
-        document.getElementById('secondcat1').style.display = "none";
-        document.getElementById('thirdcat1').style.display = "none";
-        document.getElementById('fourthcat1').style.display = "none";
-        document.getElementById('fifthcat1').style.display = "none";
-        document.getElementById('sixthcat1').style.display = "block";
-        document.getElementById('seventhcat1').style.display = "none";
-        
-    }
-
-    function seventhCatOpen() {
-        document.getElementById('firstcat').style.display = "none";
-        document.getElementById('secondcat').style.display = "none";
-        document.getElementById('thirdcat').style.display = "none";
-        document.getElementById('fourthcat').style.display = "none";
-        document.getElementById('fifthcat').style.display = "none";
-        document.getElementById('sixthcat').style.display = "none";
-        document.getElementById('seventhcat').style.display = "block";
-
-        document.getElementById('firstcat1').style.display = "none";
-        document.getElementById('secondcat1').style.display = "none";
-        document.getElementById('thirdcat1').style.display = "none";
-        document.getElementById('fourthcat1').style.display = "none";
-        document.getElementById('fifthcat1').style.display = "none";
-        document.getElementById('sixthcat1').style.display = "none";
-        document.getElementById('seventhcat1').style.display = "block";
-        
-    }
-
-
-    
-
-
-        
 
 </script>
 
