@@ -1,0 +1,2735 @@
+<!--1-->
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' type='text/css'
+    media='all' />
+<!-- If required -->
+<!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?dl=0' type='text/css' media='screen' /> -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css' type='text/css'
+    media='all' />
+
+<style>
+    .toggle .osh-btn .label {
+        color: #6E6E6E;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: left;
+        padding: 0
+    }
+
+    .navAllCat .label {
+        color: #6E6E6E;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: left;
+        padding: 0
+    }
+
+    .navAllCat .caret {
+        display: inherit;
+        width: initial;
+        height: 0;
+        margin-left: inherit;
+        border-top: inherit;
+        border-right: inherit;
+        border-left: inherit;
+        vertical-align: baseline
+    }
+
+    .osh-btn>.caret {
+        display: inherit;
+        width: initial;
+        height: 0;
+        margin-left: inherit;
+        border-top: inherit;
+        border-right: inherit;
+        border-left: inherit
+    }
+
+    .osh-dropdown>.toggle>.osh-btn>.caret {
+        vertical-align: baseline
+    }
+
+    .main_header--nav-right .dropdown-header {
+        display: initial;
+        padding: 0;
+        font-size: 12px;
+        line-height: 1.42857143;
+        color: #777;
+        white-space: nowrap
+    }
+
+    .btn-header {
+        padding: 0
+    }
+
+    .panel-categories h3 {
+        font-size: 1em
+    }
+
+    #search_box-cancel_btn .label {
+        color: #416998;
+        font-size: 100%;
+        font-weight: 500;
+        text-align: left;
+        vertical-align: baseline;
+        border-radius: 0
+    }
+
+    .search_box--cancel_btn {
+
+        padding: 11px 0 !important;
+    }
+
+    .caret.osh-font-light-arrow-down {
+        display: inline;
+    }
+
+    .osh-featured-box.-sku .sku>.link {
+        text-decoration: none;
+    }
+
+    .caret {
+        display: inline-block;
+        width: initial;
+        height: initial;
+        margin-left: initial;
+        vertical-align: initial;
+        border: none;
+    }
+/* <!--end 1--> */
+/* <!--2--> */
+    section.pagination {
+        display: block !important;
+    }
+
+    .box-heading {
+        text-align: center;
+        color: #ff7102;
+        font-weight: 600;
+        margin-top: 20px;
+        font-family: 'Lato', sans-serif;
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .osh-featured-box.-carousel>.wrapper.-carousel {
+        width: 1170px !important;
+        max-height: 350px;
+    }
+
+    .osh-featured-box>header>.headline {
+        border: none;
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+        color: #373838;
+        font-weight: 600;
+        margin-top: 10px;
+        text-transform: uppercase;
+        font-family: 'Lato', sans-serif;
+        font-size: 26px;
+    }
+
+    .osh-featured-box>header {
+        border-bottom: none;
+        position: relative;
+        text-align: center;
+        margin-bottom: 0 !important;
+    }
+
+    .osh-featured-box {
+        position: relative;
+        margin-bottom: 0 !important;
+    }
+
+    .text-display-3 {
+        display: block;
+        font-size: 20px !important;
+        color: #373838 !important;
+        font-weight: 600 !important;
+        text-transform: uppercase;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        width: 98%;
+        margin-bottom: -12px !important;
+        margin-top: 20px;
+    }
+
+    .vertical-box {
+        border: 1px solid #ddd;
+        border-radius: 7px;
+        padding-left: 20px;
+        padding-top: 5px;
+        height: 90px;
+        margin-right: 10px;
+    }
+
+    .vertical-box-content {
+        padding-left: 10px;
+        float: left;
+        color: #fe7208;
+        font-weight: 600;
+    }
+
+    .city-box {
+        border: 1px solid #ddd;
+        border-radius: 7px;
+        padding: 15px;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+    }
+
+    .coming-soon {
+        position: relative;
+        background-color: #ff7102;
+        box-shadow: 3px 3px #9e9e9e;
+        float: right;
+    }
+
+    .coming-soon>p {
+        margin: 0;
+        font-size: 11px;
+        padding: 5px 10px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+/* <!--end 2--> */
+/* <!--3--> */
+    .glyphicon {
+        top: 5px;
+    }
+
+    .dropdown-menu {
+        cursor: pointer;
+        height: 270px;
+        overflow-y: scroll;
+    }
+
+    .city-container {
+        height: 270px;
+        overflow-y: scroll;
+    }
+
+    .banner-text {
+        position: relative;
+        color: white;
+    }
+
+    .center-left {
+        position: absolute;
+        top: 55px;
+        width: 23%;
+        left: 65%;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .btn-lg {
+        padding: 10px 9px;
+    }
+
+    .btn-warning {
+        background-color: #ff7102;
+        border-color: #ff8d00;
+    }
+
+    .seller {
+        text-align: center;
+        margin: 20px 0 50px 0;
+        background: #09b909;
+        line-height: 3;
+        border-radius: 30px;
+    }
+/*<!--end 3 -->*/
+/*<!--4 -->*/
+    /*<!--FAQ Styling Starts Here-->*/
+
+    .block-acrdion-main {
+        margin-top: 5px;
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+
+    .acrdion-title {
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+
+    .acrdion-title h3 {
+        font-size: 18px;
+        float: left;
+        color: #F68B1E;
+        margin: 0;
+        line-height: 20px;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 10px;
+    }
+
+    .acrdion-title p {
+        float: right;
+        margin: 0 0 10px 0;
+        font-size: 18px;
+        color: #005387;
+        cursor: pointer;
+        line-height: 20px;
+    }
+
+    .panel-group {
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+
+    .panel-default>.panel-heading {
+        background-color: #fff !important;
+    }
+
+    .panel.panel-default {
+        border-radius: 0 !important;
+        margin: 5px !important;
+    }
+
+    .lzd-act-richtext a {
+    text-decoration: none !important;
+    color: #5660de !important;
+}
+
+    .panel-group .panel-heading a {
+        display: block;
+        margin: 16px;
+        text-decoration: none;
+        position: relative;
+        font-size: 16px;
+        line-height: 20px;
+        color: #333 !important;
+        font-weight: 500 !important;
+    }
+
+    .panel-group .panel-heading a.collapsed:after {
+        content: '+';
+        position: absolute;
+        right: 20px;
+        top: 25%;
+        font-size: 30px;
+        color: #F68B1E;
+    }
+/* <!--end 4--> */
+/* <!--5--> */
+    .panel-group .panel-heading a:after {
+        content: '-';
+        position: absolute;
+        right: 20px;
+        top: 25%;
+        font-size: 30px;
+        color: #F68B1E;
+    }
+
+    .panel-body {
+        padding: 15px 35px 15px 0 !important;
+        margin: 0 20px;
+    }
+
+    .panel-heading {
+        padding: 0px 8px !important;
+    }
+
+    .pull-right {
+        display: none !important;
+    }
+
+    .col-sm-1.col-xs-6.partner-mobile-margin {
+        width: 11.64% !important;
+        margin: 5px;
+    }
+    .dropdown-menu {
+    cursor: pointer;
+    height: 280px;
+    width: -webkit-fill-available;
+    overflow-y: scroll;
+}
+.osh-featured-box>header>.headline {
+        font-size: 24px;
+        line-height: 26px;
+        border-top: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-left: 1px solid #ddd;
+        display: inline-block;
+        color: #333;
+        background-color: #fff;
+        margin: 0;
+        text-transform: uppercase;
+        padding: 7px 20px;
+        font-weight: 600;
+    }
+
+    @media only screen and (max-width: 1199px) {
+        .col-sm-1.col-xs-6.partner-mobile-margin {
+            width: 11.45% !important;
+            margin: 5px;
+        }
+    }
+
+    @media only screen and (max-width: 769px) {
+        .block-acrdion-main {
+            padding: 0 !important;
+        }
+
+        .acrdion-title p {
+            font-size: 14.15px;
+            margin: 0 0 10px 0;
+            float: left;
+        }
+
+        .panel-group .panel-heading a:after {
+            right: 11px;
+        }
+
+        .panel-group .panel-heading a.collapsed:after {
+            right: 8px;
+        }
+
+        .panel-body {
+            padding: 15px 35px 15px 0 !important;
+            margin: 0 8px;
+        }
+
+        .panel-group .panel-heading a {
+            padding: 10px 7px;
+            font-weight: 500;
+        }
+    }
+
+    @media only screen and (max-width: 769px) {
+        .block-acrdion-main {
+            padding: 0 !important;
+        }
+
+        .acrdion-title {
+            padding-bottom: 20px;
+        }
+
+        .acrdion-title p {
+            font-size: 14.15px;
+            margin: 12px 0 0 4px;
+            float: left;
+        }
+/* <!--end 5--> */
+/* <!--6--> */
+        .panel-group .panel {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            border-radius: 0 !important;
+        }
+
+        .panel-group .panel-heading a:after {
+            right: 11px;
+        }
+
+        .panel-group .panel-heading a.collapsed:after {
+            right: 8px;
+        }
+
+        .panel-body {
+            padding: 15px 35px 15px 0 !important;
+            margin: 0 8px;
+        }
+
+        .panel-group .panel-heading a {
+            padding: 10px 7px;
+            font-weight: 500;
+            padding-right: 30px;
+        }
+    }
+
+    @media (min-width: 414px) and (max-width: 768px) {
+        .acrdion-title p {
+            margin: 20px 0 0 0;
+            float: right;
+        }
+    }
+
+    p.question {
+        display: inline-block;
+        margin-left: 1%;
+        font-weight: bold;
+        width: 92%;
+    }
+
+    .panel-title {
+        cursor: pointer;
+    }
+
+    .panel-collapse {
+        display: none;
+    }
+
+    .panel-collapse.in {
+        display: block;
+    }
+
+    .panel-heading h4 {
+        margin-top: 0;
+    }
+    /*<!--FAQ Styling Ends Here-->*/
+    @media only screen and (max-width: 480px) {
+        .box-heading {
+            font-size: 20px !important;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {}
+
+    div[class^=col-] {
+        padding: 5px 5px;
+    }
+
+    .lzd-act-richtext ol,
+    .lzd-act-richtext ul {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .lzd-act-richtext ol li,
+    .lzd-act-richtext ul li {
+        list-style: none !important;
+    }
+
+    .lzd-act-richtext {
+        line-height: inherit !important;
+    }
+
+    .lzd-act-richtext h1 {
+        font-size: 24px !important;
+    }
+
+    .lzd-act-richtext p {
+        margin: auto !important;
+        clear: none !important;
+    }
+
+    .lzd-act-richtext h4 {
+        font-size: 18px !important;
+        margin-top: 0 !important;
+    }
+
+    .lzd-act-richtext h5 {
+        font-size: 14px !important;
+        margin-top: 7px !important;
+        margin: 10px 0 !important;
+    }
+</style>
+<!--end 6 -->
+<!--7 -->
+<div class="container-fluid" style=" max-width: 1170px; margin: 0 auto;">
+   
+    <div class="row banner-text">
+        <div class="col-sm-12" style="padding-top:0 !important;"><img
+                src="https://laz-img-cdn.alicdn.com/tfs/TB10x1IxUY1gK0jSZFCwu3wqXXa.png"
+                class="img-responsive center-block">
+            <div class="center-left hidden-xs">
+                <h3 style="margin-bottom:8px">Convenience is now just around the corner</h3>
+                <p style="font-size: 20px;">Daraz Return Drop off Points!</p>
+                <button class="btn btn-lg btn-warning" id="findshop" style="text-align: left">Find a Daraz Customer Return <br> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Drop off Points</button>
+            </div>
+        </div>
+    </div>
+
+<div>
+        <div>
+            <h3 class="box-heading">How Daraz Return Drop off Points Work?</h3>
+        </div>
+    <div class="row"  >
+        <div class="container-fluid">
+            <div class="col-sm-4 col-xs-12 text-center" >
+            <div>
+                <img src="//laz-img-cdn.alicdn.com/images/ims-web/TB1NMK4s4YaK1RjSZFnXXa80pXa.png"  class="img-responsive center-block">
+                <h4><strong> Create/Initiate Return <br>from your Daraz App</strong></h4>
+                <p>Create Return in your Daraz App
+                   <br>from your convenient location.
+                </p>
+            </div>
+            <div>
+                <img src="//laz-img-cdn.alicdn.com/images/ims-web/TB1drK4s4YaK1RjSZFnXXa80pXa.png"  class="img-responsive center-block">
+                <h4><strong>Print your return manifest</strong></h4>
+            </div>
+            <div >
+                <img src= "//laz-img-cdn.alicdn.com/images/ims-web/TB1J.eMs8LoK1RjSZFuXXXn0XXa.png"  class="img-responsive center-block">
+                <h4><strong>Drop off your return Package <br> at your nearest Daraz approved <br> package Return point!</strong></h4>
+                <p>Find your nearest Drop-off Location below,
+                    <br> drop-off in your convenient time.
+                 </p>
+            </div>
+            </div>
+        </div>
+</div>
+</div>
+    <!-- End -->
+<!--end 7 -->
+<!-- 8 -->
+    <!-- Find Daraz Shop -->
+    <div class="container-fluid" style=" max-width: 1170px; margin: 0 auto;">
+        <div class="row" id="shop" style="padding: 0 5px;">
+            <h3 class="box-heading" style="background-color: #ff7102; color: #fff; padding: 10px 0; margin-bottom: 50px;">
+                Find a Daraz Approved Customer Return Package Drop-off Point</h3>
+            <div class="col-sm-8 col-xs-12">
+                <iframe id="map"src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3652.064817661932!2d90.3817541!3d23.7450679!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8ba11974a2f%3A0x99e120f8ab2f1961!2sDaraz+Bangladesh+Dhanmondi+Hub!5e0!3m2!1sen!2sbd!4v1553504712768"
+                    width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+                <h4 class="text-center" style="margin-top: 0;"><strong>Select your city</strong></h4>
+                <div class="dropdown" style="margin-bottom: 20px;">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"
+                        style="width:100%; border-radius: 7px; text-align: left;">
+                        <span id="selectcity" style="text-align: left;">Daraz Return Package Drop-off Points</span>
+                        <span class="glyphicon glyphicon-chevron-down" style="float: right;"></span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <li>
+                            <a id="Dhk">Dhaka</a>
+                        </li>
+                        <li>
+                            <a id="Ctg">Chittagong</a>
+                        </li>
+                        <li>
+                            <a id="Bar">Barisal</a>
+                        </li> 
+                        <li>
+                            <a id="Khul">Khulna</a>
+                        </li>
+                        <li>
+                            <a id="Mymen">Mymenshing</a>
+                        </li>
+                        <li>
+                            <a id="Raj">Rajshahi</a>
+                        </li>
+                        <li>
+                            <a id="Ran">Rangpur </a>
+                        </li>
+                        <li>
+                            <a id="Syl">Sylhet </a>
+                        </li>
+                    </div>
+                </div>
+                <!--end 8 -->
+                <!-- 9 -->
+             <!--Dhaka -->
+                <div id="Dhaka" class="city-container" style="display: none; cursor: pointer;">
+                    <div class="city-box" onclick="DhakaSouthhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Dhaka South</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Modina Masjid, Uttar Jatrabari Koborsthan 5/Kha/1 , Uttar Jatrabari </p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick=" DhakaNorthhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub  Dhaka North</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">House- 28, Road- 12, Sector-12, Uttara, Dhaka 1230</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Dhanmondi()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Dhanmondi</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">112/8, Salam Mansion, Dhanmondi 8/A new, Old 15, Below Janata Bank</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Dhamraihub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Dhamrai</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Bazar Road, Savar Upazilla, Bangladesh</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Shonirakhrahub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Shonirakhra </strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Modina Masjid, Uttar Jatrabari Koborsthan 5/Kha/1 , Uttar Jatrabari </p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Narayanganjhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Narayanganj</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">6 No New Chashara , Jamtola , Narayangonj</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Gazipurhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Gazipur</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">House: 21, Road: 02, Master Villa, Chandona Chowrasta, Gazipur, Dhaka</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Faridpurhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Faridpur </strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Chameli vila (Ground Floor), Kobi josimuddin Road. South Alipur. Faidpur sadar,  Faridpur </p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Manikganjhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Manikganj </strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">87/7 Porra, Manikgonj, Sadar</p>
+                        </address>
+                    </div>
+                </div>
+                <!-- end 10-->
+                <!-- 11 -->
+                <!--Chittagong -->
+               
+                <div id="Chittagong" class="city-container" style="display: none; cursor: pointer;">
+                    <div class="city-box" onclick="Barurahub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Barura</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">367/335, Momena Monjil , Jawtola, Cumilla Adsharo Nagar ,Cumilla.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="LangalkotChhariabazarhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Langalkot Chhariabazar</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">367/335, Momena Monjil , Jawtola, Cumilla Adsharo Nagar ,Cumilla.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Laksamhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Laksam</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">367/335, Momena Monjil , Jawtola, Cumilla Adsharo Nagar ,Cumilla.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Muradnagarhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Muradnagar</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Notun Chowdouary Para, House Name # Anupam. House No # 270, Comilla Sader, Comilla.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Chouddagramhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Chouddagram </strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Notun Chowdouary Para, House Name # Anupam. House No # 270, Comilla Sader, Comilla.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Comillahub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Comilla</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Notun Chowdouary Para, House Name # Anupam. House No # 270, Comilla Sader, Comilla.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Panchharihub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Panchhari</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Notun Chowdouary Para, House Name # Anupam. House No # 270, Comilla Sader, Comilla.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Chandinahub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Chandina</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Notun Chowdouary Para, House Name # Anupam. House No # 270, Comilla Sader, Comilla.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Davidharhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Davidhar</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Notun Chowdouary Para, House Name # Anupam. House No # 270, Comilla Sader, Comilla.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Homnahub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Homna</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Notun Chowdouary Para, House Name # Anupam. House No # 270, Comilla Sader, Comilla.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Brahmanparahub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Brahmanpara</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Notun Chowdouary Para, House Name # Anupam. House No # 270, Comilla Sader, Comilla.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Daudkandihub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Daudkandi</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Notun Chowdouary Para, House Name # Anupam. House No # 270, Comilla Sader, Comilla.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Manikchharihub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Manikchhari</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">87/7 Porra, Manikgonj, Sadar</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Jaldihub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Jaldi</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Tong Fokir Majar Lane, Madarbari, Ctg</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Rouzanhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Rouzan</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Tong Fokir Majar Lane, Madarbari, Ctg</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Patiyahub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Patiya </strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Tong Fokir Majar Lane, Madarbari, Ctg</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Anowarahub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Anowara</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Tong Fokir Majar Lane, Madarbari, Ctg</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="EastJoarahub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub East Joara</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Tong Fokir Majar Lane, Madarbari, Ctg</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Jarachharihub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Jarachhari</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Tong Fokir Majar Lane, Madarbari, Ctg</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Sandwiphub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Sandwip </strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Tong Fokir Majar Lane, Madarbari, Ctg</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Satkaniahub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Satkania</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Tong Fokir Majar Lane, Madarbari, Ctg</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Sitakundahub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Sitakunda</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">House No#14, Road #1, O.R.Nizam Road R/ A, P.S: Panchlaish,Dist: Chittagong</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Boalkhalihub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Boalkhali</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">House No#14, Road #1, O.R.Nizam Road R/ A, P.S: Panchlaish,Dist: Chittagong</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Noakhalihub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Noakhali</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">House-Satani Bari,Vill/ Road- Notun College Road, Maijdi (Part-B) ,Post- Maijdi Cort -3800,Noakhali Sadar, Noakhali Pouroshova, Noakhali.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Senbaghub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Senbag</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">House-Satani Bari,Vill/ Road- Notun College Road, Maijdi (Part-B) ,Post- Maijdi Cort -3800,Noakhali Sadar, Noakhali Pouroshova, Noakhali.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="CharAlexganderhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Char Alexgander</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">House-Satani Bari,Vill/ Road- Notun College Road, Maijdi (Part-B) ,Post- Maijdi Cort -3800,Noakhali Sadar, Noakhali Pouroshova, Noakhali.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Begumganjhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Begumganj</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">House-Satani Bari,Vill/ Road- Notun College Road, Maijdi (Part-B) ,Post- Maijdi Cort -3800,Noakhali Sadar, Noakhali Pouroshova, Noakhali.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Chatkhilhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Chatkhil</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">House-Satani Bari,Vill/ Road- Notun College Road, Maijdi (Part-B) ,Post- Maijdi Cort -3800,Noakhali Sadar, Noakhali Pouroshova, Noakhali.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Hatiyahub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Hatiya</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">House-Satani Bari,Vill/ Road- Notun College Road, Maijdi (Part-B) ,Post- Maijdi Cort -3800,Noakhali Sadar, Noakhali Pouroshova, Noakhali.</p>
+                        </address>
+                    </div>
+                    <!--end 11-->
+                    <!-- 12 -->
+                    <div class="city-box" onclick="Chandpurhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Chandpur</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">House- 582/525, Vill/Road- Koralia Road,koralia, Post-Chandpur-3600,Chandpur Sadar, Chandpur Pourasova, Chandpur.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Hayemcharhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Hayemchar</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">House- 582/525, Vill/Road- Koralia Road,koralia, Post-Chandpur-3600,Chandpur Sadar, Chandpur Pourasova, Chandpur.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Matlobganjhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Matlobganj</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">House- 582/525, Vill/Road- Koralia Road,koralia, Post-Chandpur-3600,Chandpur Sadar, Chandpur Pourasova, Chandpur.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Kachuahub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Kachua </strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">House- 582/525, Vill/Road- Koralia Road,koralia, Post-Chandpur-3600,Chandpur Sadar, Chandpur Pourasova, Chandpur.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Shahrastihub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Shahrasti</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">House- 582/525, Vill/Road- Koralia Road,koralia, Post-Chandpur-3600,Chandpur Sadar, Chandpur Pourasova, Chandpur.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Faridganjhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Faridganj</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">House- 582/525, Vill/Road- Koralia Road,koralia, Post-Chandpur-3600,Chandpur Sadar, Chandpur Pourasova, Chandpur.</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Fenihub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Feni</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Shaheb Bazar, Feni</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Basurhathub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Basurhat</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">House- H-73, Chewria House, Vill/ Road- College Road , masterpara,Post- Feni-3900, Feni Sadar , Feni Pouroshova, Feni,</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Dagonbhuiahub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Dagonbhuia </strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Shaheb Bazar, Feni</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Pashurampurhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Pashurampur</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Shaheb Bazar, Feni</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Sonagazihub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Sonagazi</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Shaheb Bazar, Feni</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Chhagalnaiahub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Chhagalnaia</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Shaheb Bazar, Feni</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Ukhiahub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Ukhia</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Kuruskul rastar mata, Main road, Coxbazar</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Kutubdiahub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Kutubdia</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Kuruskul rastar mata, Main road, Coxbazar</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Gorakghathub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Gorakghat</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Kuruskul rastar mata, Main road, Coxbazar</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Ramuhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Ramu</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Kuruskul rastar mata, Main road, Coxbazar</p>
+                        </address>
+                    </div>
+                    <div class="city-box" onclick="Teknafhub()">
+                        <address>
+                            <h5 style="color:#ff7102"><strong>Hub Teknaf</strong></h5>
+                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                            <p style="display: inline;">Kuruskul rastar mata, Main road, Coxbazar</p>
+                        </address>
+                    </div>
+                    </div>
+                    <!--end 12-->
+                    <!--13-->
+                    <!--Barishal-->
+                    <div id="Barishal" class="city-container" style="display: none; cursor: pointer;">
+                        <div class="city-box" onclick="Babuganjhub()">
+                            <address>
+                                <h5 style="color:#ff7102"><strong>Hub Babuganj</strong></h5>
+                                <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                <p style="display: inline;">Cnb Road, Kalu-Sha-Shorok, Mirabarir Pol, Sadar Barishal, Barishal</p>
+                            </address>
+                        </div>
+                        <div class="city-box" onclick="Babuganj1hub()">
+                            <address>
+                                <h5 style="color:#ff7102"><strong>Hub Babuganj</strong></h5>
+                                <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                <p style="display: inline;">Richon Villa,Road- Eidgoan Lane, Novogram Raod,Post- Barishal Sadar-8200, Barishal Sadar, Barishal Citycorporation , Barishal</p>
+                            </address>
+                        </div>
+                        <div class="city-box" onclick="Gouranadihub()">
+                            <address>
+                                <h5 style="color:#ff7102"><strong>Hub Gouranadi</strong></h5>
+                                <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                <p style="display: inline;">Richon Villa,Road- Eidgoan Lane, Novogram Raod,Post- Barishal Sadar-8200, Barishal Sadar, Barishal Citycorporation , Barishal</p>
+                            </address>
+                        </div>
+                        <div class="city-box" onclick="Barajaliahub()">
+                            <address>
+                                <h5 style="color:#ff7102"><strong>Hub Barajalia</strong></h5>
+                                <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                <p style="display: inline;">Richon Villa,Road- Eidgoan Lane, Novogram Raod,Post- Barishal Sadar-8200, Barishal Sadar, Barishal Citycorporation , Barishal</p>
+                            </address>
+                        </div>
+                        <div class="city-box" onclick="Uzirpurhub()">
+                            <address>
+                                <h5 style="color:#ff7102"><strong>Hub Uzirpur</strong></h5>
+                                <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                <p style="display: inline;">Richon Villa,Road- Eidgoan Lane, Novogram Raod,Post- Barishal Sadar-8200, Barishal Sadar, Barishal Citycorporation , Barishal</p>
+                            </address>
+                        </div>
+                        <div class="city-box" onclick="Agailjharahub()">
+                            <address>
+                                <h5 style="color:#ff7102"><strong>Hub Agailjhara</strong></h5>
+                                <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                <p style="display: inline;">Richon Villa,Road- Eidgoan Lane, Novogram Raod,Post- Barishal Sadar-8200, Barishal Sadar, Barishal Citycorporation , Barishal</p>
+                            </address>
+                        </div>
+                        <div class="city-box" onclick="Bagerhathub()">
+                            <address>
+                                <h5 style="color:#ff7102"><strong>Hub Bagerhat</strong></h5>
+                                <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                <p style="display: inline;">In Front Of Govt Primary School,Munigonj,Bagerhat</p>
+                            </address>
+                        </div>
+                        <div class="city-box" onclick="Sahebganjhub()">
+                            <address>
+                                <h5 style="color:#ff7102"><strong>Hub Sahebganj</strong></h5>
+                                <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                <p style="display: inline;">Cnb Road, Kalu-Sha-Shorok, Mirabarir Pol, Sadar Barishal, Barishal</p>
+                            </address>
+                        </div>
+                        <div class="city-box" onclick="BarishalTownhub()">
+                            <address>
+                                <h5 style="color:#ff7102"><strong>Hub Barishal Town</strong></h5>
+                                <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                <p style="display: inline;">Cnb Road, Kalu-Sha-Shorok, Mirabarir Pol, Sadar Barishal, Barishal</p>
+                            </address>
+                        </div>
+                        <div class="city-box" onclick="Muladihub()">
+                            <address>
+                                <h5 style="color:#ff7102"><strong>Hub Muladi</strong></h5>
+                                <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                <p style="display: inline;">Cnb Road, Kalu-Sha-Shorok, Mirabarir Pol, Sadar Barishal, Barishal</p>
+                            </address>
+                        </div>
+                        <div class="city-box" onclick="Jhalokatihub()">
+                            <address>
+                                <h5 style="color:#ff7102"><strong>Hub Jhalokati</strong></h5>
+                                <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                <p style="display: inline;">Abadulla Shork; Sadar Jhalokathi; Jhalokahti.</p>
+                            </address>
+                        </div>
+                        <div class="city-box" onclick="Patuakhalihub()">
+                            <address>
+                                <h5 style="color:#ff7102"><strong>Hub Patuakhali</strong></h5>
+                                <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                <p style="display: inline;">Dc Banglo Road; Back Of Sonali Bank; Sadar Patuyakhali; Patuyakhali</p>
+                            </address>
+                        </div>
+                        <div class="city-box" onclick="Bargunahub()">
+                            <address>
+                                <h5 style="color:#ff7102"><strong>Hub Barguna</strong></h5>
+                                <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                <p style="display: inline;">Ma Manzil; Khamar Bari Shorok; Sadar Barguna; Barguna </p>
+                            </address>
+                        </div>
+                        <div class="city-box" onclick="Mehendiganjhub()">
+                            <address>
+                                <h5 style="color:#ff7102"><strong>Hub Mehendiganj</strong></h5>
+                                <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                <p style="display: inline;">Cnb Road, Kalu-Sha-Shorok, Mirabarir Pol, Sadar Barishal, Barishal</p>
+                            </address>
+                        </div>
+                    </div>
+                    <!--end 13-->
+                    <!-- 14 -->
+                    <!--Khulna-->
+                    <div id="Khulna" class="city-container" style="display: none; cursor: pointer;">
+                            <div class="city-box" onclick="Amadeehub()">
+                                <address>
+                                    <h5 style="color:#ff7102"><strong>Hub Amadee</strong></h5>
+                                    <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                    <p style="display: inline;">House:115, Road:16, Nirala R/A, Khulna</p>
+                                </address>
+                            </div>
+                            <div class="city-box" onclick="Paikgachhahub()">
+                                <address>
+                                    <h5 style="color:#ff7102"><strong>Hub Paikgachha</strong></h5>
+                                    <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                    <p style="display: inline;">House:115, Road:16, Nirala R/A, Khulna</p>
+                                </address>
+                            </div>
+                            <div class="city-box" onclick="Aliapurhub()">
+                                <address>
+                                    <h5 style="color:#ff7102"><strong>Hub Aliapur</strong></h5>
+                                    <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                    <p style="display: inline;">House:115, Road:16, Nirala R/A, Khulna</p>
+                                </address>
+                            </div>
+                            <div class="city-box" onclick="Sajiarahub()">
+                                <address>
+                                    <h5 style="color:#ff7102"><strong>Hub Sajiara</strong></h5>
+                                    <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                    <p style="display: inline;">House:115, Road:16, Nirala R/A, Khulna</p>
+                                </address>
+                            </div>
+                            <div class="city-box" onclick="KhulnaTownhub()">
+                                <address>
+                                    <h5 style="color:#ff7102"><strong>Hub KhulnaTown</strong></h5>
+                                    <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                    <p style="display: inline;">House:115, Road:16, Nirala R/A, Khulna</p>
+                                </address>
+                            </div>
+                            <div class="city-box" onclick="KhulnaTown1hub()">
+                                <address>
+                                    <h5 style="color:#ff7102"><strong>Hub KhulnaTown</strong></h5>
+                                    <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                    <p style="display: inline;">House-282, 15 Nur Nagar, Nur nagar Mosjid Raod, Post- GPO- 9000, Sosnadanga Khulna citycorporation Khulna,</p>
+                                </address>
+                            </div>
+                            <div class="city-box" onclick="Terakhadahub()">
+                                <address>
+                                    <h5 style="color:#ff7102"><strong>Hub Terakhada</strong></h5>
+                                    <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                    <p style="display: inline;">House:115, Road:16, Nirala R/A, Khulna</p>
+                                </address>
+                            </div>
+                            <div class="city-box" onclick="Batiaghathub()">
+                                <address>
+                                    <h5 style="color:#ff7102"><strong>Hub Batiaghat</strong></h5>
+                                    <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                    <p style="display: inline;">House:115, Road:16, Nirala R/A, Khulna</p>
+                                </address>
+                            </div>
+                            <div class="city-box" onclick="Digaliahub()">
+                                <address>
+                                    <h5 style="color:#ff7102"><strong>Hub Digalia</strong></h5>
+                                    <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                    <p style="display: inline;">House:115, Road:16, Nirala R/A, Khulna</p>
+                                </address>
+                            </div>
+                            <div class="city-box" onclick="ChalnaBazarhub()">
+                                <address>
+                                    <h5 style="color:#ff7102"><strong>Hub Chalna Bazar</strong></h5>
+                                    <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                    <p style="display: inline;">House:115, Road:16, Nirala R/A, Khulna</p>
+                                </address>
+                            </div>
+                            <div class="city-box" onclick="Kushtiahub()">
+                                <address>
+                                    <h5 style="color:#ff7102"><strong>Hub Kushtia</strong></h5>
+                                    <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                    <p style="display: inline;">Nahar menshion 96/2 ( SB road) Aruapara. Kushtia Sadar. Kustia.</p>
+                                </address>
+                            </div>
+                            <div class="city-box" onclick="Bagerhathub()">
+                                <address>
+                                    <h5 style="color:#ff7102"><strong>Hub Bagerhat</strong></h5>
+                                    <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                    <p style="display: inline;">In Front Of Govt Primary School,Munigonj,Bagerhat</p>
+                                </address>
+                            </div>
+                            <div class="city-box" onclick="Jashorehub()">
+                                <address>
+                                    <h5 style="color:#ff7102"><strong>Hub Jashore</strong></h5>
+                                    <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                    <p style="display: inline;">House-41, Holding-1469,Vill/Road- Rail Road,Post-Jashore-7400, Kotoali Jassore Pourosova, Jassore</p>
+                                </address>
+                            </div>
+                        </div>
+                        <!--end 14-->
+                        <!--15-->
+                        <!--Rajshahi-->
+                        <div id="Rajshahi" class="city-container" style="display: none; cursor: pointer;">
+                                <div class="city-box" onclick="Bargunahub()">
+                                    <address>
+                                        <h5 style="color:#ff7102"><strong>Hub Barguna</strong></h5>
+                                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                        <p style="display: inline;">Ma Manzil; Khamar Bari Shorok; Sadar Barguna; Barguna </p>
+                                    </address>
+                                </div>
+                                <div class="city-box" onclick="Pabnahub()">
+                                    <address>
+                                        <h5 style="color:#ff7102"><strong>Hub Pabna</strong></h5>
+                                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                        <p style="display: inline;">Radhanagor, Paban Sador</p>
+                                    </address>
+                                </div>
+                                <div class="city-box" onclick="Rajapurhub()">
+                                    <address>
+                                        <h5 style="color:#ff7102"><strong>Hub Rajapur</strong></h5>
+                                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                        <p style="display: inline;">Abadulla Shork; Sadar Jhalokathi; Jhalokahti.</p>
+                                    </address>
+                                </div>
+                                <div class="city-box" onclick="Rajshahihub()">
+                                    <address>
+                                        <h5 style="color:#ff7102"><strong>Hub Rajshahi</strong></h5>
+                                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                        <p style="display: inline;">House-407, Ward-28, Sweet er More, Ektormore road, kajla, Motiar Rajshahi.</p>
+                                    </address>
+                                </div>
+                                <div class="city-box" onclick="Natorehub()">
+                                    <address>
+                                        <h5 style="color:#ff7102"><strong>Hub Natore</strong></h5>
+                                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                        <p style="display: inline;">House-364, Vill/ Road- Dakkhin Borogasa,Post-Natore Sadar 6400, Natore PouroShova, Natore.</p>
+                                    </address>
+                                </div>
+                            </div>
+
+                            <!--Rangpur-->
+                            <div id="Rangpur" class="city-container" style="display: none; cursor: pointer;">
+                                <div class="city-box" onclick="Dinajpurhub()">
+                                    <address>
+                                        <h5 style="color:#ff7102"><strong>Hub Dinajpur</strong></h5>
+                                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                        <p style="display: inline;">Notun Chowdouary Para, House Name # Anupam. House No # 270, Comilla Sader, Comilla. </p>
+                                    </address>
+                                </div>
+                                <div class="city-box" onclick="Rangpurhub()">
+                                    <address>
+                                        <h5 style="color:#ff7102"><strong>Hub Rangpur</strong></h5>
+                                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                        <p style="display: inline;">House no 68, Road No 1, Gupta para Sadar, Opposite of Lions School, Enjoy Cyber Café Building, Ground Floor </p>
+                                    </address>
+                                </div>
+                                <div class="city-box" onclick="Rangpur1hub()">
+                                    <address>
+                                        <h5 style="color:#ff7102"><strong>Hub Rangpur</strong></h5>
+                                        <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                        <p style="display: inline;">House-233, Holding No- 36, Ward-26, Road-3, Thikadar Para, Rangpur Citycorporation, Rangpur.</p>
+                                    </address>
+                                </div>
+                            </div>
+                                <!--end 15-->
+
+                                <!--16-->
+                                <!--Sylhet-->
+                            <div id="Sylhet" class="city-container" style="display: none; cursor: pointer;">
+                                    <div class="city-box" onclick="Balaganjhub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Balaganj</strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">Lutfa Manzil,Alo-5,Monipuri Para,Ambarkhana ,Sylhet-3100 </p>
+                                        </address>
+                                    </div>
+                                    <div class="city-box" onclick="Ambarkhanahub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Ambarkhana</strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">Lutfa Manzil,Alo-5,Monipuri Para,Ambarkhana ,Sylhet-3100 </p>
+                                        </address>
+                                    </div>  
+                                    <div class="city-box" onclick="Habiganjhub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Habiganj</strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">6 No New Chashara , Jamtola , Narayangonj </p>
+                                        </address>
+                                    </div>  
+                                    <div class="city-box" onclick="Goainhathub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Goainhat</strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">Lutfa Manzil,Alo-5,Monipuri Para,Ambarkhana ,Sylhet-3100 </p>
+                                        </address>
+                                    </div>  
+                                    <div class="city-box" onclick="Jakiganjhub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Jakiganj</strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">Lutfa Manzil,Alo-5,Monipuri Para,Ambarkhana ,Sylhet-3100 </p>
+                                        </address>
+                                    </div>  
+                                    <div class="city-box" onclick="Kanaighathub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Kanaighat</strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">Lutfa Manzil,Alo-5,Monipuri Para,Ambarkhana ,Sylhet-3100 </p>
+                                        </address>
+                                    </div>  
+                                    <div class="city-box" onclick="Moulvibazarhub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Moulvibazar</strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">Dokkin Kolimabad ,Moluvibazer Sador.</p>
+                                        </address>
+                                    </div>  
+                                    <div class="city-box" onclick="SylhetSadarhub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Sylhet Sadar</strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">Lutfa Manzil,Alo-5,Monipuri Para,Ambarkhana ,Sylhet-3100 </p>
+                                        </address>
+                                    </div>  
+                                    <div class="city-box" onclick="SylhetSadar1hub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Sylhet Sadar</strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">48 Alhelal Neya shorak sylhet</p>
+                                        </address>
+                                    </div> 
+                                    <div class="city-box" onclick="Bishwanathhub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Bishwanath</strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">Lutfa Manzil,Alo-5,Monipuri Para,Ambarkhana ,Sylhet-3100 </p>
+                                        </address>
+                                    </div>  
+                                    <div class="city-box" onclick="Bianibazarhub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Bianibazar </strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">Lutfa Manzil,Alo-5,Monipuri Para,Ambarkhana ,Sylhet-3100 </p>
+                                        </address>
+                                    </div>  
+                                    <div class="city-box" onclick="Fenchuganjhub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Fenchuganj</strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">Lutfa Manzil,Alo-5,Monipuri Para,Ambarkhana ,Sylhet-3100 </p>
+                                        </address>
+                                    </div>
+                                    <div class="city-box" onclick="Golapganjhub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Golapganj</strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">Lutfa Manzil,Alo-5,Monipuri Para,Ambarkhana ,Sylhet-3100 </p>
+                                        </address>
+                                    </div>   
+                                    <div class="city-box" onclick="Sunamganjhub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Sunamganj</strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">House/Holding- Pollabi 27/Aa/A, Vill/Road- Alipara Sologor,Post-Sunamganj -3000,Sunamganj Sadar, Sunamganj Pouroshova, Sunamganj </p>
+                                        </address>
+                                    </div>  
+                            </div> 
+                                    <!--end 16-->
+                                 <!--17-->
+                                <!--Mymensingh-->
+                            <div id="Mymensingh" class="city-container" style="display: none; cursor: pointer;">
+                                    <div class="city-box" onclick="Trishalhub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Trishal</strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">68,Bagmara.(Beside Of Vatikashor Gorostan Mosjid) Sadar Mymensingh. </p>
+                                        </address>
+                                    </div>
+                                    <div class="city-box" onclick="Gaforgaonhub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Gaforgaon</strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">68,Bagmara.(Beside Of Vatikashor Gorostan Mosjid) Sadar Mymensingh. </p>
+                                        </address>
+                                    </div>
+                                    <div class="city-box" onclick="Nandailhub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Nandail</strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">68,Bagmara.(Beside Of Vatikashor Gorostan Mosjid) Sadar Mymensingh. </p>
+                                        </address>
+                                    </div>
+                                    <div class="city-box" onclick="Gouripurhub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Gouripur</strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">68,Bagmara.(Beside Of Vatikashor Gorostan Mosjid) Sadar Mymensingh. </p>
+                                        </address>
+                                    </div>
+                                    <div class="city-box" onclick="MymensinghTownhub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Mymensingh Town</strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">68,Bagmara.(Beside Of Vatikashor Gorostan Mosjid) Sadar Mymensingh. </p>
+                                        </address>
+                                    </div>
+                                    <div class="city-box" onclick="Muktagachahub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Muktagacha</strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">68,Bagmara.(Beside Of Vatikashor Gorostan Mosjid) Sadar Mymensingh. </p>
+                                        </address>
+                                    </div>
+                                    <div class="city-box" onclick="Isshwargonjhub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Isshwargonj</strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">68,Bagmara.(Beside Of Vatikashor Gorostan Mosjid) Sadar Mymensingh. </p>
+                                        </address>
+                                    </div>
+                                    <div class="city-box" onclick="Sherpurhub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Sherpur</strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">Vill/ Raod-Gopalbari, Post- Sherpur-2100,Sherpur Sadar, Sherpur Pouroshova, Sherpur, </p>
+                                        </address>
+                                    </div>
+                                    <div class="city-box" onclick="Phulpurhub()">
+                                        <address>
+                                            <h5 style="color:#ff7102"><strong>Hub Phulpur</strong></h5>
+                                            <p style="margin: 0; display: inline;"><strong>Address:</strong></p>
+                                            <p style="display: inline;">68,Bagmara.(Beside Of Vatikashor Gorostan Mosjid) Sadar Mymensingh. </p>
+                                        </address>
+                                    </div>
+                            </div>
+                                
+                            </div>
+                    </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+   $("#Dhaka").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.9990914247705!2d90.25331131497522!3d23.424399984750988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI1JzI3LjgiTiA5MMKwMTUnMTkuOCJF!5e0!3m2!1sen!2sbd!4v1598939538480!5m2!1sen!2sbd"
+            });
+   $("#Chittagong").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.722085488554!2d91.82067231495512!3d22.32634798531001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE5JzM0LjkiTiA5McKwNDknMjIuMyJF!5e0!3m2!1sen!2sbd!4v1598939374518!5m2!1sen!2sbd"
+            });  
+   $("#Barisal").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.871098117008!2d90.3575523149618!3d22.695841985119532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQxJzQ1LjAiTiA5MMKwMjEnMzUuMSJF!5e0!3m2!1sen!2sbd!4v1598940006837!5m2!1sen!2sbd"
+            });
+   $("#Khulna").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.029979961579!2d89.55111031496372!3d22.8013529850655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ4JzA0LjkiTiA4OcKwMzMnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1598940082929!5m2!1sen!2sbd"
+            });
+   $("#Mymenshing").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.140833883245!2d90.40427131500078!3d24.756359984103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ1JzIyLjkiTiA5MMKwMjQnMjMuMyJF!5e0!3m2!1sen!2sbd!4v1598940190416!5m2!1sen!2sbd"
+            });
+   $("#Rajshahi").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.301924022361!2d89.22904731498649!3d24.020415984456907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDAxJzEzLjUiTiA4OcKwMTMnNTIuNSJF!5e0!3m2!1sen!2sbd!4v1598940267123!5m2!1sen!2sbd"
+            });
+   $("#Rangpur").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.53951391633!2d90.71594531498498!3d23.941354984495604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU2JzI4LjkiTiA5MMKwNDMnMDUuMyJF!5e0!3m2!1sen!2sbd!4v1598940333290!5m2!1sen!2sbd"
+            });
+   $("#Sylhet").click(function() {
+            document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598940405623!5m2!1sen!2sbd"
+            });
+    </script>
+
+    <script>
+        /*Dhaka*/
+    function Faridpurhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.9994412894907!2d89.8278463149786!3d23.60435298466151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM2JzE1LjciTiA4OcKwNDknNDguMSJF!5e0!3m2!1sen!2sbd!4v1598969807554!5m2!1sen!2sbd"
+        }
+    function DhakaNorthhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.2863823096122!2d90.22321131497706!3d23.52219998470235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMxJzE5LjkiTiA5MMKwMTMnMzEuNCJF!5e0!3m2!1sen!2sbd!4v1598970111400!5m2!1sen!2sbd"
+        }
+    function Dhamraihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.769791250809!2d90.1490113149767!3d23.504799984710964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMwJzE3LjMiTiA5MMKwMDknMDQuMyJF!5e0!3m2!1sen!2sbd!4v1598970144954!5m2!1sen!2sbd" 
+        }
+    function Shonirakhrahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.9990914247705!2d90.25331131497522!3d23.424399984750988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI1JzI3LjgiTiA5MMKwMTUnMTkuOCJF!5e0!3m2!1sen!2sbd!4v1598970974684!5m2!1sen!2sbd" 
+        }
+    function Narayanganjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.4001944367983!2d90.498706314979!3d23.625834984650794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM3JzMzLjAiTiA5MMKwMzAnMDMuMiJF!5e0!3m2!1sen!2sbd!4v1598971014162!5m2!1sen!2sbd" 
+        }
+    function Gazipurhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.4341989538248!2d91.0811413149729!3d23.299999984813194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDE4JzAwLjAiTiA5McKwMDQnNjAuMCJF!5e0!3m2!1sen!2sbd!4v1598971062396!5m2!1sen!2sbd" 
+        }
+    function DhakaSouthhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.9990914247705!2d90.25331131497522!3d23.424399984750988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI1JzI3LjgiTiA5MMKwMTUnMTkuOCJF!5e0!3m2!1sen!2sbd!4v1598971102723!5m2!1sen!2sbd" 
+        }
+    function Dhanmondi() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.461835411287!2d90.21831131497555!3d23.44379998474138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI2JzM3LjciTiA5MMKwMTMnMTMuOCJF!5e0!3m2!1sen!2sbd!4v1598971140293!5m2!1sen!2sbd" 
+        }
+    function Manikganjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116799.9729027276!2d89.96293780656322!3d23.81862915175773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755f5c790f668ef%3A0x833298a1c0c62ae6!2sManikganj%20Sadar%20Upazila!5e0!3m2!1sen!2sbd!4v1598993628041!5m2!1sen!2sbd" 
+        }
+
+        /*Ctg*/
+    function Muradnagarhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.004588337045!2d91.17631431497588!3d23.46029898473314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzM3LjEiTiA5McKwMTAnNDIuNiJF!5e0!3m2!1sen!2sbd!4v1598956840341!5m2!1sen!2sbd"
+        } 
+    function Dagonbhuiahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.2576436046097!2d90.96715131498719!3d24.057229984438962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDAzJzI2LjAiTiA5MMKwNTgnMDkuNiJF!5e0!3m2!1sen!2sbd!4v1598956867316!5m2!1sen!2sbd" 
+        }                              
+    function Patiyahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.722085488554!2d91.82067231495512!3d22.32634798531001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE5JzM0LjkiTiA5McKwNDknMjIuMyJF!5e0!3m2!1sen!2sbd!4v1598939374518!5m2!1sen!2sbd" 
+        }                              
+    function Anawarahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.722085488554!2d91.82067231495512!3d22.32634798531001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE5JzM0LjkiTiA5McKwNDknMjIuMyJF!5e0!3m2!1sen!2sbd!4v1598939374518!5m2!1sen!2sbd" 
+        }                              
+    function EastJoarahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.722085488554!2d91.82067231495512!3d22.32634798531001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE5JzM0LjkiTiA5McKwNDknMjIuMyJF!5e0!3m2!1sen!2sbd!4v1598939374518!5m2!1sen!2sbd" 
+        }                              
+    function Chouddagramhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.004588337045!2d91.17631431497588!3d23.46029898473314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzM3LjEiTiA5McKwMTAnNDIuNiJF!5e0!3m2!1sen!2sbd!4v1598956840341!5m2!1sen!2sbd" 
+        }                              
+    function FaridpurhuJarachharihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.9994412894907!2d89.8278463149786!3d23.60435298466151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM2JzE1LjciTiA4OcKwNDknNDguMSJF!5e0!3m2!1sen!2sbd!4v1598969807554!5m2!1sen!2sbd"
+        }                              
+    function Gorakghathub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.1746192571572!2d91.99067031494!3d21.461663985765483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDI3JzQyLjAiTiA5McKwNTknMzQuMyJF!5e0!3m2!1sen!2sbd!4v1598957140125!5m2!1sen!2sbd" 
+        }                              
+    function Sandwiphub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.722085488554!2d91.82067231495512!3d22.32634798531001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE5JzM0LjkiTiA5McKwNDknMjIuMyJF!5e0!3m2!1sen!2sbd!4v1598939374518!5m2!1sen!2sbd" 
+        }                              
+    function Comillahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.004588337045!2d91.17631431497588!3d23.46029898473314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzM3LjEiTiA5McKwMTAnNDIuNiJF!5e0!3m2!1sen!2sbd!4v1598956840341!5m2!1sen!2sbd" 
+        }                              
+    function Ramuhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.1746192571572!2d91.99067031494!3d21.461663985765483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDI3JzQyLjAiTiA5McKwNTknMzQuMyJF!5e0!3m2!1sen!2sbd!4v1598957140125!5m2!1sen!2sbd" 
+        }                              
+    function Panchharihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.004588337045!2d91.17631431497588!3d23.46029898473314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzM3LjEiTiA5McKwMTAnNDIuNiJF!5e0!3m2!1sen!2sbd!4v1598956840341!5m2!1sen!2sbd" 
+        }                              
+    function Burichanghub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.004588337045!2d91.17631431497588!3d23.46029898473314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzM3LjEiTiA5McKwMTAnNDIuNiJF!5e0!3m2!1sen!2sbd!4v1598956840341!5m2!1sen!2sbd" 
+        }                              
+    function Teknafhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.1746192571572!2d91.99067031494!3d21.461663985765483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDI3JzQyLjAiTiA5McKwNTknMzQuMyJF!5e0!3m2!1sen!2sbd!4v1598957140125!5m2!1sen!2sbd" 
+        }                              
+    function Chandinahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.004588337045!2d91.17631431497588!3d23.46029898473314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzM3LjEiTiA5McKwMTAnNDIuNiJF!5e0!3m2!1sen!2sbd!4v1598956840341!5m2!1sen!2sbd" 
+        }                              
+    function Rouzanhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.722085488554!2d91.82067231495512!3d22.32634798531001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE5JzM0LjkiTiA5McKwNDknMjIuMyJF!5e0!3m2!1sen!2sbd!4v1598939374518!5m2!1sen!2sbd" 
+        }                              
+    function Fenihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.2576436046097!2d90.96715131498719!3d24.057229984438962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDAzJzI2LjAiTiA5MMKwNTgnMDkuNiJF!5e0!3m2!1sen!2sbd!4v1598956867316!5m2!1sen!2sbd" 
+        }                              
+    function Jaldihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.722085488554!2d91.82067231495512!3d22.32634798531001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE5JzM0LjkiTiA5McKwNDknMjIuMyJF!5e0!3m2!1sen!2sbd!4v1598939374518!5m2!1sen!2sbd" 
+        }                              
+    function Pashurampurhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.2576436046097!2d90.96715131498719!3d24.057229984438962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDAzJzI2LjAiTiA5MMKwNTgnMDkuNiJF!5e0!3m2!1sen!2sbd!4v1598956867316!5m2!1sen!2sbd"
+        }
+    function Sonagazihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.2576436046097!2d90.96715131498719!3d24.057229984438962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDAzJzI2LjAiTiA5MMKwNTgnMDkuNiJF!5e0!3m2!1sen!2sbd!4v1598956867316!5m2!1sen!2sbd" 
+        } 
+    function Chhagalnaiahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.2576436046097!2d90.96715131498719!3d24.057229984438962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDAzJzI2LjAiTiA5MMKwNTgnMDkuNiJF!5e0!3m2!1sen!2sbd!4v1598956867316!5m2!1sen!2sbd" 
+        } 
+    function Davidharhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.004588337045!2d91.17631431497588!3d23.46029898473314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzM3LjEiTiA5McKwMTAnNDIuNiJF!5e0!3m2!1sen!2sbd!4v1598956840341!5m2!1sen!2sbd" 
+        } 
+    function Kutubdiahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.1746192571572!2d91.99067031494!3d21.461663985765483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDI3JzQyLjAiTiA5McKwNTknMzQuMyJF!5e0!3m2!1sen!2sbd!4v1598957140125!5m2!1sen!2sbd" 
+        } 
+    function Homnahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.004588337045!2d91.17631431497588!3d23.46029898473314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzM3LjEiTiA5McKwMTAnNDIuNiJF!5e0!3m2!1sen!2sbd!4v1598956840341!5m2!1sen!2sbd" 
+        } 
+    function Brahmanparahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.004588337045!2d91.17631431497588!3d23.46029898473314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzM3LjEiTiA5McKwMTAnNDIuNiJF!5e0!3m2!1sen!2sbd!4v1598956840341!5m2!1sen!2sbd" 
+        }  
+    function Satkaniahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.722085488554!2d91.82067231495512!3d22.32634798531001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE5JzM0LjkiTiA5McKwNDknMjIuMyJF!5e0!3m2!1sen!2sbd!4v1598939374518!5m2!1sen!2sbd" 
+        }  
+    function Daudkandihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.004588337045!2d91.17631431497588!3d23.46029898473314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzM3LjEiTiA5McKwMTAnNDIuNiJF!5e0!3m2!1sen!2sbd!4v1598956840341!5m2!1sen!2sbd" 
+        }  
+    function Ukhiahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.1746192571572!2d91.99067031494!3d21.461663985765483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDI3JzQyLjAiTiA5McKwNTknMzQuMyJF!5e0!3m2!1sen!2sbd!4v1598957140125!5m2!1sen!2sbd" 
+        }
+    function Senbaghub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.9126477997203!2d91.09689588812185!3d22.889362334562268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDUzJzIxLjciTiA5McKwMDUnNTAuOCJF!5e0!3m2!1sen!2sbd!4v1598993997782!5m2!1sen!2sbd" 
+        }
+    function Barurahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.9010712924605!2d91.17486155113588!3d23.464032705496017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzUwLjUiTiA5McKwMTAnMzcuNCJF!5e0!3m2!1sen!2sbd!4v1598994034251!5m2!1sen!2sbd" 
+        }
+    function Langalkothub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.9010712924605!2d91.17486155113588!3d23.464032705496017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzUwLjUiTiA5McKwMTAnMzcuNCJF!5e0!3m2!1sen!2sbd!4v1598994034251!5m2!1sen!2sbd" 
+        }
+    function Hayemcharhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916.6005668645934!2d90.6544250291904!3d23.22844439905309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEzJzQyLjQiTiA5MMKwMzknMTcuOSJF!5e0!3m2!1sen!2sbd!4v1598994114940!5m2!1sen!2sbd" 
+        }
+    function Matlobganjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916.6005668645934!2d90.6544250291904!3d23.22844439905309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEzJzQyLjQiTiA5MMKwMzknMTcuOSJF!5e0!3m2!1sen!2sbd!4v1598994114940!5m2!1sen!2sbd" 
+        }
+    function Kachuahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916.6005668645934!2d90.6544250291904!3d23.22844439905309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEzJzQyLjQiTiA5MMKwMzknMTcuOSJF!5e0!3m2!1sen!2sbd!4v1598994114940!5m2!1sen!2sbd" 
+        }
+    function CharAlexganderhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.9126477997203!2d91.09689588812185!3d22.889362334562268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDUzJzIxLjciTiA5McKwMDUnNTAuOCJF!5e0!3m2!1sen!2sbd!4v1598994183272!5m2!1sen!2sbd" 
+        }
+    function Laksamhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.9010712924605!2d91.17486155113588!3d23.464032705496017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzUwLjUiTiA5McKwMTAnMzcuNCJF!5e0!3m2!1sen!2sbd!4v1598994034251!5m2!1sen!2sbd" 
+        }
+    function Begumganjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.9126477997203!2d91.09689588812185!3d22.889362334562268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDUzJzIxLjciTiA5McKwMDUnNTAuOCJF!5e0!3m2!1sen!2sbd!4v1598994183272!5m2!1sen!2sbd" 
+        }
+    function Chatkhilhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.9126477997203!2d91.09689588812185!3d22.889362334562268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDUzJzIxLjciTiA5McKwMDUnNTAuOCJF!5e0!3m2!1sen!2sbd!4v1598994183272!5m2!1sen!2sbd" 
+        }
+    function Sitakundahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.45927446937!2d91.82320148812153!3d22.359779039347888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDIxJzM1LjIiTiA5McKwNDknMjUuNSJF!5e0!3m2!1sen!2sbd!4v1598994344687!5m2!1sen!2sbd" 
+        }
+    function Hatiyahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.9126477997203!2d91.09689588812185!3d22.889362334562268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDUzJzIxLjciTiA5McKwMDUnNTAuOCJF!5e0!3m2!1sen!2sbd!4v1598994183272!5m2!1sen!2sbd" 
+        }
+    function Shahrastihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916.6005668645934!2d90.6544250291904!3d23.22844439905309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEzJzQyLjQiTiA5MMKwMzknMTcuOSJF!5e0!3m2!1sen!2sbd!4v1598994114940!5m2!1sen!2sbd" 
+        }
+    function Noakhalihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.9126477997203!2d91.09689588812185!3d22.889362334562268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDUzJzIxLjciTiA5McKwMDUnNTAuOCJF!5e0!3m2!1sen!2sbd!4v1598994183272!5m2!1sen!2sbd" 
+        }
+    function ChandpurSadarSahatalihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916.6005668645934!2d90.6544250291904!3d23.22844439905309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEzJzQyLjQiTiA5MMKwMzknMTcuOSJF!5e0!3m2!1sen!2sbd!4v1598994114940!5m2!1sen!2sbd"
+        }
+    function Basurhathub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3672.389098274073!2d91.3972032!3d23.0094815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3753683050838fc7%3A0x6a2d4cebdebb4129!2sVital%20Research%20unit%202!5e0!3m2!1sen!2sbd!4v1598994465336!5m2!1sen!2sbd" 
+        }
+    function Boalkhalihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.45927446937!2d91.82320148812153!3d22.359779039347888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDIxJzM1LjIiTiA5McKwNDknMjUuNSJF!5e0!3m2!1sen!2sbd!4v1598994344687!5m2!1sen!2sbd"
+        }
+    function Hajiganjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916.6005668645934!2d90.6544250291904!3d23.22844439905309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEzJzQyLjQiTiA5MMKwMzknMTcuOSJF!5e0!3m2!1sen!2sbd!4v1598994114940!5m2!1sen!2sbd" 
+        }
+    function Faridganjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916.6005668645934!2d90.6544250291904!3d23.22844439905309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEzJzQyLjQiTiA5MMKwMzknMTcuOSJF!5e0!3m2!1sen!2sbd!4v1598994114940!5m2!1sen!2sbd" 
+        }
+    function Manikchharihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116799.9729027276!2d89.96293780656322!3d23.81862915175773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755f5c790f668ef%3A0x833298a1c0c62ae6!2sManikganj%20Sadar%20Upazila!5e0!3m2!1sen!2sbd!4v1598994542380!5m2!1sen!2sbd" 
+        }
+
+
+        /* Barisal */                              
+    function Babuganjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.871098117008!2d90.3575523149618!3d22.695841985119532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQxJzQ1LjAiTiA5MMKwMjEnMzUuMSJF!5e0!3m2!1sen!2sbd!4v1598940006837!5m2!1sen!2sbd"
+        }
+    function Babuganj1hub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3680.647946480637!2d90.3487734!3d22.704146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQyJzE2LjUiTiA5MMKwMjEnMDUuMiJF!5e0!3m2!1sen!2sbd!4v1598993458846!5m2!1sen!2sbd" 
+        }
+    function Bagerhathub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.75212781322!2d89.46971131495646!3d22.400699985271473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDI0JzAyLjUiTiA4OcKwMjgnMTguOCJF!5e0!3m2!1sen!2sbd!4v1598956081200!5m2!1sen!2sbd" 
+        }
+    function Sahebganjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.871098117008!2d90.3575523149618!3d22.695841985119532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQxJzQ1LjAiTiA5MMKwMjEnMzUuMSJF!5e0!3m2!1sen!2sbd!4v1598940006837!5m2!1sen!2sbd"
+        }
+    function BarishalTownhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.871098117008!2d90.3575523149618!3d22.695841985119532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQxJzQ1LjAiTiA5MMKwMjEnMzUuMSJF!5e0!3m2!1sen!2sbd!4v1598940006837!5m2!1sen!2sbd"
+        }
+    function Jhalokatihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.339158307237!2d90.19655531496083!3d22.64113998514753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDM4JzI4LjEiTiA5MMKwMTEnNTUuNSJF!5e0!3m2!1sen!2sbd!4v1598956185921!5m2!1sen!2sbd" 
+        }
+    function Muladihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.871098117008!2d90.3575523149618!3d22.695841985119532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQxJzQ1LjAiTiA5MMKwMjEnMzUuMSJF!5e0!3m2!1sen!2sbd!4v1598940006837!5m2!1sen!2sbd"
+        }
+    function Patuakhalihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.484617074423!2d90.40646631498099!3d23.730091984599337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQzJzQ4LjMiTiA5MMKwMjQnMzEuMiJF!5e0!3m2!1sen!2sbd!4v1598956696257!5m2!1sen!2sbd" 
+        }
+    function Bargunahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.866488825614!2d90.35934631498137!3d23.75213998458851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ1JzA3LjciTiA5MMKwMjEnNDEuNSJF!5e0!3m2!1sen!2sbd!4v1598956748286!5m2!1sen!2sbd" 
+        }
+    function Mehendiganjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.871098117008!2d90.3575523149618!3d22.695841985119532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQxJzQ1LjAiTiA5MMKwMjEnMzUuMSJF!5e0!3m2!1sen!2sbd!4v1598940006837!5m2!1sen!2sbd" 
+        }
+    function Gouranadihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3680.647946480637!2d90.3487734!3d22.704146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQyJzE2LjUiTiA5MMKwMjEnMDUuMiJF!5e0!3m2!1sen!2sbd!4v1598993458846!5m2!1sen!2sbd" 
+        }
+    function Barajaliahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3680.647946480637!2d90.3487734!3d22.704146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQyJzE2LjUiTiA5MMKwMjEnMDUuMiJF!5e0!3m2!1sen!2sbd!4v1598993458846!5m2!1sen!2sbd" 
+        }
+    function Uzirpurhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3680.647946480637!2d90.3487734!3d22.704146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQyJzE2LjUiTiA5MMKwMjEnMDUuMiJF!5e0!3m2!1sen!2sbd!4v1598993458846!5m2!1sen!2sbd" 
+        }
+    function Agailjharahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3680.647946480637!2d90.3487734!3d22.704146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQyJzE2LjUiTiA5MMKwMjEnMDUuMiJF!5e0!3m2!1sen!2sbd!4v1598993458846!5m2!1sen!2sbd" 
+        }
+
+
+        /*Khulna*/
+    function Amadeehub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.029979961579!2d89.55111031496372!3d22.8013529850655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ4JzA0LjkiTiA4OcKwMzMnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1598971196043!5m2!1sen!2sbd" 
+        }
+    function Paikgachhahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.029979961579!2d89.55111031496372!3d22.8013529850655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ4JzA0LjkiTiA4OcKwMzMnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1598971196043!5m2!1sen!2sbd" 
+        }
+    function Aliapurhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.029979961579!2d89.55111031496372!3d22.8013529850655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ4JzA0LjkiTiA4OcKwMzMnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1598971196043!5m2!1sen!2sbd"
+        }
+    function Sajiarahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.029979961579!2d89.55111031496372!3d22.8013529850655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ4JzA0LjkiTiA4OcKwMzMnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1598971196043!5m2!1sen!2sbd" 
+        }
+    function KhulnaTownhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.029979961579!2d89.55111031496372!3d22.8013529850655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ4JzA0LjkiTiA4OcKwMzMnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1598940082929!5m2!1sen!2sbd" 
+        }
+    function KhulnaTown1hub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.218164316703!2d89.54556131496427!3d22.831416685050243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ5JzUzLjEiTiA4OcKwMzInNTEuOSJF!5e0!3m2!1sen!2sbd!4v1598993540964!5m2!1sen!2sbd" 
+        }
+    function Terakhadahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.029979961579!2d89.55111031496372!3d22.8013529850655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ4JzA0LjkiTiA4OcKwMzMnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1598971196043!5m2!1sen!2sbd" 
+        }
+    function Batiaghathub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.029979961579!2d89.55111031496372!3d22.8013529850655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ4JzA0LjkiTiA4OcKwMzMnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1598971196043!5m2!1sen!2sbd" 
+        }
+    function Digaliahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.029979961579!2d89.55111031496372!3d22.8013529850655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ4JzA0LjkiTiA4OcKwMzMnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1598971196043!5m2!1sen!2sbd" 
+        }
+    function ChalnaBazarhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.029979961579!2d89.55111031496372!3d22.8013529850655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ4JzA0LjkiTiA4OcKwMzMnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1598971196043!5m2!1sen!2sbd" 
+        }
+    function Kushtiahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.7321478591343!2d89.1363173149842!3d23.89911498451631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDUzJzU2LjgiTiA4OcKwMDgnMTguNiJF!5e0!3m2!1sen!2sbd!4v1598971299335!5m2!1sen!2sbd" 
+        }
+    function Bagerhathub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.75212781322!2d89.46971131495646!3d22.400699985271473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDI0JzAyLjUiTiA4OcKwMjgnMTguOCJF!5e0!3m2!1sen!2sbd!4v1598971358312!5m2!1sen!2sbd" 
+        }
+    function Jashorehub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d917.0728880077287!2d89.21059038812203!3d23.159556832080067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDA5JzM0LjQiTiA4OcKwMTInNDAuMSJF!5e0!3m2!1sen!2sbd!4v1598993583053!5m2!1sen!2sbd" 
+        }
+
+        /*Rajshahi*/
+    function Bargunahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.866488825614!2d90.35934631498137!3d23.75213998458851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ1JzA3LjciTiA5MMKwMjEnNDEuNSJF!5e0!3m2!1sen!2sbd!4v1598971540348!5m2!1sen!2sbd" 
+        }
+    function Pabnahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.301924022361!2d89.22904731498649!3d24.020415984456907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDAxJzEzLjUiTiA4OcKwMTMnNTIuNSJF!5e0!3m2!1sen!2sbd!4v1598940267123!5m2!1sen!2sbd" 
+        }
+    function Rajapurhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.339158307237!2d90.19655531496083!3d22.64113998514753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDM4JzI4LjEiTiA5MMKwMTEnNTUuNSJF!5e0!3m2!1sen!2sbd!4v1598977324409!5m2!1sen!2sbd" 
+        }
+    function Rajshahihub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d908.6454455177366!2d88.63295148812287!3d24.361056820711955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDIxJzM5LjgiTiA4OMKwMzgnMDAuNiJF!5e0!3m2!1sen!2sbd!4v1598993664292!5m2!1sen!2sbd" 
+        }
+    function Natorehub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d908.2904518280878!2d88.97817368812285!3d24.41044562023315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDI0JzM3LjYiTiA4OMKwNTgnNDMuNCJF!5e0!3m2!1sen!2sbd!4v1598993702372!5m2!1sen!2sbd" 
+        }
+        
+        /*Rangpur*/
+    function Dinajpurhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.004588337045!2d91.17631431497588!3d23.46029898473314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzM3LjEiTiA5McKwMTAnNDIuNiJF!5e0!3m2!1sen!2sbd!4v1598971595654!5m2!1sen!2sbd" 
+        }
+    function Rangpurhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.53951391633!2d90.71594531498498!3d23.941354984495604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU2JzI4LjkiTiA5MMKwNDMnMDUuMyJF!5e0!3m2!1sen!2sbd!4v1598940333290!5m2!1sen!2sbd" 
+        }
+    function Rangpur1hub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.04350092102!2d89.2536763150204!3d25.736074983648386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zMjXCsDQ0JzA5LjkiTiA4OcKwMTUnMjEuMSJF!5e0!3m2!1sen!2sbd!4v1598994578781!5m2!1sen!2sbd" 
+        }
+
+        /*Sylhet*/
+    function Balaganjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598975491870!5m2!1sen!2sbd" 
+        }
+    function Sylhethub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598975491870!5m2!1sen!2sbd" 
+        }
+    function Habiganjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.4001944367983!2d90.498706314979!3d23.625834984650794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM3JzMzLjAiTiA5MMKwMzAnMDMuMiJF!5e0!3m2!1sen!2sbd!4v1598975626362!5m2!1sen!2sbd" 
+        }
+    function Goainhathub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598975491870!5m2!1sen!2sbd" 
+        }
+    function Gopalganjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598975491870!5m2!1sen!2sbd" 
+        }
+    function Jakiganjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598975491870!5m2!1sen!2sbd" 
+        }
+    function Kanaighathub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3636.7402942262406!2d91.46081131499157!3d24.285799984328207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDE3JzA4LjkiTiA5McKwMjcnNDYuOCJF!5e0!3m2!1sen!2sbd!4v1598975586276!5m2!1sen!2sbd" 
+        }
+    function Moulvibazarhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3636.7402942262406!2d91.46081131499157!3d24.285799984328207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDE3JzA4LjkiTiA5McKwMjcnNDYuOCJF!5e0!3m2!1sen!2sbd!4v1598975586276!5m2!1sen!2sbd" 
+        }
+    function SylhetSadarhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598975491870!5m2!1sen!2sbd" 
+        }
+    function SylhetSadar1hub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28951.573174863788!2d91.84342940413308!3d24.899801449673415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375054d3d270329f%3A0xf58ef93431f67382!2sSylhet!5e0!3m2!1sen!2sbd!4v1598993782336!5m2!1sen!2sbd" 
+        }
+    function Bishwanathhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598975491870!5m2!1sen!2sbd" 
+        }
+    function Bianibazarhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598975491870!5m2!1sen!2sbd" 
+        }
+    function Fenchuganjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598975491870!5m2!1sen!2sbd" 
+        }
+    function Golapganjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598975491870!5m2!1sen!2sbd" 
+        }
+    function Sunamganjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9529647071636!2d91.41383911500695!3d25.06958328395574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDA0JzEwLjUiTiA5McKwMjQnNTcuNyJF!5e0!3m2!1sen!2sbd!4v1598993818775!5m2!1sen!2sbd" 
+        }
+
+        /*Mymensingh*/
+    function Trishalhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.140833883245!2d90.40427131500078!3d24.756359984103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ1JzIyLjkiTiA5MMKwMjQnMjMuMyJF!5e0!3m2!1sen!2sbd!4v1598971397443!5m2!1sen!2sbd" 
+        }
+    function Gaforgaonhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.140833883245!2d90.40427131500078!3d24.756359984103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ1JzIyLjkiTiA5MMKwMjQnMjMuMyJF!5e0!3m2!1sen!2sbd!4v1598971397443!5m2!1sen!2sbd" 
+        }
+    function Nandailhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.140833883245!2d90.40427131500078!3d24.756359984103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ1JzIyLjkiTiA5MMKwMjQnMjMuMyJF!5e0!3m2!1sen!2sbd!4v1598971397443!5m2!1sen!2sbd" 
+        }
+    function Gouripurhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.140833883245!2d90.40427131500078!3d24.756359984103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ1JzIyLjkiTiA5MMKwMjQnMjMuMyJF!5e0!3m2!1sen!2sbd!4v1598971397443!5m2!1sen!2sbd" 
+        }
+    function MymensinghTownhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.140833883245!2d90.40427131500078!3d24.756359984103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ1JzIyLjkiTiA5MMKwMjQnMjMuMyJF!5e0!3m2!1sen!2sbd!4v1598940190416!5m2!1sen!2sbd" 
+        }
+    function Muktagachahub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.140833883245!2d90.40427131500078!3d24.756359984103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ1JzIyLjkiTiA5MMKwMjQnMjMuMyJF!5e0!3m2!1sen!2sbd!4v1598971397443!5m2!1sen!2sbd" 
+        }
+    function Isshwargonjhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.140833883245!2d90.40427131500078!3d24.756359984103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ1JzIyLjkiTiA5MMKwMjQnMjMuMyJF!5e0!3m2!1sen!2sbd!4v1598971397443!5m2!1sen!2sbd" 
+        }
+    function Haluaghathub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.140833883245!2d90.40427131500078!3d24.756359984103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ1JzIyLjkiTiA5MMKwMjQnMjMuMyJF!5e0!3m2!1sen!2sbd!4v1598971397443!5m2!1sen!2sbd" 
+        }
+    function Phulpurhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.140833883245!2d90.40427131500078!3d24.756359984103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ1JzIyLjkiTiA5MMKwMjQnMjMuMyJF!5e0!3m2!1sen!2sbd!4v1598971397443!5m2!1sen!2sbd" 
+        }
+    function Sherpurhub() {
+        document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d903.8366666047725!2d90.0173958881233!3d25.0223068142267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDAxJzIwLjMiTiA5MMKwMDEnMDQuNiJF!5e0!3m2!1sen!2sbd!4v1598993734349!5m2!1sen!2sbd" 
+        }
+    </script>
+    <script>
+$("#findshop").click(function() {
+    $('html,body').animate({
+            scrollTop: $("#shop").offset().top - 100
+        },
+        'slow');
+});
+$("#identify").click(function() {
+    $('html,body').animate({
+            scrollTop: $("#shop").offset().top
+        },
+        'slow');
+});
+$(document).ready(function() {
+    $('.panel-title').click(function() {
+        $(this).find('a').toggleClass('collapsed');
+        $(this).parents('.panel').find('.panel-collapse').slideToggle();
+    });
+    $('.acrdion-title a').click(function() {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active').text('EXPAND ALL');
+            $(this).parents('.acrdion-main').find('.panel-title a').addClass('collapsed');
+            $(this).parents('.acrdion-main').find('.panel').find('.panel-collapse').slideUp();
+        } else {
+            $(this).addClass('active').text('COLLAPSE ALL');
+            $(this).parents('.acrdion-main').find('.panel-title a').removeClass('collapsed');
+            $(this).parents('.acrdion-main').find('.panel').find('.panel-collapse').slideDown();
+        }
+    });
+});
+    </script>
+    <script>
+        /*dhk*/
+        if (/#Faridpurhub/.test(window.location.href)) {
+            Faridpurhub();
+        }
+        if (/#DhakaNorthhub/.test(window.location.href)) {
+            DhakaNorthhub();
+        }
+        if (/#Dhamraihub/.test(window.location.href)) {
+            Dhamraihub();
+        }
+        if (/#Shonirakhrahub/.test(window.location.href)) {
+            Shonirakhrahub();
+        }
+        if (/#Narayanganjhub/.test(window.location.href)) {
+            Narayanganjhub();
+         }
+        if (/#Gazipurhub/.test(window.location.href)) {
+            Gazipurhub();
+        }
+        if (/#DhakaSouthhub/.test(window.location.href)) {
+            DhakaSouthhub();
+        }
+        if (/#Dhanmondi/.test(window.location.href)) {
+            Dhanmondi();
+        }
+        if (/#Manikganjhub/.test(window.location.href)) {
+            Manikganjhub();
+        }
+        /*ctg*/
+        if (/#Muradnagarhub/.test(window.location.href)) {
+            Muradnagarhub();
+        }
+        if (/#Dagonbhuiahub/.test(window.location.href)) {
+            Dagonbhuiahub();
+        }
+        if (/#Patiyahub/.test(window.location.href)) {
+            Patiyahub();
+        }
+        if (/#Anawarahub/.test(window.location.href)) {
+            Anawarahub();
+        }
+        if (/#EastJoarahub/.test(window.location.href)) {
+            EastJoarahub();
+        }
+        if (/#Chouddagramhub/.test(window.location.href)) {
+            Chouddagramhub();
+        }
+        if (/#Jarachharihub/.test(window.location.href)) {
+            Jarachharihub();
+        }
+        if (/#Gorakghathub/.test(window.location.href)) {
+            Gorakghathub();
+        }
+        if (/#Sandwiphub/.test(window.location.href)) {
+            Sandwiphub();
+        }
+        if (/#Comillahub/.test(window.location.href)) {
+            Comillahub();
+        }
+        if (/#Ramuhub/.test(window.location.href)) {
+            Ramuhub();
+        }
+        if (/#Panchharihub/.test(window.location.href)) {
+            Panchharihub();
+        }
+        if (/#Burichanghub/.test(window.location.href)) {
+            Burichanghub();
+        }
+        if (/#Teknafhub/.test(window.location.href)) {
+            Teknafhub();
+        }
+        if (/#Chandinahub/.test(window.location.href)) {
+            Chandinahub();
+        }
+        if (/#Rouzanhub/.test(window.location.href)) {
+            Rouzanhub();
+        }
+        if (/#Fenihub/.test(window.location.href)) {
+            Fenihub();
+        }
+        if (/#Jaldihub/.test(window.location.href)) {
+            Jaldihub();
+        }
+        if (/#Pashurampurhub/.test(window.location.href)) {
+            Pashurampurhub();
+        }
+        if (/#Sonagazihub/.test(window.location.href)) {
+            Sonagazihub();
+        }
+        if (/#Chhagalnaiahub/.test(window.location.href)) {
+            Chhagalnaiahub();
+        }
+        if (/#Davidharhub/.test(window.location.href)) {
+            Davidharhub();
+        }
+        if (/#Kutubdiahub/.test(window.location.href)) {
+            Kutubdiahub();
+        }
+        if (/#Homnahub/.test(window.location.href)) {
+            Homnahub();
+        }
+        if (/#Brahmanparahub/.test(window.location.href)) {
+            Brahmanparahub();
+        }
+        if (/#Satkaniahub/.test(window.location.href)) {
+            Satkaniahub();
+        }
+        if (/#Daudkandihub/.test(window.location.href)) {
+            Daudkandihub();
+        }
+        if (/#Ukhiahub/.test(window.location.href)) {
+            Ukhiahub();
+        }
+        if (/#Senbaghub/.test(window.location.href)) {
+            Senbaghub();
+        }
+        if (/#Barurahub/.test(window.location.href)) {
+            Barurahub();
+        }
+        if (/#Langalkothub/.test(window.location.href)) {
+            Langalkothub();
+        }
+        if (/#Hayemcharhub/.test(window.location.href)) {
+            Hayemcharhub();
+        }
+        if (/#Matlobganjhub/.test(window.location.href)) {
+            Matlobganjhub();
+        }
+        if (/#Kachuahub/.test(window.location.href)) {
+            Kachuahub();
+        }
+        if (/#CharAlexganderhub/.test(window.location.href)) {
+            CharAlexganderhub();
+        }
+        if (/#Laksamhub/.test(window.location.href)) {
+            Laksamhub();
+        }
+        if (/#Begumganjhub/.test(window.location.href)) {
+            Begumganjhub();
+        }
+        if (/#Chatkhilhub/.test(window.location.href)) {
+            Chatkhilhub();
+        }
+        if (/#Sitakundahub/.test(window.location.href)) {
+            Sitakundahub();
+        }
+        if (/#Hatiyahub/.test(window.location.href)) {
+            Hatiyahub();
+        }
+        if (/#Shahrastihub/.test(window.location.href)) {
+            Shahrastihub();
+        }
+        if (/#Noakhalihub/.test(window.location.href)) {
+            Noakhalihub();
+        }
+        if (/#ChandpurSadarSahatalihub/.test(window.location.href)) {
+            ChandpurSadarSahatalihub();
+        }
+        if (/#Basurhathub/.test(window.location.href)) {
+            Basurhathub();
+        }
+        if (/#Boalkhalihub/.test(window.location.href)) {
+            Boalkhalihub();
+        }
+        if (/#Hajiganjhub/.test(window.location.href)) {
+            Hajiganjhub();
+        }
+        if (/#Faridganjhub/.test(window.location.href)) {
+            Faridganjhub();
+        }
+        if (/#Manikchharihub/.test(window.location.href)) {
+            Manikchharihub();
+        }
+        /*Barishal*/
+        if (/#Babuganjhub/.test(window.location.href)) {
+            Babuganjhub();
+        }
+        if (/#Bagerhathub/.test(window.location.href)) {
+            Bagerhathub();
+        }
+        if (/#Sahebganjhub/.test(window.location.href)) {
+            Sahebganjhub();
+        }
+        if (/#BarishalTownhub/.test(window.location.href)) {
+            BarishalTownhub();
+        }
+        if (/#Jhalokatihub/.test(window.location.href)) {
+            Jhalokatihub();
+        }
+        if (/#Muladihub/.test(window.location.href)) {
+            Muladihub();
+        }
+        if (/#Patuakhalihub/.test(window.location.href)) {
+            Patuakhalihub();
+        }
+        if (/#Bargunahub/.test(window.location.href)) {
+            Bargunahub();
+        }
+        if (/#Mehendiganjhub/.test(window.location.href)) {
+            Mehendiganjhub();
+        }
+        if (/#Babuganj1hub/.test(window.location.href)) {
+            Babuganj1hub();
+        }
+        if (/#Gouranadihub/.test(window.location.href)) {
+            Gouranadihub();
+        }
+        if (/#Barajaliahub/.test(window.location.href)) {
+            Barajaliahub();
+        }
+        if (/#Uzirpurhub/.test(window.location.href)) {
+            Uzirpurhub();
+        }
+        if (/#Agailjharahub/.test(window.location.href)) {
+            Agailjharahub();
+        }
+        /*Khulna*/
+        if (/#KhulnaTown1hub/.test(window.location.href)) {
+            KhulnaTown1hub();
+        }
+        if (/#KhulnaTownhub/.test(window.location.href)) {
+            KhulnaTownhub();
+        }
+        if (/#Jashorehub/.test(window.location.href)) {
+            Jashorehub();
+        }
+        if (/#Amadeehub/.test(window.location.href)) {
+            Amadeehub();
+        }
+        if (/#Paikgachhahub/.test(window.location.href)) {
+            Paikgachhahub();
+        }
+        if (/#Aliapurhub/.test(window.location.href)) {
+            Aliapurhub();
+        }
+        if (/#Sajiarahub/.test(window.location.href)) {
+            Sajiarahub();
+        }
+        if (/#KhulnaTownhub/.test(window.location.href)) {
+            KhulnaTownhub();
+        }
+        if (/#Terakhadahub/.test(window.location.href)) {
+            Terakhadahub();
+        }
+        if (/#Batiaghathub/.test(window.location.href)) {
+            Batiaghathub();
+        }
+        if (/#Digaliahub/.test(window.location.href)) {
+            Digaliahub();
+        }
+        if (/#ChalnaBazarhub/.test(window.location.href)) {
+            ChalnaBazarhub();
+        }
+        if (/#Kushtiahub/.test(window.location.href)) {
+            Kushtiahub();
+        }
+        if (/#Bagerhathub/.test(window.location.href)) {
+            Bagerhathub();
+        }
+        /*Rajshahi*/
+        if (/#Bargunahub/.test(window.location.href)) {
+            Bargunahub();
+        }
+        if (/#Pabnahub/.test(window.location.href)) {
+            Pabnahub();
+        }
+        if (/#Rajapurhub/.test(window.location.href)) {
+            Rajapurhub();
+        }
+        if (/#Rajshahihub/.test(window.location.href)) {
+            Rajshahihub();
+        }
+        if (/#Natorehub/.test(window.location.href)) {
+            Natorehub();
+        }
+        /*Rangpur*/
+        if (/#Dinajpurhub/.test(window.location.href)) {
+            Dinajpurhub();
+        }
+        if (/#Rangpurhub/.test(window.location.href)) {
+            Rangpurhub();
+        }
+        if (/#Rangpurhub/.test(window.location.href)) {
+            Rangpur1hub();
+        }
+        /*Sylhet*/
+        if (/#Balaganjhub/.test(window.location.href)) {
+            Balaganjhub();
+        }
+        if (/#Sylhethub/.test(window.location.href)) {
+            Sylhethub();
+        }
+        if (/#Habiganjhub/.test(window.location.href)) {
+            Habiganjhub();
+        }
+        if (/#Goainhathub/.test(window.location.href)) {
+            Goainhathub();
+        }
+        if (/#Gopalganjhub/.test(window.location.href)) {
+            Gopalganjhub();
+        }
+        if (/#Jakiganjhub/.test(window.location.href)) {
+            Jakiganjhub();
+        }
+        if (/#Kanaighathub/.test(window.location.href)) {
+            Kanaighathub();
+        }
+        if (/#Moulvibazarhub/.test(window.location.href)) {
+            Moulvibazarhub();
+        }
+        if (/#SylhetSadarhub/.test(window.location.href)) {
+            SylhetSadarhub();
+        }
+        if (/#Bishwanathhub/.test(window.location.href)) {
+            Bishwanathhub();
+        }
+        if (/#Bianibazarhub/.test(window.location.href)) {
+            Bianibazarhub();
+        }
+        if (/#Fenchuganjhub/.test(window.location.href)) {
+            Fenchuganjhub();
+        }
+        if (/#Golapganjhub/.test(window.location.href)) {
+            Golapganjhub();
+        }
+        if (/#SylhetSadar1hub/.test(window.location.href)) {
+            SylhetSadar1hub();
+        }
+        if (/#Sunamganjhub/.test(window.location.href)) {
+            Sunamganjhub();
+        }
+        /*Mymen*/
+        if (/#Sherpurhub/.test(window.location.href)) {
+            Sherpurhub();
+        }
+        if (/#Trishalhub/.test(window.location.href)) {
+            Trishalhub();
+        }
+        if (/#Gaforgaonhub/.test(window.location.href)) {
+            Gaforgaonhub();
+        }
+        if (/#Nandailhub/.test(window.location.href)) {
+            Nandailhub();
+        }
+        if (/#Gouripurhub/.test(window.location.href)) {
+            Gouripurhub();
+        }
+        if (/#MymensinghTownhub/.test(window.location.href)) {
+            MymensinghTownhub();
+        }
+        if (/#Muktagachahub/.test(window.location.href)) {
+            Muktagachahub();
+        }
+        if (/#Isshwargonjhub/.test(window.location.href)) {
+            Isshwargonjhub();
+        }
+        if (/#Haluaghathub/.test(window.location.href)) {
+            Haluaghathub();
+        }
+        if (/#Phulpurhub/.test(window.location.href)) {
+            Phulpurhub();
+        }
+
+        
+    </script>
+<script>
+    $("#Dhk").click(function() {
+            $('#Dhaka').show();
+            $('#Chittagong').hide();
+            $('#Barisal').hide();
+            $('#Khulna').hide();
+            $('#Rajshahi').hide();
+            $('#Rangpur').hide();
+            $('#Sylhet').hide();
+            $('#Mymensingh').hide();
+            $("#selectcity").text("Dhaka");
+            document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.9990914247705!2d90.25331131497522!3d23.424399984750988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI1JzI3LjgiTiA5MMKwMTUnMTkuOCJF!5e0!3m2!1sen!2sbd!4v1598939538480!5m2!1sen!2sbd";
+            });
+            function Dhanmondi() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.461835411287!2d90.21831131497555!3d23.44379998474138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI2JzM3LjciTiA5MMKwMTMnMTMuOCJF!5e0!3m2!1sen!2sbd!4v1598971140293!5m2!1sen!2sbd" 
+                }
+            function DhakaNorth() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.2863823096122!2d90.22321131497706!3d23.52219998470235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMxJzE5LjkiTiA5MMKwMTMnMzEuNCJF!5e0!3m2!1sen!2sbd!4v1598970111400!5m2!1sen!2sbd" 
+                }
+            function Dhamrai() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.769791250809!2d90.1490113149767!3d23.504799984710964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMwJzE3LjMiTiA5MMKwMDknMDQuMyJF!5e0!3m2!1sen!2sbd!4v1598970144954!5m2!1sen!2sbd" 
+                }
+            function Shonirakhra() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.9990914247705!2d90.25331131497522!3d23.424399984750988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI1JzI3LjgiTiA5MMKwMTUnMTkuOCJF!5e0!3m2!1sen!2sbd!4v1598970974684!5m2!1sen!2sbd" 
+                }
+            function Narayanganj() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.4001944367983!2d90.498706314979!3d23.625834984650794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM3JzMzLjAiTiA5MMKwMzAnMDMuMiJF!5e0!3m2!1sen!2sbd!4v1598971014162!5m2!1sen!2sbd" 
+                }
+            function Gazipur() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.4341989538248!2d91.0811413149729!3d23.299999984813194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDE4JzAwLjAiTiA5McKwMDQnNjAuMCJF!5e0!3m2!1sen!2sbd!4v1598971062396!5m2!1sen!2sbd" 
+                }
+            function DhakaSouth() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.9990914247705!2d90.25331131497522!3d23.424399984750988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI1JzI3LjgiTiA5MMKwMTUnMTkuOCJF!5e0!3m2!1sen!2sbd!4v1598971102723!5m2!1sen!2sbd" 
+                }
+            function Manikganj() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116799.9729027276!2d89.96293780656322!3d23.81862915175773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755f5c790f668ef%3A0x833298a1c0c62ae6!2sManikganj%20Sadar%20Upazila!5e0!3m2!1sen!2sbd!4v1598993628041!5m2!1sen!2sbd" 
+                }
+        $("#Ctg").click(function() {
+            $('#Dhaka').hide();
+            $('#Chittagong').show();
+            $('#Barisal').hide();
+            $('#Khulna').hide();
+            $('#Rajshahi').hide();
+            $('#Rangpur').hide();
+            $('#Sylhet').hide();
+            $('#Mymensingh').hide();
+            $("#selectcity").text("Chittagong");
+            document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.722085488554!2d91.82067231495512!3d22.32634798531001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE5JzM0LjkiTiA5McKwNDknMjIuMyJF!5e0!3m2!1sen!2sbd!4v1598939374518!5m2!1sen!2sbd"
+            });
+            function Muradnagar() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.004588337045!2d91.17631431497588!3d23.46029898473314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzM3LjEiTiA5McKwMTAnNDIuNiJF!5e0!3m2!1sen!2sbd!4v1598956840341!5m2!1sen!2sbd" 
+                }
+            function Dagonbhuia() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.2576436046097!2d90.96715131498719!3d24.057229984438962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDAzJzI2LjAiTiA5MMKwNTgnMDkuNiJF!5e0!3m2!1sen!2sbd!4v1598956867316!5m2!1sen!2sbd" 
+                }
+            function Patiya() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.722085488554!2d91.82067231495512!3d22.32634798531001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE5JzM0LjkiTiA5McKwNDknMjIuMyJF!5e0!3m2!1sen!2sbd!4v1598939374518!5m2!1sen!2sbd" 
+                }
+            function Anawara() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.722085488554!2d91.82067231495512!3d22.32634798531001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE5JzM0LjkiTiA5McKwNDknMjIuMyJF!5e0!3m2!1sen!2sbd!4v1598939374518!5m2!1sen!2sbd" 
+                }
+            function EastJoara() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.722085488554!2d91.82067231495512!3d22.32634798531001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE5JzM0LjkiTiA5McKwNDknMjIuMyJF!5e0!3m2!1sen!2sbd!4v1598939374518!5m2!1sen!2sbd" 
+                }
+            function Chouddagram() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.004588337045!2d91.17631431497588!3d23.46029898473314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzM3LjEiTiA5McKwMTAnNDIuNiJF!5e0!3m2!1sen!2sbd!4v1598956840341!5m2!1sen!2sbd" 
+                }
+            function Jarachhari() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.722085488554!2d91.82067231495512!3d22.32634798531001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE5JzM0LjkiTiA5McKwNDknMjIuMyJF!5e0!3m2!1sen!2sbd!4v1598939374518!5m2!1sen!2sbd" 
+                }
+            function Gorakghat() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.1746192571572!2d91.99067031494!3d21.461663985765483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDI3JzQyLjAiTiA5McKwNTknMzQuMyJF!5e0!3m2!1sen!2sbd!4v1598957140125!5m2!1sen!2sbd" 
+                }
+            function Sandwip() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.722085488554!2d91.82067231495512!3d22.32634798531001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE5JzM0LjkiTiA5McKwNDknMjIuMyJF!5e0!3m2!1sen!2sbd!4v1598939374518!5m2!1sen!2sbd" 
+                }
+            function Comilla() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.004588337045!2d91.17631431497588!3d23.46029898473314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzM3LjEiTiA5McKwMTAnNDIuNiJF!5e0!3m2!1sen!2sbd!4v1598956840341!5m2!1sen!2sbd" 
+                }
+            function Ramu() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.1746192571572!2d91.99067031494!3d21.461663985765483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDI3JzQyLjAiTiA5McKwNTknMzQuMyJF!5e0!3m2!1sen!2sbd!4v1598957140125!5m2!1sen!2sbd" 
+                }
+            function Panchhari() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.004588337045!2d91.17631431497588!3d23.46029898473314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzM3LjEiTiA5McKwMTAnNDIuNiJF!5e0!3m2!1sen!2sbd!4v1598956840341!5m2!1sen!2sbd" 
+                }
+            function Burichang() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.004588337045!2d91.17631431497588!3d23.46029898473314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzM3LjEiTiA5McKwMTAnNDIuNiJF!5e0!3m2!1sen!2sbd!4v1598956840341!5m2!1sen!2sbd" 
+                }
+            function Teknaf() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.1746192571572!2d91.99067031494!3d21.461663985765483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDI3JzQyLjAiTiA5McKwNTknMzQuMyJF!5e0!3m2!1sen!2sbd!4v1598957140125!5m2!1sen!2sbd" 
+                }
+            function Chandina() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.004588337045!2d91.17631431497588!3d23.46029898473314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzM3LjEiTiA5McKwMTAnNDIuNiJF!5e0!3m2!1sen!2sbd!4v1598956840341!5m2!1sen!2sbd" 
+                }
+            function Rouzan() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.722085488554!2d91.82067231495512!3d22.32634798531001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE5JzM0LjkiTiA5McKwNDknMjIuMyJF!5e0!3m2!1sen!2sbd!4v1598939374518!5m2!1sen!2sbd" 
+                }
+            function Jaldi() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.722085488554!2d91.82067231495512!3d22.32634798531001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE5JzM0LjkiTiA5McKwNDknMjIuMyJF!5e0!3m2!1sen!2sbd!4v1598939374518!5m2!1sen!2sbd" 
+                }
+            function Feni() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.2576436046097!2d90.96715131498719!3d24.057229984438962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDAzJzI2LjAiTiA5MMKwNTgnMDkuNiJF!5e0!3m2!1sen!2sbd!4v1598956867316!5m2!1sen!2sbd" 
+                }
+            function Pashurampur() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.2576436046097!2d90.96715131498719!3d24.057229984438962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDAzJzI2LjAiTiA5MMKwNTgnMDkuNiJF!5e0!3m2!1sen!2sbd!4v1598956867316!5m2!1sen!2sbd" 
+                }
+            function Sonagazi() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.2576436046097!2d90.96715131498719!3d24.057229984438962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDAzJzI2LjAiTiA5MMKwNTgnMDkuNiJF!5e0!3m2!1sen!2sbd!4v1598956867316!5m2!1sen!2sbd" 
+                }
+            function Chhagalnaia() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3643.2576436046097!2d90.96715131498719!3d24.057229984438962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDAzJzI2LjAiTiA5MMKwNTgnMDkuNiJF!5e0!3m2!1sen!2sbd!4v1598956867316!5m2!1sen!2sbd" 
+                }
+            function Davidhar() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.004588337045!2d91.17631431497588!3d23.46029898473314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzM3LjEiTiA5McKwMTAnNDIuNiJF!5e0!3m2!1sen!2sbd!4v1598956840341!5m2!1sen!2sbd" 
+                }
+            function Homna() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.004588337045!2d91.17631431497588!3d23.46029898473314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzM3LjEiTiA5McKwMTAnNDIuNiJF!5e0!3m2!1sen!2sbd!4v1598956840341!5m2!1sen!2sbd" 
+                }
+            function Brahmanpara() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.004588337045!2d91.17631431497588!3d23.46029898473314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzM3LjEiTiA5McKwMTAnNDIuNiJF!5e0!3m2!1sen!2sbd!4v1598956840341!5m2!1sen!2sbd" 
+                }
+            function Daudkandi() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.004588337045!2d91.17631431497588!3d23.46029898473314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzM3LjEiTiA5McKwMTAnNDIuNiJF!5e0!3m2!1sen!2sbd!4v1598956840341!5m2!1sen!2sbd" 
+                }
+            function Ukhia() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.1746192571572!2d91.99067031494!3d21.461663985765483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDI3JzQyLjAiTiA5McKwNTknMzQuMyJF!5e0!3m2!1sen!2sbd!4v1598957140125!5m2!1sen!2sbd" 
+                }
+            function Kutubdia() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.1746192571572!2d91.99067031494!3d21.461663985765483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDI3JzQyLjAiTiA5McKwNTknMzQuMyJF!5e0!3m2!1sen!2sbd!4v1598957140125!5m2!1sen!2sbd" 
+                }
+            function Satkania() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.722085488554!2d91.82067231495512!3d22.32634798531001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDE5JzM0LjkiTiA5McKwNDknMjIuMyJF!5e0!3m2!1sen!2sbd!4v1598939374518!5m2!1sen!2sbd" 
+                }
+            function Senbag() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.9126477997203!2d91.09689588812185!3d22.889362334562268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDUzJzIxLjciTiA5McKwMDUnNTAuOCJF!5e0!3m2!1sen!2sbd!4v1598993997782!5m2!1sen!2sbd" 
+                }
+            function CharAlexgander() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.9126477997203!2d91.09689588812185!3d22.889362334562268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDUzJzIxLjciTiA5McKwMDUnNTAuOCJF!5e0!3m2!1sen!2sbd!4v1598993997782!5m2!1sen!2sbd" 
+                }
+            function Begumganj() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.9126477997203!2d91.09689588812185!3d22.889362334562268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDUzJzIxLjciTiA5McKwMDUnNTAuOCJF!5e0!3m2!1sen!2sbd!4v1598993997782!5m2!1sen!2sbd" 
+                }
+            function Chatkhil() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.9126477997203!2d91.09689588812185!3d22.889362334562268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDUzJzIxLjciTiA5McKwMDUnNTAuOCJF!5e0!3m2!1sen!2sbd!4v1598993997782!5m2!1sen!2sbd" 
+                }
+            function Hatiya() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.9126477997203!2d91.09689588812185!3d22.889362334562268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDUzJzIxLjciTiA5McKwMDUnNTAuOCJF!5e0!3m2!1sen!2sbd!4v1598993997782!5m2!1sen!2sbd" 
+                }
+            function Noakhali() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.9126477997203!2d91.09689588812185!3d22.889362334562268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDUzJzIxLjciTiA5McKwMDUnNTAuOCJF!5e0!3m2!1sen!2sbd!4v1598993997782!5m2!1sen!2sbd" 
+                }
+            function Barura() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.9010712924605!2d91.17486155113588!3d23.464032705496017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzUwLjUiTiA5McKwMTAnMzcuNCJF!5e0!3m2!1sen!2sbd!4v1598994034251!5m2!1sen!2sbd" 
+                }
+            function Langalkot() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.9010712924605!2d91.17486155113588!3d23.464032705496017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzUwLjUiTiA5McKwMTAnMzcuNCJF!5e0!3m2!1sen!2sbd!4v1598994034251!5m2!1sen!2sbd" 
+                }
+            function Laksam() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.9010712924605!2d91.17486155113588!3d23.464032705496017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzUwLjUiTiA5McKwMTAnMzcuNCJF!5e0!3m2!1sen!2sbd!4v1598994034251!5m2!1sen!2sbd" 
+                }
+            function Hayemchar() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916.6005668645934!2d90.6544250291904!3d23.22844439905309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEzJzQyLjQiTiA5MMKwMzknMTcuOSJF!5e0!3m2!1sen!2sbd!4v1598994114940!5m2!1sen!2sbd" 
+                }
+            function Matlobganj() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916.6005668645934!2d90.6544250291904!3d23.22844439905309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEzJzQyLjQiTiA5MMKwMzknMTcuOSJF!5e0!3m2!1sen!2sbd!4v1598994114940!5m2!1sen!2sbd" 
+                }
+            function Kachua() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916.6005668645934!2d90.6544250291904!3d23.22844439905309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEzJzQyLjQiTiA5MMKwMzknMTcuOSJF!5e0!3m2!1sen!2sbd!4v1598994114940!5m2!1sen!2sbd" 
+                }
+            function Shahrasti() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916.6005668645934!2d90.6544250291904!3d23.22844439905309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEzJzQyLjQiTiA5MMKwMzknMTcuOSJF!5e0!3m2!1sen!2sbd!4v1598994114940!5m2!1sen!2sbd" 
+                }
+            function Chandpur() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916.6005668645934!2d90.6544250291904!3d23.22844439905309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEzJzQyLjQiTiA5MMKwMzknMTcuOSJF!5e0!3m2!1sen!2sbd!4v1598994114940!5m2!1sen!2sbd" 
+                }
+            function Hajiganj() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916.6005668645934!2d90.6544250291904!3d23.22844439905309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEzJzQyLjQiTiA5MMKwMzknMTcuOSJF!5e0!3m2!1sen!2sbd!4v1598994114940!5m2!1sen!2sbd" 
+                }
+            function Faridganj() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916.6005668645934!2d90.6544250291904!3d23.22844439905309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDEzJzQyLjQiTiA5MMKwMzknMTcuOSJF!5e0!3m2!1sen!2sbd!4v1598994114940!5m2!1sen!2sbd" 
+                }
+            function Sitakunda() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.45927446937!2d91.82320148812153!3d22.359779039347888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDIxJzM1LjIiTiA5McKwNDknMjUuNSJF!5e0!3m2!1sen!2sbd!4v1598994344687!5m2!1sen!2sbd" 
+                }
+            function Boalkhali() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.45927446937!2d91.82320148812153!3d22.359779039347888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDIxJzM1LjIiTiA5McKwNDknMjUuNSJF!5e0!3m2!1sen!2sbd!4v1598994344687!5m2!1sen!2sbd" 
+                }
+            function Basurhat() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3672.389098274073!2d91.3972032!3d23.0094815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3753683050838fc7%3A0x6a2d4cebdebb4129!2sVital%20Research%20unit%202!5e0!3m2!1sen!2sbd!4v1598994465336!5m2!1sen!2sbd" 
+                }
+
+        $("#Bar").click(function() {
+            $('#Dhaka').hide();
+            $('#Chittagong').show();
+            $('#Barisal').hide();
+            $('#Khulna').hide();
+            $('#Rajshahi').hide();
+            $('#Rangpur').hide();
+            $('#Sylhet').hide();
+            $('#Mymensingh').hide();
+            $("#selectcity").text("Barisal");
+            document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.871098117008!2d90.3575523149618!3d22.695841985119532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQxJzQ1LjAiTiA5MMKwMjEnMzUuMSJF!5e0!3m2!1sen!2sbd!4v1598940006837!5m2!1sen!2sbd"
+            });
+            function Babuganj() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.871098117008!2d90.3575523149618!3d22.695841985119532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQxJzQ1LjAiTiA5MMKwMjEnMzUuMSJF!5e0!3m2!1sen!2sbd!4v1598940006837!5m2!1sen!2sbd" 
+                }
+            function Babuganj1() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3680.647946480637!2d90.3487734!3d22.704146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQyJzE2LjUiTiA5MMKwMjEnMDUuMiJF!5e0!3m2!1sen!2sbd!4v1598993458846!5m2!1sen!2sbd" 
+                }
+            function Bagerhat() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.75212781322!2d89.46971131495646!3d22.400699985271473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDI0JzAyLjUiTiA4OcKwMjgnMTguOCJF!5e0!3m2!1sen!2sbd!4v1598956081200!5m2!1sen!2sbd" 
+                }
+            function Sahebganj() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.871098117008!2d90.3575523149618!3d22.695841985119532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQxJzQ1LjAiTiA5MMKwMjEnMzUuMSJF!5e0!3m2!1sen!2sbd!4v1598940006837!5m2!1sen!2sbd" 
+                }
+            function BarishalTown() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.871098117008!2d90.3575523149618!3d22.695841985119532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQxJzQ1LjAiTiA5MMKwMjEnMzUuMSJF!5e0!3m2!1sen!2sbd!4v1598940006837!5m2!1sen!2sbd" 
+                }
+            function Muladi() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.871098117008!2d90.3575523149618!3d22.695841985119532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQxJzQ1LjAiTiA5MMKwMjEnMzUuMSJF!5e0!3m2!1sen!2sbd!4v1598940006837!5m2!1sen!2sbd" 
+                }
+            function Jhalokati() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.339158307237!2d90.19655531496083!3d22.64113998514753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDM4JzI4LjEiTiA5MMKwMTEnNTUuNSJF!5e0!3m2!1sen!2sbd!4v1598956185921!5m2!1sen!2sbd" 
+                }
+            function Patuakhali() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.484617074423!2d90.40646631498099!3d23.730091984599337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQzJzQ4LjMiTiA5MMKwMjQnMzEuMiJF!5e0!3m2!1sen!2sbd!4v1598956696257!5m2!1sen!2sbd" 
+                }
+            function Barguna() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.866488825614!2d90.35934631498137!3d23.75213998458851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ1JzA3LjciTiA5MMKwMjEnNDEuNSJF!5e0!3m2!1sen!2sbd!4v1598956748286!5m2!1sen!2sbd" 
+                }
+            function Babuganj1() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3680.647946480637!2d90.3487734!3d22.704146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQyJzE2LjUiTiA5MMKwMjEnMDUuMiJF!5e0!3m2!1sen!2sbd!4v1598993458846!5m2!1sen!2sbd" 
+                }
+            function Gouranadi() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3680.647946480637!2d90.3487734!3d22.704146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQyJzE2LjUiTiA5MMKwMjEnMDUuMiJF!5e0!3m2!1sen!2sbd!4v1598993458846!5m2!1sen!2sbd" 
+                }
+            function Barajalia() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3680.647946480637!2d90.3487734!3d22.704146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQyJzE2LjUiTiA5MMKwMjEnMDUuMiJF!5e0!3m2!1sen!2sbd!4v1598993458846!5m2!1sen!2sbd" 
+                }
+            function Uzirpur() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3680.647946480637!2d90.3487734!3d22.704146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQyJzE2LjUiTiA5MMKwMjEnMDUuMiJF!5e0!3m2!1sen!2sbd!4v1598993458846!5m2!1sen!2sbd" 
+                }
+            function Agailjhara() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3680.647946480637!2d90.3487734!3d22.704146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQyJzE2LjUiTiA5MMKwMjEnMDUuMiJF!5e0!3m2!1sen!2sbd!4v1598993458846!5m2!1sen!2sbd" 
+                }
+
+            $("#Khul").click(function() {
+            $('#Dhaka').hide();
+            $('#Chittagong').hide();
+            $('#Barisal').hide();
+            $('#Khulna').show();
+            $('#Rajshahi').hide();
+            $('#Rangpur').hide();
+            $('#Sylhet').hide();
+            $('#Mymensingh').hide();
+            $("#selectcity").text("Khulna");
+            document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.029979961579!2d89.55111031496372!3d22.8013529850655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ4JzA0LjkiTiA4OcKwMzMnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1598940082929!5m2!1sen!2sbd"
+            });
+            function Amadee() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.029979961579!2d89.55111031496372!3d22.8013529850655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ4JzA0LjkiTiA4OcKwMzMnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1598940082929!5m2!1sen!2sbd"
+            }
+            function Paikgachha() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.029979961579!2d89.55111031496372!3d22.8013529850655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ4JzA0LjkiTiA4OcKwMzMnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1598940082929!5m2!1sen!2sbd"
+            }
+            function Aliapur() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.029979961579!2d89.55111031496372!3d22.8013529850655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ4JzA0LjkiTiA4OcKwMzMnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1598940082929!5m2!1sen!2sbd"
+            }
+            function Sajiara() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.029979961579!2d89.55111031496372!3d22.8013529850655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ4JzA0LjkiTiA4OcKwMzMnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1598940082929!5m2!1sen!2sbd"
+            }
+            function KhulnaTown() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.029979961579!2d89.55111031496372!3d22.8013529850655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ4JzA0LjkiTiA4OcKwMzMnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1598940082929!5m2!1sen!2sbd"
+            }
+            function Terakhada() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.029979961579!2d89.55111031496372!3d22.8013529850655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ4JzA0LjkiTiA4OcKwMzMnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1598940082929!5m2!1sen!2sbd"
+            }
+            function Batiaghat() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.029979961579!2d89.55111031496372!3d22.8013529850655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ4JzA0LjkiTiA4OcKwMzMnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1598940082929!5m2!1sen!2sbd"
+            }
+            function Digalia() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.029979961579!2d89.55111031496372!3d22.8013529850655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ4JzA0LjkiTiA4OcKwMzMnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1598940082929!5m2!1sen!2sbd"
+            }
+            function ChalnaBazar() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.029979961579!2d89.55111031496372!3d22.8013529850655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ4JzA0LjkiTiA4OcKwMzMnMTEuOSJF!5e0!3m2!1sen!2sbd!4v1598940082929!5m2!1sen!2sbd"
+            }
+            function Kushtia() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.7321478591343!2d89.1363173149842!3d23.89911498451631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDUzJzU2LjgiTiA4OcKwMDgnMTguNiJF!5e0!3m2!1sen!2sbd!4v1598971299335!5m2!1sen!2sbd" 
+            }
+            function Bagerhat() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.75212781322!2d89.46971131495646!3d22.400699985271473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDI0JzAyLjUiTiA4OcKwMjgnMTguOCJF!5e0!3m2!1sen!2sbd!4v1598971358312!5m2!1sen!2sbd" 
+            }
+            function KhulnaTown1() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.218164316703!2d89.54556131496427!3d22.831416685050243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ5JzUzLjEiTiA4OcKwMzInNTEuOSJF!5e0!3m2!1sen!2sbd!4v1598993540964!5m2!1sen!2sbd" 
+            }
+            function Jashore() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d917.0728880077287!2d89.21059038812203!3d23.159556832080067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDA5JzM0LjQiTiA4OcKwMTInNDAuMSJF!5e0!3m2!1sen!2sbd!4v1598993583053!5m2!1sen!2sbd" 
+            }
+
+            $("#Raj").click(function() {
+            $('#Dhaka').hide();
+            $('#Chittagong').hide();
+            $('#Barisal').hide();
+            $('#Khulna').hide();
+            $('#Rajshahi').show();
+            $('#Rangpur').hide();
+            $('#Sylhet').hide();
+            $('#Mymensingh').hide();
+            $("#selectcity").text("Rajshahi");
+            document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.301924022361!2d89.22904731498649!3d24.020415984456907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDAxJzEzLjUiTiA4OcKwMTMnNTIuNSJF!5e0!3m2!1sen!2sbd!4v1598940267123!5m2!1sen!2sbd"
+            });
+            function Rajshahi() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.301924022361!2d89.22904731498649!3d24.020415984456907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDAxJzEzLjUiTiA4OcKwMTMnNTIuNSJF!5e0!3m2!1sen!2sbd!4v1598940267123!5m2!1sen!2sbd"
+            }
+            function Natore() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d908.2904518280878!2d88.97817368812285!3d24.41044562023315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDI0JzM3LjYiTiA4OMKwNTgnNDMuNCJF!5e0!3m2!1sen!2sbd!4v1598993702372!5m2!1sen!2sbd" 
+            }
+            function Barguna() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.866488825614!2d90.35934631498137!3d23.75213998458851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDQ1JzA3LjciTiA5MMKwMjEnNDEuNSJF!5e0!3m2!1sen!2sbd!4v1598971540348!5m2!1sen!2sbd" 
+            }
+            function Pabna() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.301924022361!2d89.22904731498649!3d24.020415984456907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDAxJzEzLjUiTiA4OcKwMTMnNTIuNSJF!5e0!3m2!1sen!2sbd!4v1598940267123!5m2!1sen!2sbd" 
+            }
+            function Rajapur() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.339158307237!2d90.19655531496083!3d22.64113998514753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDM4JzI4LjEiTiA5MMKwMTEnNTUuNSJF!5e0!3m2!1sen!2sbd!4v1598977324409!5m2!1sen!2sbd" 
+            }
+
+            $("#Ran").click(function() {
+            $('#Dhaka').hide();
+            $('#Chittagong').hide();
+            $('#Barisal').hide();
+            $('#Khulna').hide();
+            $('#Rajshahi').hide();
+            $('#Rangpur').show();
+            $('#Sylhet').hide();
+            $('#Mymensingh').hide();
+            $("#selectcity").text("Rangpur");
+            document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.53951391633!2d90.71594531498498!3d23.941354984495604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU2JzI4LjkiTiA5MMKwNDMnMDUuMyJF!5e0!3m2!1sen!2sbd!4v1598940333290!5m2!1sen!2sbd"
+            });
+            function Rangpur() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.53951391633!2d90.71594531498498!3d23.941354984495604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU2JzI4LjkiTiA5MMKwNDMnMDUuMyJF!5e0!3m2!1sen!2sbd!4v1598940333290!5m2!1sen!2sbd"
+            }
+            function Dinajpur() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.004588337045!2d91.17631431497588!3d23.46029898473314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDI3JzM3LjEiTiA5McKwMTAnNDIuNiJF!5e0!3m2!1sen!2sbd!4v1598971595654!5m2!1sen!2sbd" 
+            }
+            function Rangpur1() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.04350092102!2d89.2536763150204!3d25.736074983648386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zMjXCsDQ0JzA5LjkiTiA4OcKwMTUnMjEuMSJF!5e0!3m2!1sen!2sbd!4v1598994578781!5m2!1sen!2sbd" 
+            }
+
+            $("#Syl").click(function() {
+            $('#Dhaka').hide();
+            $('#Chittagong').hide();
+            $('#Barisal').hide();
+            $('#Khulna').hide();
+            $('#Rajshahi').hide();
+            $('#Rangpur').hide();
+            $('#Sylhet').show();
+            $('#Mymensingh').hide();
+            $("#selectcity").text("Sylhet");
+            document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598940405623!5m2!1sen!2sbd"
+            });
+            function Sylhet() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598940405623!5m2!1sen!2sbd"
+            }
+            function Balaganj() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598940405623!5m2!1sen!2sbd"
+            }
+            function Goainhat() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598940405623!5m2!1sen!2sbd"
+            }
+            function Gopalganj() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598940405623!5m2!1sen!2sbd"
+            }
+            function Jakiganj() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598940405623!5m2!1sen!2sbd"
+            }
+            function Kanaighat() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598940405623!5m2!1sen!2sbd"
+            }
+            function SylhetSadar() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598940405623!5m2!1sen!2sbd"
+            }
+            function Bishwanath() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598940405623!5m2!1sen!2sbd"
+            }
+            function Bianibazar() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598940405623!5m2!1sen!2sbd"
+            }
+            function Fenchuganj() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598940405623!5m2!1sen!2sbd"
+            }
+            function Golapganj() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598940405623!5m2!1sen!2sbd"
+            }
+            function Habiganj() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.4001944367983!2d90.498706314979!3d23.625834984650794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM3JzMzLjAiTiA5MMKwMzAnMDMuMiJF!5e0!3m2!1sen!2sbd!4v1598975626362!5m2!1sen!2sbd" 
+            }
+            function Moulvibazar() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3636.7402942262406!2d91.46081131499157!3d24.285799984328207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDE3JzA4LjkiTiA5McKwMjcnNDYuOCJF!5e0!3m2!1sen!2sbd!4v1598975586276!5m2!1sen!2sbd" 
+            }
+            function SylhetSadar1() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28951.573174863788!2d91.84342940413308!3d24.899801449673415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375054d3d270329f%3A0xf58ef93431f67382!2sSylhet!5e0!3m2!1sen!2sbd!4v1598993782336!5m2!1sen!2sbd" 
+            }
+            function Sunamganj() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.9529647071636!2d91.41383911500695!3d25.06958328395574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDA0JzEwLjUiTiA5McKwMjQnNTcuNyJF!5e0!3m2!1sen!2sbd!4v1598993818775!5m2!1sen!2sbd" 
+            }
+
+            $("#Mymen").click(function() {
+            $('#Dhaka').hide();
+            $('#Chittagong').hide();
+            $('#Barisal').hide();
+            $('#Khulna').hide();
+            $('#Rajshahi').hide();
+            $('#Rangpur').hide();
+            $('#Sylhet').hide();
+            $('#Mymensingh').show();
+            $("#selectcity").text("Mymensingh");
+            document.getElementById("map").src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.7701413239593!2d91.8668603150037!3d24.90582098403241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU0JzIxLjAiTiA5McKwNTInMDguNiJF!5e0!3m2!1sen!2sbd!4v1598940405623!5m2!1sen!2sbd"
+            });
+            function Sherpur() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d903.8366666047725!2d90.0173958881233!3d25.0223068142267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDAxJzIwLjMiTiA5MMKwMDEnMDQuNiJF!5e0!3m2!1sen!2sbd!4v1598993734349!5m2!1sen!2sbd" 
+            }
+            function Trishal() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.140833883245!2d90.40427131500078!3d24.756359984103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ1JzIyLjkiTiA5MMKwMjQnMjMuMyJF!5e0!3m2!1sen!2sbd!4v1598971397443!5m2!1sen!2sbd" 
+            }
+            function Gaforgaon() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.140833883245!2d90.40427131500078!3d24.756359984103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ1JzIyLjkiTiA5MMKwMjQnMjMuMyJF!5e0!3m2!1sen!2sbd!4v1598971397443!5m2!1sen!2sbd" 
+            }
+            function Nandail() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.140833883245!2d90.40427131500078!3d24.756359984103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ1JzIyLjkiTiA5MMKwMjQnMjMuMyJF!5e0!3m2!1sen!2sbd!4v1598971397443!5m2!1sen!2sbd" 
+            }
+            function Gouripur() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.140833883245!2d90.40427131500078!3d24.756359984103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ1JzIyLjkiTiA5MMKwMjQnMjMuMyJF!5e0!3m2!1sen!2sbd!4v1598971397443!5m2!1sen!2sbd" 
+            }
+            function MymensinghTown() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.140833883245!2d90.40427131500078!3d24.756359984103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ1JzIyLjkiTiA5MMKwMjQnMjMuMyJF!5e0!3m2!1sen!2sbd!4v1598971397443!5m2!1sen!2sbd" 
+            }
+            function Muktagacha() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.140833883245!2d90.40427131500078!3d24.756359984103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ1JzIyLjkiTiA5MMKwMjQnMjMuMyJF!5e0!3m2!1sen!2sbd!4v1598971397443!5m2!1sen!2sbd" 
+            }
+            function Isshwargonj() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.140833883245!2d90.40427131500078!3d24.756359984103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ1JzIyLjkiTiA5MMKwMjQnMjMuMyJF!5e0!3m2!1sen!2sbd!4v1598971397443!5m2!1sen!2sbd" 
+            }
+            function Haluaghat() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.140833883245!2d90.40427131500078!3d24.756359984103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ1JzIyLjkiTiA5MMKwMjQnMjMuMyJF!5e0!3m2!1sen!2sbd!4v1598971397443!5m2!1sen!2sbd" 
+            }
+            function Phulpur() {
+                document.getElementById("map").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.140833883245!2d90.40427131500078!3d24.756359984103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ1JzIyLjkiTiA5MMKwMjQnMjMuMyJF!5e0!3m2!1sen!2sbd!4v1598971397443!5m2!1sen!2sbd" 
+            }
+    </script>
+
+
+
+
+
+
+
+
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
