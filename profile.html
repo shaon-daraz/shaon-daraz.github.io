@@ -57,6 +57,7 @@ var imageData = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAtAAAAJLCAYAAADO9
     ctx.globalAlpha = 1;
     ctx.drawImage(imageObj1, 0, 0, 720, 800);
     imageObj2.src = imageData;
+    imageObj1.onload = function() {
       ctx.globalAlpha = 1;
       ctx.drawImage(imageObj2, 0, 200);
       var img = canvas.toDataURL('image/jpeg', 1.0);
@@ -64,7 +65,7 @@ var imageData = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAtAAAAJLCAYAAADO9
       $('.merged-image').removeClass('hidden');
       $('#download').attr('href',img);
       $('#download').removeClass('hidden');
-      
+    }
   };
 }
 
